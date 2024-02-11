@@ -6,7 +6,8 @@ Content Type:
 -	Best Practices
 -	Solutions
 -	Guidance
- 
+-   New Horizons
+
 Categories:
 -	Integration
 -	Containers

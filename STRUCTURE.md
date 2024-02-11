@@ -35,6 +35,9 @@ Each folder should contain subfolders organized by topic or technology, and furt
                 /setup
                 /code
                 /instructions
+            /seminar
+                /videos
+                /slides
             /material
                 /videos
                 /slides

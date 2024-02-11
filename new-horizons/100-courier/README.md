@@ -1,0 +1,2 @@
+# NOTICE
+This technology preview is based upon the alpha version of Chef Courier, many features are not yet completed, and the lab may make use of simulated features, features/functions that are not present in the GA release, or that have changed before the public release. 
