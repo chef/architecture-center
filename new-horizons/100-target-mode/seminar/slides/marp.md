@@ -1,96 +1,142 @@
 ---
 marp: true
 #theme: uncover
+#theme: default
+#theme: gaia
 #class:
 #  - lead
+
 paginate: true
-header: Progress Chef - Archiecture Center
-footer: 2024
----
-# Part 1: 
-#### Introduction to IaC Testing
-###### What and Why
+header: '![w:200px](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/header-logo.png)'
+footer: '&copy; 2024 Progress Software Corporation and/or its subsidiaries or affiliates. All rights reserved.'
+size: 16:9
+style: |
+  footer {
+    font-size: 10px;
+  }
+  .columns-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .small li {
+    font-size: 70%;
+  }
+  .columns-3 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
 
+title: Introduction to Chef Target Mode
+description: New Horizons Series - level 100. Introduction to Target Mode
+author: George Westwater, Progress Chef
+url: https://github.com/chef/architecture-center/blob/main/new-horizons/100-target-mode/seminar/slides/marp.md
+#image: https://marp.app/og-image.jpg
 ---
-# Slide 2
-Slide: Set the Context
-Speaking Notes
 
----
-# Terminology
-•	Slide: Terminology 
-•	Speaking Notes: quick review of any unique terminology
+# Chef Target Mode
+## Introduction to Chef Target Mode
+### New Horizons - level 100
+![bg right](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/logo.png)
 
----
-# Overview of Infrastructure as Code (IaC)
-•	Slide: Overview of Infrastructure as Code (IaC)
-•	Speaking Notes: Explain the concept of IaC, explain provisioning vs post provisioning, and Target Mode vs Agent Mode
 
----
-# Part 2: 
-#### Tool(s) introduction 
-###### Chef, Test Kitchen, and InSpec
-
----
-# Introduction to Chef
-•	Speaking Notes: Brief on Chef, components (workstation, Chef server, nodes), and cookbooks/policy files.
-
----
-# Introduction to Test Kitchen Overview
-•	Speaking Notes: Explain Test Kitchen’s role in testing cookbooks across various platforms before production deployment.
-
----
-# slide: InSpec Introduction
-•	Speaking Notes: Describe InSpec as a testing framework for infrastructure compliance and security.
 
 ---
-# Part 3: 
-#### Best Practices
-###### Testing with Chef, Test Kitchen, and InSpec
+![bg right](https://images.unsplash.com/photo-1589959864690-24091a905ea1)
+<!-- _paginate: "false" -->
+<!-- image source: "https://unsplash.com/photos/black-white-and-red-round-arrow-PFqfV5bn91A" -->
+# What is Target Mode?
 
 ---
-# Writing Testable Chef Cookbooks 
-•	Speaking Notes: Emphasize modular code, using resources effectively, metadata to manage dependencies.
-•	Best Practices: Small, reusable recipes, version pinning in metadata, test-driven development (TDD).
+![bg right](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/right-blue-1.png)
+# Why Agentless?
+
+<!--
+Although Chef states that a pull-based (agent-based) configuration management system is the most secure option. 
+
+Agents can not go on every device and can not manage API-based configuration systems.
+-->
 
 ---
-# Utilizing Test Kitchen 
-•	Speaking Notes: Configuration of .kitchen.yml, platform testing, integration with cloud services for testing.
-•	Best Practices: Multi-platform testing strategy, using kitchen-dokken for speed, leveraging kitchen-cloud for real-world testing environments.
+![bg right](https://images.unsplash.com/photo-1474487548417-781cb71495f3)
+<!-- image source: https://unsplash.com/photos/yellow-and-black-train-on-railways-7KKQG0eB_TI -->
+
+# Protocol Support
+- SSH
+- WinRM
+- Rest (HTTP/HTTPS)
+- Cloud (AWS, Azure, GCP, ...)
+- Kubernetes
+- ...
 
 ---
-# Writing InSpec Tests
-•	Speaking Notes: Structure of InSpec tests, importance of compliance as code.
-•	Best Practices: Covering critical security and compliance checks, parameterizing tests for reusability, continuous testing in CI/CD pipelines.
+
+# Resource Support
+![bg right](https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1)
+<!-- image source: https://unsplash.com/photos/macbook-pro-on-black-wooden-table-PNbDkQ2DDgM -->
 
 ---
-# Linting
-•	Speaking Notes:
-•	Best Practices:
+# Brief History
+- 15.0.293 – introduced Target Mode
+- 15.1.0 – large performance improvements (re-using existing connections)
+- 16.6.14 – “most” Ohai plugins now support target mode
+- 17.7.22 – credential file now supports transport protocol
+- 18.0.155 – introduces first native Target Mode resource (REST)
 
 ---
-# Part 4
-#### Lab Exercise #1
-###### ............
+# Limitations
+- No out-of-the-box orchestrator
+- No out-of-the-box node mapping to Infra Server / Automate
+- Limited native resources
+- Resources are not protocol aware
 
-•	Part 5: Integrating Test Kitchen with CI/CD Pipelines 
-•	Slide: CI/CD Basics and Importance for IaC
-•	Speaking Notes: Introduce CI/CD concepts, emphasizing the role of automation in building, testing, and deploying code changes. Highlight the importance of including IaC in these pipelines to ensure infrastructure changes are also tested and reliable.
-•	Best Practices: Automate everything, keep the build fast, test in representation of the production environment(s).
-•	Slide: Considerations for CI/CD for Chef Cookbooks 
-•	Speaking Notes: Discuss the setup of a CI/CD pipeline specific to Chef cookbooks, including the tools (e.g., Jenkins, GitHub Actions, GitLab CI) and the stages of the pipeline (lint, unit test, integration test).
-•	Best Practices: Use linting tools (e.g., Cookstyle) for static code analysis, Unit tests with ChefSpec, and integration tests with Test Kitchen.
-•	Slide: Considerations for Integrating Test Kitchen into CI/CD 
-•	Speaking Notes: Discuss how to integrate Test Kitchen into CI/CD pipelines, using Docker for testing environments to speed up execution. Outline steps for configuring .kitchen.yml to use docker and setting up environment variables for dynamic configuration.
-•	Best Practices: Parallelize Test Kitchen instances to reduce testing time, cache base Docker images to speed up builds, clean up testing environments after tests to conserve resources.
-•	Slide: Continuous Compliance and Security Testing with InSpec 
-•	Speaking Notes: Emphasize the need for continuous compliance and security testing within CI/CD pipelines using InSpec. Discuss how to automate InSpec tests post-convergence in Test Kitchen or as a separate stage in the pipeline.
-•	Best Practices: Integrate compliance as part of the definition of done, ensure InSpec profiles are version controlled and reviewed, use InSpec for compliance and security  gate checks in the pipeline.
+(we are going to cover overcomming limitation later)
 
-•	Part 6: Lab Exercise #2 (time permitting)
+---
+<!-- _paginate: "false" -->
+<!-- _header: "" -->
+<!-- _footer: "" -->
+![bg](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/bg-gray.png)
+# Technical Bits
 
-•	Part 7: Wrap-Up and Q&A
-•	Slide: Review of Key Points 
-•	Speaking Notes: Recap best practices, importance of testing, and the role of InSpec in compliance.
-•	Q&A Session:
-•	Open the floor to questions, encourage sharing of experiences or concerns with testing infrastructure as code.
+
+---
+
+# Custom Resources
+
+```
+resource_name :NAME_OF_RESOURCE
+provides :NAME_OF_RESOURCE target_mode: true
+unified_mode true
+
+load_current_value do |new_resource|
+...
+end
+
+action :YOUR_ACTION do
+...
+end
+```
+
+---
+
+# Credentials File
+
+```
+['NAME']
+client_name                 = ''
+client_key                  = ''
+validation_client_name      = ''
+validation_key              = ''
+chef_server_url             = ''
+cookbook_path               = ["",""]
+
+host                        = '192.168.0.251'
+user                        = 'root'
+password                    = '123456'
+target_protocol             = 'ssh'
+['myserver']
+```
+
+---
