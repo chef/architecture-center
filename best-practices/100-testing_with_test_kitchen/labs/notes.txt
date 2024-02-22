@@ -1,0 +1,35 @@
+---
+
+
+•	Part 4: Lab Exercise #1
+
+•	Part 5: Integrating Test Kitchen with CI/CD Pipelines 
+•	Slide: CI/CD Basics and Importance for IaC
+•	Speaking Notes: Introduce CI/CD concepts, emphasizing the role of automation in building, testing, and deploying code changes. Highlight the importance of including IaC in these pipelines to ensure infrastructure changes are also tested and reliable.
+•	Best Practices: Automate everything, keep the build fast, test in representation of the production environment(s).
+•	Slide: Considerations for CI/CD for Chef Cookbooks 
+•	Speaking Notes: Discuss the setup of a CI/CD pipeline specific to Chef cookbooks, including the tools (e.g., Jenkins, GitHub Actions, GitLab CI) and the stages of the pipeline (lint, unit test, integration test).
+•	Best Practices: Use linting tools (e.g., Cookstyle) for static code analysis, Unit tests with ChefSpec, and integration tests with Test Kitchen.
+•	Slide: Considerations for Integrating Test Kitchen into CI/CD 
+•	Speaking Notes: Discuss how to integrate Test Kitchen into CI/CD pipelines, using Docker for testing environments to speed up execution. Outline steps for configuring .kitchen.yml to use docker and setting up environment variables for dynamic configuration.
+•	Best Practices: Parallelize Test Kitchen instances to reduce testing time, cache base Docker images to speed up builds, clean up testing environments after tests to conserve resources.
+•	Slide: Continuous Compliance and Security Testing with InSpec 
+•	Speaking Notes: Emphasize the need for continuous compliance and security testing within CI/CD pipelines using InSpec. Discuss how to automate InSpec tests post-convergence in Test Kitchen or as a separate stage in the pipeline.
+•	Best Practices: Integrate compliance as part of the definition of done, ensure InSpec profiles are version controlled and reviewed, use InSpec for compliance and security gate checks in the pipeline.
+
+•	Part 6: Lab Exercise #2 (time permitting)
+
+•	Part 7: Wrap-Up and Q&A
+•	Slide: Review of Key Points 
+•	Speaking Notes: Recap best practices, importance of testing, and the role of InSpec in compliance.
+•	Q&A Session:
+•	Open the floor to questions, encourage sharing of experiences or concerns with testing infrastructure as code.
+
+
+## Part 4: Lab Exercise - Implementing Tests for a Chef Cookbook (5 mins)
+- **Objective**: Write tests for a Chef cookbook using Test Kitchen and InSpec, and integrate these tests into a CI/CD pipeline.
+- **Instructions**:
+  1. **Setup**: Ensure participants have Chef Workstation, Test Kitchen, and InSpec installed.
+  2. **Task**: Create a simple Chef cookbook with a recipe. Write InSpec tests for the recipe. Configure Test Kitchen to run the tests.
+  3. **CI/CD Integration**: Set up a basic CI/CD pipeline using GitHub Actions to run tests automatically on code commits.
+- **Expected Outcomes**: Participants will learn to write and execute tests for Chef cookbooks and integrate testing into a CI/CD pipeline.
