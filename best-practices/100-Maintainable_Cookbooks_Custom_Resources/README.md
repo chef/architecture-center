@@ -10,25 +10,25 @@ Using custom resources instead of directly embedding all logic within a cookbook
 Custom resource provides several significant advantages for Chef practitioners. These benefits enhance the maintainability, reusability, and clarity of infrastructure as code. Here’s why custom resources are a preferable approach: 
 
 ## Benefits 
-1. Encapsulation and Modularity
+1. **Encapsulation and Modularity**:
 Custom resources encapsulate specific functionality and configurations into standalone, modular components. This modular approach allows for cleaner, more organized cookbooks by separating concerns and reducing the complexity of recipes. It's easier to manage and update the logic of a specific resource when it's contained within its own definition rather than interspersed throughout various recipes.
 
-2. Reusability
+2. **Reusability**:
 Custom resources can be reused across different cookbooks and environments. Once you've created a custom resource for a particular task (e.g., managing a service, deploying a configuration file), you can easily apply it in multiple contexts without duplicating code. This reusability not only saves time but also ensures consistency across your infrastructure.
 
-3. Readability and Maintainability
+3. **Readability and Maintainability**:
 Cookbooks filled with intricate scripting logic can become difficult to read and maintain. Custom resources abstract away complexity, presenting a simplified interface in recipes. For instance, a single line in a recipe using a custom resource can replace dozens of lines of resource declarations and Ruby code. This abstraction makes cookbooks more accessible to new team members and reduces the cognitive load required to understand and maintain the infrastructure code.
 
-4. Idempotency and Convergence
+4. **Idempotency and Convergence**:
 Custom resources, by design, promote idempotent behavior—ensuring that the same set of actions can be executed repeatedly without changing the system state beyond the initial application. This idempotency is central to Chef's convergence model, where the goal is to bring the system into a desired state without unintended side effects. Custom resources make it easier to define the desired state and the actions to achieve it in a controlled, predictable manner.
 
-5. Enhanced Error Handling
+5. **Enhanced Error Handling**:
 With custom resources, you can implement sophisticated error handling within the resource itself, encapsulating validation logic and exceptions. This localized error handling improves the robustness of your infrastructure code by ensuring that errors are caught and managed close to their source, reducing the risk of unhandled exceptions during cookbook executions.
 
-6. Better Testing and Debugging
+6. **Better Testing and Debugging**:
 Custom resources can be tested independently of recipes or cookbooks, allowing for more granular testing strategies. This isolation simplifies debugging and unit testing, enabling developers to validate the functionality of individual resources without executing the entire cookbook. Furthermore, testing frameworks can facilitating comprehensive testing practices.
 
-7. Resource Clarity and Self-documentation
+7. **Resource Clarity and Self-documentation**:
 The declarative nature of custom resources, with clearly defined properties and actions, serves as a form of self-documentation. This clarity benefits not only current team members but also aids in the onboarding of new staff, providing them with an understandable map of infrastructure components and their management logic.
 
 

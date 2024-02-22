@@ -270,37 +270,6 @@ It's that time again... time to upgrade that troublesome piece of software that 
  Maintaining a quorum is crucial for many distributed systems and clustering technologies to ensure high availability and prevent split-brain scenarios, especially during updates or upgrades. Software that typically involves clustering and might require quorum maintenance includes databases (like Microsoft SQL Server with Always On availability groups), container orchestration systems (such as Kubernetes), and various distributed data stores (Splunk, HashiCorp Vault) and messaging systems (Splunk). For detailed configurations and understanding of failover cluster quorum, you might find the article https://www.starwindsoftware.com/blog/understand-failover-cluster-quorum helpful on understanding what a cluster quorum failure is
  -->
 
----
-
-
-<div class="columns-2 small"><div>
-
-## Without Courier
-
-1. 
-1. 
-1. 
-1. 
-1. 
-
-</div><div>
-
-## With Courier
-
-1. 
-1. 
-    - 
-    - 
-    - 
-1. 
-    - 
-    -  
-1. 
-1. 
-1. 
-
-</div></div>
-
 <!--
 A job orchestration system streamlines the process of updating or upgrading software clusters by allowing for staged updates across nodes. It manages the complexity of ensuring that only a certain number of nodes are taken offline for updates at any given time, maintaining cluster availability and load balancing. This systematic approach minimizes downtime and ensures a smooth transition during upgrades, enhancing system stability and reliability without overwhelming the operational capacity of the cluster.
 -->
@@ -312,43 +281,6 @@ A job orchestration system streamlines the process of updating or upgrading soft
 
 # Scenario #3
 Your Intrusion Detection System (IDS) raises and event. A machine running may be compromised. The event needs to be validated, machine needs to be quartined, and evidence collected.
-
-
-
-<!-- 
- -->
-
----
-
-
-<div class="columns-2 small"><div>
-
-## Without Courier
-
-1. 
-1. 
-1. 
-1. 
-1. 
-
-</div><div>
-
-## With Courier
-
-1. 
-1. 
-    - 
-    - 
-    - 
-1. 
-    - 
-    -  
-1. 
-1. 
-1. 
-
-</div></div>
-
 
 <!--
 A job orchestration system can significantly enhance the efficiency of responding to events detected by Intrusion Detection Systems (IDS) like Amazon GuardDuty. By automating responses to common or critical security alerts, the system can immediately execute predefined actions on affected nodes or across the infrastructure. This automation ensures a swift, consistent, and scalable response to potential threats, reducing the window of vulnerability and the need for manual intervention, thus maintaining system integrity and security at all times.
@@ -364,68 +296,9 @@ A job orchestration system can significantly enhance the efficiency of respondin
 # Scenario #4
 Patching critical systems
 
-
-
-<!-- 
- -->
-
----
-
-
-<div class="columns-2 small"><div>
-
-## Without Courier
-
-1. 
-1. 
-1. 
-1. 
-1. 
-
-</div><div>
-
-## With Courier
-
-1. 
-1. 
-    - 
-    - 
-    - 
-1. 
-    - 
-    -  
-1. 
-1. 
-1. 
-
-</div></div>
-
-
 <!--
 A job orchestration system facilitates the seamless application of software and operating system patches across a vast server fleet by scheduling and automating patch deployment. It ensures critical systems remain operational by staging the patch process, applying updates to non-critical systems first, and monitoring for failures. If a patch fails, the system can halt further deployment, preventing widespread impact. This approach allows for maintaining service availability and system integrity while ensuring the entire fleet is updated securely and efficiently.
 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
