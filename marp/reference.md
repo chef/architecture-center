@@ -1,5 +1,6 @@
 ---
 marp: true
+paginate: true
 ---
 ![bg right](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/logo.png)
 
