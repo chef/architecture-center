@@ -1,0 +1,7 @@
+resources:
+  - type: web_server_setup 
+    name: my_web_server
+    server_name: example.com
+    document_root: /var/www/example
+    index_content: <h1>Welcome to example.com!</h1>
+    action: create  

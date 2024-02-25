@@ -224,7 +224,7 @@ At launch users interact with Courier primarily through the CLI, and an extesniv
 # Scenario #1
 It is Thursday evening now and there is a security issue (Log4j) reported. I had plans on Saturday. Now my plans are ruined because I must find servers having the issue and apply patches onto them.
 
----
+<!---
 
 <div class="columns-2 small"><div>
 
@@ -253,6 +253,7 @@ It is Thursday evening now and there is a security issue (Log4j) reported. I had
 1. Happily, keep the weekend plans
 
 </div></div>
+-->
 
 <!-- 
 A job orchestration system aids in swiftly addressing vulnerabilities like Log4j by automating the detection and remediation process across impacted nodes. Initially, it identifies affected nodes through automated scanning tasks. Once identified, the system can prioritize and sequentially execute remediation scripts, ensuring that critical systems remain operational by carefully managing resource allocation and maintaining service availability. This orchestrated approach ensures a coordinated, efficient, and minimally disruptive response to such widespread vulnerabilities.
@@ -294,7 +295,7 @@ A job orchestration system can significantly enhance the efficiency of respondin
 <!-- image source: "https://unsplash.com/photos/man-in-blue-sweater-using-silver-macbook-vIQDv6tUHYk" -->
 
 # Scenario #4
-Patching critical systems
+It's the third thursday of the month, and it's time to patch all the critical systems. We want to be sure this is done in a carefully controlled method as tomorrow is holiday.
 
 <!--
 A job orchestration system facilitates the seamless application of software and operating system patches across a vast server fleet by scheduling and automating patch deployment. It ensures critical systems remain operational by staging the patch process, applying updates to non-critical systems first, and monitoring for failures. If a patch fails, the system can halt further deployment, preventing widespread impact. This approach allows for maintaining service availability and system integrity while ensuring the entire fleet is updated securely and efficiently.
