@@ -1,0 +1,57 @@
+#!/bin/bash
+export CMD=""
+if [ -z "$API_KEY" ]; then
+  echo "API_KEY is not configured"
+  exit 1
+fi
+
+if [ -z "$API_SECRET" ]; then
+  echo "API_SECRET is not configured"
+  exit 1
+fi
+
+if [ -z "$PASSPHRASE" ]; then
+  echo "PASSPHRASE is not configured"
+  exit 1
+fi
+
+if [ -z "$USER" ]; then
+  echo "PASSPHRASE is not configured"
+  exit 1
+fi
+
+if [ -z "$FQDN" ]; then
+  echo "PLATFORM_URL is not configured"
+  exit 1
+fi
+
+PLATFORM_URL="https://$FQDN"
+
+if [ -z "$1" ]; then
+  echo "usage: courier <service> <verb>-<noun> <args>"
+  exit 1
+fi
+
+if [ $1 == "scheduler" ]; then
+    export CMD="scheduler"
+fi
+
+if [ $1 == "state" ]; then
+    export CMD="state"
+fi
+
+if [ $1 == "orchestrator" ]; then
+    export CMD="orchestrator"
+fi
+
+if [ -z "$CMD" ]; then
+  echo "$1 is Invalid service"
+  echo "Valid options:"
+  echo "scheduler"
+  echo "state"
+  echo "orchestrator"
+  echo "delivery"
+  exit 1
+fi
+
+/opt/demo/courier_$CMD "$2" "$3" "$4" "$5" "$6" "$7" "$8" "$9"

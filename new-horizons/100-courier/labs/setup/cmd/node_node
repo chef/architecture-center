@@ -1,0 +1,56 @@
+#!/bin/bash
+export CMD=""
+if [ -z "$API_KEY" ]; then
+  echo "API_KEY is not configured"
+  exit 1
+fi
+
+if [ -z "$API_SECRET" ]; then
+  echo "API_SECRET is not configured"
+  exit 1
+fi
+
+if [ -z "$PASSPHRASE" ]; then
+  echo "PASSPHRASE is not configured"
+  exit 1
+fi
+
+if [ -z "$USER" ]; then
+  echo "PASSPHRASE is not configured"
+  exit 1
+fi
+
+if [ -z "$FQDN" ]; then
+  echo "PLATFORM_URL is not configured"
+  exit 1
+fi
+
+PLATFORM_URL="https://$FQDN"
+
+if [ -z "$1" ]; then
+  echo "usage: node node <verb>-<noun> <args>"
+  exit 1
+fi
+
+if [ $1 == "list-nodes" ]; then
+    export CMD="list-nodes"
+fi
+
+if [ $1 == "get-node" ]; then
+    export CMD="get-node"
+fi
+
+
+if [ -z "$CMD" ]; then
+  echo "usage: node skill <verb>-<noun> <args>"
+  echo "$1 is Invalid action expected: <verb>-<noun>"
+  echo "Valid options:"
+  echo "list-nodes"
+  echo "get-node"
+  echo "list-skills"
+  echo "assign-skill"
+  echo "remove-skill"
+  exit 1
+fi
+
+/opt/demo/node_node_$CMD "$2" "$3" "$4" "$5" "$6" "$7" "$8" "$9"

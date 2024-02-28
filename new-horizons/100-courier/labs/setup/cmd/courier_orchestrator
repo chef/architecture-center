@@ -1,0 +1,45 @@
+#!/bin/bash
+export CMD=""
+if [ -z "$API_KEY" ]; then
+  echo "API_KEY is not configured"
+  exit 1
+fi
+
+if [ -z "$API_SECRET" ]; then
+  echo "API_SECRET is not configured"
+  exit 1
+fi
+
+if [ -z "$PASSPHRASE" ]; then
+  echo "PASSPHRASE is not configured"
+  exit 1
+fi
+
+if [ -z "$USER" ]; then
+  echo "PASSPHRASE is not configured"
+  exit 1
+fi
+
+if [ -z "$FQDN" ]; then
+  echo "PLATFORM_URL is not configured"
+  exit 1
+fi
+
+PLATFORM_URL="https://$FQDN"
+
+if [ $1 == "running-jobs" ]; then
+    export CMD="running-jobs"
+fi
+
+
+
+
+if [ -z "$CMD" ]; then
+  echo "usage: courier orchestrator <verb>-<noun> <args>"
+  echo "$1 is Invalid action expected: <verb>-<noun>"
+  echo "Valid options:"
+  echo "list-jobs"
+  exit 1
+fi
+
+/opt/demo/courier_orchestrator_$CMD "$2" "$3" "$4" "$5" "$6" "$7" "$8" "$9"

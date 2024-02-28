@@ -1,0 +1,26 @@
+[log]
+dir = "{{.settings.dir}}"
+format = "{{.settings.format}}"
+level = "{{.settings.level}}"
+output = "{{.settings.output}}"
+
+[node]
+node_id = "{{.agent.nodeId}}"
+
+[queue]
+address = "amqp://{{.settings.api_key}}:{{.settings.api_secret}}@{{.settings.server}}:{{.settings.port}}//"
+channel = "{{.agent.nodeId}}"
+provider = {{.settings.provider}}
+
+[reporter]
+name = "server"
+authenticationType = "Basic"
+dir =  "{{.settings.reporter_dir}}"
+hostUrl = "https://{{.settings.server}}:{{.settings.port}}/"
+
+[db]
+db = "{{.settings.db}}"
+
+[credentials]
+api_key = "{{.settings.api_key}}"
+api_secret = "{{.settings.api_key}}"
