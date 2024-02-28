@@ -1,0 +1,1 @@
+chef-client -z -t openwrt -o "cb-yaml"
