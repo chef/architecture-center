@@ -13,10 +13,16 @@
                     "distributionMethod": "batching",
                     "successCriteria": [ { "numRuns": { "type": "percent", "value": 100 }, "status": "success" }
                     ],
-                    "nodeListType":"nodes",
-                    "nodeIdentifiers":[
-                        "--NODE1--"
-                    ] 
+                    "nodeListType":"query",
+                    "query":{ 
+                        "name":"filter1", 
+                        "constraints": { 
+                            "attributes": 
+                            [ 
+                                { "name" : "primary_ip", "operator" : "MATCHES", "value" : ["192.168.1.10"] }  
+                            ]  
+                        }  
+                    }
                 }
             ]
         },

@@ -22,20 +22,11 @@ resources:
   hostname: 'OpenWrt'
   conloglevel: '7'
 
-# - type: openwrt_network_interface 
-#   name: 'lan'
-#   type: 'bridge'
-#   ifname: 'eth0'
-#   proto: 'static'
-#   ipaddress: '10.211.55.10'
-#   netmask: '255.255.255.0'
-#   gateway: '10.211.55.1'
-
-- type: openwrt_network_route 
-  name: 'VLAN-1'
-  interface: 'lan'
-  target: '192.168.2.0'
-  gateway: '192.168.2.100'
+# - type: openwrt_network_route 
+#   name: 'VLAN-1'
+#   interface: 'lan'
+#   target: '192.168.2.0'
+#   gateway: '192.168.2.100'
   
 - type: openwrt_uci_firewall 
   name: 'Allow-ISAKMP'
