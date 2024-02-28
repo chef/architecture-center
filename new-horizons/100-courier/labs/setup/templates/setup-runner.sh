@@ -37,7 +37,7 @@ PLATFORM_URL="https://$FQDN"
 # Runner
 sed -i "s|--API-KEY--|${API_KEY}|g" courier-runner-default-settings.json 
 sed -i "s|--API-SECRET--|${API_SECRET}|g" courier-runner-default-settings.json 
-sed -i "s|--SERVER--|${PLATFORM_URL}|g" courier-runner-default-settings.json 
+sed -i "s|--SERVER--|${FQDN}|g" courier-runner-default-settings.json 
 
 TEMPLATE=$(cat courier-runner.tmpl | base64 -w 0)
 sed -i "s|--TEMPLATE--|${TEMPLATE}|g" courier-runner.json
@@ -64,7 +64,7 @@ echo "*********************** START GOHAI"
 # Gohai
 sed -i "s|--API-KEY--|${API_KEY}|g" chef-gohai-default-settings.json 
 sed -i "s|--API-SECRET--|${API_SECRET}|g" chef-gohai-default-settings.json 
-sed -i "s|--SERVER--|${PLATFORM_URL}|g" chef-gohai-default-settings.json 
+sed -i "s|--SERVER--|${FQDN}|g" chef-gohai-default-settings.json 
 
 TEMPLATE=$(cat chef-gohai.tmpl | base64 -w 0)
 sed -i "s|--TEMPLATE--|${TEMPLATE}|g" chef-gohai.json

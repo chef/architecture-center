@@ -23,6 +23,6 @@ echo "user='ec2-user'" >> /home/ec2-user/.chef/credentials
 echo "key_files='~/.keys/key-pair.pem'" >> /home/ec2-user/.chef/credentials
 
 echo "['openwrt']" >> /home/ec2-user/.chef/credentials
-echo "host='192.168.1.30'" >> /home/ec2-user/.chef/credentials
+echo "host='192.168.0.30'" >> /home/ec2-user/.chef/credentials
 echo "user='root'" >> /home/ec2-user/.chef/credentials
 echo "password='target-mode'" >> /home/ec2-user/.chef/credentials

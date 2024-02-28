@@ -1,9 +1,31 @@
 #!/bin/bash
-if [ -z "$PLATFORM_URL" ]; then
+export CMD=""
+if [ -z "$API_KEY" ]; then
+  echo "API_KEY is not configured"
+  exit 1
+fi
+
+if [ -z "$API_SECRET" ]; then
+  echo "API_SECRET is not configured"
+  exit 1
+fi
+
+if [ -z "$PASSPHRASE" ]; then
+  echo "PASSPHRASE is not configured"
+  exit 1
+fi
+
+if [ -z "$USER" ]; then
+  echo "PASSPHRASE is not configured"
+  exit 1
+fi
+
+if [ -z "$FQDN" ]; then
   echo "PLATFORM_URL is not configured"
   exit 1
 fi
 
+PLATFORM_URL="https://$FQDN"
 
 export CMD=""
 
