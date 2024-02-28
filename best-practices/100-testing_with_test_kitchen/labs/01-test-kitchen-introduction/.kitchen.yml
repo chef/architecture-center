@@ -20,5 +20,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[learn_chef_httpd::default]
+      - recipe[01-test-kitchen-introduction::default]
     attributes:
