@@ -1,4 +1,4 @@
-name '01-test-kitchen-introduction'
+name '02-dokken-error'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'all_rights'
