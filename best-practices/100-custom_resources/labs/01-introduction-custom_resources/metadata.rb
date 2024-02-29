@@ -1,4 +1,4 @@
-name '01-introduction-custom_resources'
+name 'introduction-custom_resources'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'all_rights'

@@ -20,5 +20,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[01-introduction-custom_resources::default]
+      - recipe[introduction-custom_resources::default]
     attributes:

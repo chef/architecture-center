@@ -20,5 +20,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[01-test-kitchen-introduction::default]
+      - recipe[yaml_recipies_and_custom_resources::default]
     attributes:

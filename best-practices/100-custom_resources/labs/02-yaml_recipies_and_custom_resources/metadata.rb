@@ -1,4 +1,4 @@
-name '01-test-kitchen-introduction'
+name 'yaml_recipies_and_custom_resources'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'all_rights'
