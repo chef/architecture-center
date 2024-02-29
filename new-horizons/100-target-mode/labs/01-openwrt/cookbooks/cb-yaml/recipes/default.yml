@@ -45,6 +45,7 @@ resources:
 
 - type: openwrt_uci_apply 
   name: 'commit'
+  action: commit
 
 - type: openwrt_reboot 
   name: 'reboot'
