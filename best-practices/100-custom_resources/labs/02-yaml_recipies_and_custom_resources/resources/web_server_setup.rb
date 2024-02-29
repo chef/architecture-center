@@ -18,9 +18,6 @@ action :create do
 
   # Create the document root directory if it doesn't exist
   directory new_resource.document_root do
-    owner 'www-data'
-    group 'www-data'
-    mode '0755'
     recursive true
     action :create
   end
@@ -28,9 +25,6 @@ action :create do
   # Create the index.html file with the specified content
   file "#{new_resource.document_root}/index.html" do
     content new_resource.index_content
-    owner 'www-data'
-    group 'www-data'
-    mode '0644'
     action :create
   end
 end
