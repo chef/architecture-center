@@ -1,0 +1,52 @@
+resources:
+- type: touch_file 
+  name: hello.txt
+  file: '~/hello.txt'
+  action: create
+
+- type: openwrt_directory 
+  name: 'Scripts'
+  directory: '~/scripts' 
+
+- type: openwrt_download 
+  name: 'my ip'
+  source: 'http://api.ipify.org'
+  target: '~/scripts/ip.txt'
+
+- type: openwrt_package 
+  name: 'base64'
+  package: 'coreutils-base64'
+
+- type: openwrt_system_config 
+  name: '/etc/config/system'
+  hostname: 'OpenWrt'
+  conloglevel: '7'
+
+# - type: openwrt_network_route 
+#   name: 'VLAN-1'
+#   interface: 'lan'
+#   target: '192.168.2.0'
+#   gateway: '192.168.2.100'
+  
+- type: openwrt_uci_firewall 
+  name: 'Allow-ISAKMP'
+  src: 'wan'
+  dest: 'lan'
+  dest_port: '500'
+  proto: 'udp'
+  target: 'ACCEPT'
+
+- type: openwrt_uci_firewall 
+  name: 'Block-FTP'
+  src: 'wan'
+  dest: 'lan'
+  dest_port: '21'
+  target: 'REJECT'
+
+- type: openwrt_uci_apply 
+  name: 'commit'
+
+- type: openwrt_reboot 
+  name: 'reboot'
+  delay: 10
+  action: reboot

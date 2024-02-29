@@ -1,0 +1,77 @@
+#!/bin/bash
+export CMD=""
+if [ -z "$API_KEY" ]; then
+  echo "API_KEY is not configured"
+  exit 1
+fi
+
+if [ -z "$API_SECRET" ]; then
+  echo "API_SECRET is not configured"
+  exit 1
+fi
+
+if [ -z "$PASSPHRASE" ]; then
+  echo "PASSPHRASE is not configured"
+  exit 1
+fi
+
+if [ -z "$USER" ]; then
+  echo "PASSPHRASE is not configured"
+  exit 1
+fi
+
+if [ -z "$FQDN" ]; then
+  echo "PLATFORM_URL is not configured"
+  exit 1
+fi
+
+PLATFORM_URL="https://$FQDN"
+
+if [ -z "$1" ]; then
+  echo "usage: courier scheduler <verb>-<noun> <args>"
+  exit 1
+fi
+
+if [ $1 == "create-job" ]; then
+    export CMD="create-job"
+fi
+
+if [ $1 == "list-jobs" ]; then
+    export CMD="list-jobs"
+fi
+
+if [ $1 == "due-jobs" ]; then
+    export CMD="due-jobs"
+fi
+
+if [ $1 == "get-job" ]; then
+    export CMD="get-job"
+fi
+
+if [ $1 == "peek-job" ]; then
+    export CMD="peek-job"
+fi
+
+if [ $1 == "delete-job" ]; then
+    export CMD="delete-job"
+fi
+
+if [ $1 == "estimate-schedule" ]; then
+    export CMD="estimate-schedule"
+fi
+
+if [ -z "$CMD" ]; then
+  echo "usage: courier scheduler <verb>-<noun> <args>"
+  echo "$1 is Invalid action expected: <verb>-<noun>"
+  echo "Valid options:"
+  echo "create-job"
+  echo "list-jobs"
+  echo "due-jobs"
+  echo "get-job"
+  echo "peek-job"
+  echo "delete-job"
+  echo "estimate-schedule"
+  exit 1
+fi
+
+/opt/demo/courier_scheduler_$CMD "$2" "$3" "$4" "$5" "$6" "$7" "$8" "$9"

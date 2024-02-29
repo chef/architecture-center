@@ -1,0 +1,59 @@
+#!/bin/bash
+if [ -z "$API_KEY" ]; then
+  echo "API_KEY is not configured"
+  exit 1
+fi
+
+if [ -z "$API_SECRET" ]; then
+  echo "API_SECRET is not configured"
+  exit 1
+fi
+
+if [ -z "$PASSPHRASE" ]; then
+  echo "PASSPHRASE is not configured"
+  exit 1
+fi
+
+if [ -z "$USER" ]; then
+  echo "PASSPHRASE is not configured"
+  exit 1
+fi
+
+if [ -z "$FQDN" ]; then
+  echo "PLATFORM_URL is not configured"
+  exit 1
+fi
+
+PLATFORM_URL="https://$FQDN"
+
+
+export CMD=""
+
+if [ -z "$1" ]; then
+  echo "usage: courier state list-job-run-steps <<UUID>>"
+  exit 1;
+fi
+
+if [ $1 == "--help" ]; then
+    echo "usage: courier state list-job-run-steps <<UUID>>"
+    echo "Flags"
+    echo "--help"
+    echo "--json"
+    echo "--raw"
+    exit 0
+fi
+
+if [ -z "$2" ]; then
+  curl -s -H "api-key: $API_KEY" -H "api-secret: $API_SECRET" $PLATFORM_URL/state/jobRun/$1/steps -v # | jq #-c '.runs[] | { nodeId: .nodeId, groupNumber: .groupNumber, status: .status, runId: .runId }'
+  exit 0;
+fi
+
+if [ $2 == "--json" ]; then
+  curl -s -H "api-key: $API_KEY" -H "api-secret: $API_SECRET" $PLATFORM_URL/state/jobRun/$1/steps | jq 
+  exit 0
+fi
+
+if [ $2 == "--raw" ]; then
+  curl -s -H "api-key: $API_KEY" -H "api-secret: $API_SECRET" $PLATFORM_URL/state/jobRun/$1/steps
+  exit 0
+fi

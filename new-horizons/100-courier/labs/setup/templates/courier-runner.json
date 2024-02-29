@@ -1,0 +1,16 @@
+{
+    "name": "courier-runner",
+    "canister": {
+      "origin": "chef-platform",
+      "name": "courier-runner",
+      "service": true
+    },
+    "configuration_templates": [
+          {
+              "content": "--TEMPLATE--",
+              "file_name": "user.toml",
+              "file_path": "/hab/user/courier-runner/config",
+              "windows_file_path": "c:\\hab\\user\\courier-runner\\config"
+          }
+        ]
+  }

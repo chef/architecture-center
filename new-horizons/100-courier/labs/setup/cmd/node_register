@@ -1,0 +1,119 @@
+#!/bin/bash
+
+if [ -z "$API_KEY" ]; then
+  echo "API_KEY is not configured"
+  exit 1
+fi
+
+if [ -z "$API_SECRET" ]; then
+  echo "API_SECRET is not configured"
+  exit 1
+fi
+
+if [ -z "$PASSPHRASE" ]; then
+  echo "PASSPHRASE is not configured"
+  exit 1
+fi
+
+if [ -z "$USER" ]; then
+  echo "PASSPHRASE is not configured"
+  exit 1
+fi
+
+if [ -z "$FQDN" ]; then
+  echo "PLATFORM_URL is not configured"
+  exit 1
+fi
+
+PLATFORM_URL="https://$FQDN"
+
+
+if [ -z "$1" ]; then
+  echo "usage: node register <UUID>"
+  exit 1
+fi
+
+if [ $1 == "--help" ]; then
+  echo "usage: node register <UUID>"
+  echo "this is a special command used for Private Preview only to register an external node with the system"
+  echo "this must be done after node management is installed"
+  echo "Flags"
+  echo "--help"
+  exit 0
+fi
+
+function addSkill() {
+    ORIGIN=$1
+    NODEID=$2
+    SKILL=$3
+    PLATFORM=$4
+    PACKAGE=$(curl -H "api-key: $API_KEY" -H "api-secret: $API_SECRET" -s https://bldr.habitat.sh/v1/depot/pkgs/$ORIGIN/$SKILL/latest?target=$PLATFORM)
+    #echo $PACKAGE | jq
+    PACKAGE=$(echo $PACKAGE | jq -c -r '.ident')
+
+    VERSION=$(echo $PACKAGE | jq -c -r '.version')
+    RELEASE=$(echo $PACKAGE | jq -c -r '.release')
+    #echo $PACKAGE
+
+    #PACKAGE=$(curl https://bldr.habitat.sh/v1/depot/pkgs/$ORIGIN/$SKILL/$VERSION | jq)
+    #PACKAGE=$(curl -s https://bldr.habitat.sh/v1/depot/pkgs/$ORIGIN/$SKILL/$VERSION | jq -c '.data[] | select(.platforms[] == "x86_64-windows") | { origin: .origin, name: .name, version: .version, release: .release, platform: .platforms[0] }')
+    #VERSION=$(echo $PACKAGE | jq -c -r '.version')
+    #RELEASE=$(echo $PACKAGE | jq -c -r '.release')
+    #echo $PACKAGE
+
+    export BODY="{\"name\": \"$SKILL\",\"canister\": {\"version\": \"$VERSION\", \"release\": \"$RELEASE\"}}"
+    
+    echo "--- adding ---"
+    echo $BODY | jq
+
+    curl -s -X PUT -H "api-key: $API_KEY" -H "api-secret: $API_SECRET" -H 'Content-Type: application/json' $PLATFORM_URL/v1/nodes/${NODEID}/skills/add -d "{\"name\": \"$SKILL\",\"canister\": {\"version\": \"$VERSION\",\"release\": \"$RELEASE\"}}" | jq
+}
+
+SETTING_GROUP=1
+NODE=$(curl -H "api-key: $API_KEY" -H "api-secret: $API_SECRET" -s $PLATFORM_URL/v1/nodes/$1)
+OS=$(echo $NODE | jq -c -r '(.attributes[] | select(.name=="kernel_name") | .value)')
+
+HOSTNAME=$(echo $NODE | jq -c -r '(.attributes[] | select(.name=="hostname") | .value)')
+
+# PATTERN="ip-192-168-(10|20|30)-([0-9]+).us-east-2.compute.internal"
+# if [[ "$HOSTNAME" =~ $PATTERN ]]; then
+#     echo "Error: you can not register the default nodes deployed with Courier Private Preview"
+#     exit 1;
+# fi
+
+if [ "$OS" == "Linux" ]; then
+SETTING_GROUP=2
+fi
+
+if [ "$OS" == "Windows" ]; then
+SETTING_GROUP=3
+fi
+
+if [ "$SETTING_GROUP" == "1" ]; then
+  if [ "$2" == "" ]; then
+    echo "Error: can not auto detect OS version. Please call the command again with the settings group id"
+    echo "2 = linux"
+    echo "3 = windows"
+    echo "usage: node register $1 <SETTINGS>"
+    exit 1;
+  else
+    SETTING_GROUP=$2
+    exit 1;
+  fi
+fi
+
+SETTING_GROUP=2
+
+curl -s -X PATCH -H "api-key: $API_KEY" -H "api-secret: $API_SECRET" -H 'Content-Type: application/json' $PLATFORM_URL/v1/nodes/$1 -d "{\"settings_id\": ${SETTING_GROUP} }"
+
+if [ "$SETTING_GROUP" == "2" ]; then
+  PLATFORM="x86_64-linux"
+fi
+
+if [ "$SETTING_GROUP" == "3" ]; then
+  PLATFORM="x86_64-windows"
+fi
+
+addSkill "chef-platform" $1 "courier-runner" $PLATFORM
+addSkill "chef-platform" $1 "chef-gohai" $PLATFORM
+addSkill "chef-platform" $1 "shell-interpreter" $PLATFORM

@@ -1,0 +1,7 @@
+resources:
+  - type: package 
+    name: 'httpd'
+
+  - type: template 
+    name: '/var/www/html/index.html' 
+    source: 'index.html.erb'

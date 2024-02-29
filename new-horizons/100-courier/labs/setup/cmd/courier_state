@@ -1,0 +1,61 @@
+#!/bin/bash
+export CMD=""
+if [ -z "$API_KEY" ]; then
+  echo "API_KEY is not configured"
+  exit 1
+fi
+
+if [ -z "$API_SECRET" ]; then
+  echo "API_SECRET is not configured"
+  exit 1
+fi
+
+if [ -z "$PASSPHRASE" ]; then
+  echo "PASSPHRASE is not configured"
+  exit 1
+fi
+
+if [ -z "$USER" ]; then
+  echo "PASSPHRASE is not configured"
+  exit 1
+fi
+
+if [ -z "$FQDN" ]; then
+  echo "PLATFORM_URL is not configured"
+  exit 1
+fi
+
+PLATFORM_URL="https://$FQDN"
+
+
+if [ -z "$1" ]; then
+  echo "usage: courier state <verb>-<noun> <args>"
+  exit 1
+fi
+
+if [ $1 == "list-job-instances" ]; then
+    export CMD="list-job-instances"
+fi
+
+if [ $1 == "list-job-instance-runs" ]; then
+    export CMD="list-job-instance-runs"
+fi
+
+if [ $1 == "list-job-run-steps" ]; then
+    export CMD="list-job-run-steps"
+fi
+
+
+if [ -z "$CMD" ]; then
+  echo "usage: courier state <verb>-<noun> <args>"
+  echo "$1 is Invalid action expected: <verb>-<noun>"
+  echo "Valid options:"
+  echo "list-job-instances"
+  #echo "list-job-instance-runs"
+  echo "get-job-run"
+  echo "list-job-run-steps"
+  #echo "get-job-instance"
+  exit 1
+fi
+
+/opt/demo/courier_state_$CMD "$2" "$3" "$4" "$5" "$6" "$7" "$8" "$9"

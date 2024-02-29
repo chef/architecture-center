@@ -1,0 +1,47 @@
+#!/bin/bash
+if [ -z "$API_KEY" ]; then
+  echo "API_KEY is not configured"
+  exit 1
+fi
+
+if [ -z "$API_SECRET" ]; then
+  echo "API_SECRET is not configured"
+  exit 1
+fi
+
+if [ -z "$PASSPHRASE" ]; then
+  echo "PASSPHRASE is not configured"
+  exit 1
+fi
+
+if [ -z "$USER" ]; then
+  echo "PASSPHRASE is not configured"
+  exit 1
+fi
+
+if [ -z "$FQDN" ]; then
+  echo "PLATFORM_URL is not configured"
+  exit 1
+fi
+
+PLATFORM_URL="https://$FQDN"
+
+
+if [ -z "$1" ]; then
+  curl -s -H "api-key: $API_KEY" -H "api-secret: $API_SECRET" $PLATFORM_URL/JobInstance
+  exit 0;
+fi
+
+
+if [ $1 == "--help" ]; then
+    echo "usage: courier scheduler running-jobs"
+    echo "Flags"
+    echo "--help"
+    echo "--json"
+    exit 0
+fi
+
+if [ "$1" == "--json" ]; then                        
+  curl -s -H "api-key: $API_KEY" -H "api-secret: $API_SECRET" $PLATFORM_URL/JobInstance | jq
+  exit 0
+fi

@@ -1,0 +1,23 @@
+{
+    "name": "linux",
+    "skills": [
+        {
+            "settings": [
+                {
+                    "name": "statePath",
+                    "value": "/tmp/courier-client"
+                },
+                {
+                    "name": "dir",
+                    "value": "./log/error/"
+                },
+                {
+                    "name": "reporter_dir",
+                    "value": "/tmp/courier-client/step-log"
+                }
+            ],
+            "skill": "courier-runner"
+        }
+    ],
+    "version": 1
+  }

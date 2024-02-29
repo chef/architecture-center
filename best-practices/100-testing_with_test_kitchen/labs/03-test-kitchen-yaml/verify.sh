@@ -1,0 +1,1 @@
+sudo time kitchen verify

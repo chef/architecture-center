@@ -1,0 +1,15 @@
+[server]
+domain = "https://{{.settings.domain}}"
+poll_interval = "{{.settings.poll_interval}}"
+
+[logger]
+log_level = "{{.settings.log_level}}"
+
+[gohai]
+gohai_attributes = {{.settings.gohai_attributes}}
+aws_values = {{.settings.aws_values}}
+azure_values = {{.settings.azure_values}}
+
+[platform]
+api_key = "{{.settings.api_key}}"
+api_secret = "{{.settings.api_secret}}"
