@@ -1,4 +1,5 @@
 resource_name :web_server_setup
+provides :web_server_setup
 
 property :server_name, String, name_property: true
 property :document_root, String, default: '/var/www/html'
