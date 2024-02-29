@@ -1,1 +1,1 @@
-chef-client -z -t node-1 -o "cb-yaml"
+chef-client -z -t node-1 -o "linux-yaml"
