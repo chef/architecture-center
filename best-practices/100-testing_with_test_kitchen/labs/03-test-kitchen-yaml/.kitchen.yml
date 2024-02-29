@@ -1,0 +1,28 @@
+---
+driver:
+  name: dokken
+  chef_version: latest # or 16 or 16.0 or 16.0.300 or current
+
+transport:
+  name: dokken
+
+provisioner:
+  name: dokken
+
+verifier:
+  name: inspec
+
+platforms:
+- name: centos-7
+  driver:
+    image: dokken/centos-7
+- name: centos-8
+  driver:
+    image: dokken/centos-8
+
+
+suites:
+  - name: default
+    run_list:
+      - recipe[03-test-kitchen-yaml::default]
+    attributes:

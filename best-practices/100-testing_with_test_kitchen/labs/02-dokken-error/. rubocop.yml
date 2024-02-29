@@ -1,0 +1,6 @@
+Layout/EndOfLine:
+  EnforcedStyle: native
+Metrics/LineLength:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
