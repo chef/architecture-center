@@ -102,6 +102,8 @@ if [ "$SETTING_GROUP" == "1" ]; then
   fi
 fi
 
+SETTING_GROUP=2
+
 curl -s -X PATCH -H "api-key: $API_KEY" -H "api-secret: $API_SECRET" -H 'Content-Type: application/json' $PLATFORM_URL/v1/nodes/$1 -d "{\"settings_id\": ${SETTING_GROUP} }"
 
 if [ "$SETTING_GROUP" == "2" ]; then

@@ -1,1 +1,1 @@
-sudo kitchen create
+sudo kitchen destroy
