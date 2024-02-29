@@ -11,7 +11,7 @@ chown -R ec2-user:ec2-user /opt/demo
 chmod a+x /opt/demo/*
 
 echo "bin linking demo"
-ln -s /opt/demo/chef /usr/bin/
+#ln -s /opt/demo/chef /usr/bin/
 ln -s /opt/demo/node /usr/bin/
 ln -s /opt/demo/courier /usr/bin/
 
