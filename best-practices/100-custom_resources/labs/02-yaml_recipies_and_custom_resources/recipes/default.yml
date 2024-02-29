@@ -1,0 +1,5 @@
+resources:
+  - type: web_server_setup 
+    name: my-server
+    index_content: "<h1>Welcome to example.com!</h1>"
+    action: create
