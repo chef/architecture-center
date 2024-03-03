@@ -1,3 +1,9 @@
 #!/bin/bash
-echo "Running Kitchen destroy"
-sudo time kitchen destroy
+
+echo ""
+echo ""
+echo "Running Kitchen verify"
+echo "----------------------------------------"
+echo ""
+echo ""
+sudo time kitchen verify

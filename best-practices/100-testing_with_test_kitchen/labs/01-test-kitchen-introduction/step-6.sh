@@ -1,3 +1,9 @@
 #!/bin/bash
-echo "Running Kitchen verify"
-sudo time kitchen verify
+
+echo ""
+echo ""
+echo "Running Kitchen Login"
+echo "----------------------------------------"
+echo ""
+echo ""
+sudo kitchen login
