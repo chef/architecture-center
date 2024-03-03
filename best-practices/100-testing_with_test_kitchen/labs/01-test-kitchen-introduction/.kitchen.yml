@@ -21,4 +21,7 @@ suites:
   - name: default
     run_list:
       - recipe[01-test-kitchen-introduction::default]
+    verifier:
+      inspec_tests:
+        - test/integration/default      
     attributes:
