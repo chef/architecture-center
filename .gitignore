@@ -1,2 +1,7 @@
 .kitchen
 .DS_Store
+.ssh
+.openvscode-server
+.chef
+
+nodes
