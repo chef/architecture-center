@@ -1,5 +1,9 @@
 # 100 Chef Target Mode
 
+Videos:    
+- [ChefConf 2023 - Target Mode Demo](https://www.youtube.com/watch?v=qikvNBkiz_E)
+- [Lab Overview](../../seminar/videos/lab-01.mp4)
+
 ## Labs 01 - OpenWRT
 This lab will provide a working example of remote configuration of a network appliance using Chef Target Mode. During this workshop no agent will be installed on the network appliance, all actions will be performed from the OpenVSCode Server (the workstation) against the remote device using only SSH.
 
@@ -19,6 +23,8 @@ _Preperation: Open a Terminal_
 _Preperation: Open OpenWRT UI_      
 > the URL will change depending on the enviornment provisioned for you; however it should look like http://#####.demos.chef.co:80/ where ##### is replaced by your lab's unique DNS name (or number)
 
+>    > WARNING: if you see the message ```{"message":"Unauthorized to access this resource"}``` your browser changed the protocol from HTTP to HTTPS. 
+
 #### Step 1: Log in to OpenWRT UI.      
 In the OpenWRT UI 
 - Login with username ```root``` and password ```target-mode```    
@@ -33,6 +39,13 @@ In the OpenWRT UI
 EXECUTE: ```./run.sh```      
 > This will prepare Test Kitchen by downloading the required containers.
 
-
-
-https://000.demos.chef.co:3000/?folder=/home/ec2-user
+#### Step 3: Log in to OpenWRT UI.      
+In the OpenWRT UI 
+> Note you should have been logged out    
+- Login with username ```root``` and password ```target-mode```    
+![login](./images/01-login.png)
+- Navigate to ```network``` then ```firewall```    
+![fw](./images/02-firewall.png)
+- Click the "Traffic Rules" tab     
+![fw](./images/03-traffic-rules.png)
+- Look through the rules to verify the "Block" FTP rule is now present
