@@ -2,8 +2,16 @@
 
 echo ""
 echo ""
-echo "Running Kitchen verify"
+echo "Running Kitchen destroy"
 echo "----------------------------------------"
 echo ""
 echo ""
-sudo time kitchen verify
+sudo time kitchen destroy
+
+echo ""
+echo ""
+echo "running Kitchen create"
+echo "----------------------------------------"
+echo ""
+echo ""
+sudo kitchen create

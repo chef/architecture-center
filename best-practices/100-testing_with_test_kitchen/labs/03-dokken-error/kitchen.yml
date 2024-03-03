@@ -22,7 +22,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[02-dokken-error::default]
+      - recipe[03-dokken-error::default]
     verifier:
       inspec_tests:
         - test/smoke/default           

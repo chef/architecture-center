@@ -16,13 +16,14 @@ platforms:
 - name: centos-7
   driver:
     image: dokken/centos-7
-- name: centos-8
-  driver:
-    image: dokken/centos-8
-
+    privileged: true
+    pid_one_command: /usr/lib/systemd/systemd
 
 suites:
   - name: default
     run_list:
-      - recipe[03-test-kitchen-yaml::default]
+      - recipe[04-test-kitchen-yaml]
+    verifier:
+      inspec_tests:
+        - test/smoke/default           
     attributes:

@@ -6,7 +6,7 @@ All of the labs are designed to be executed from a [OpenVSCode Server](https://g
 This project (Open VSCode Server) provides a version of VS Code that runs a server on a remote machine and allows access through a modern web browser. It's based on the very same architecture used by Gitpod or GitHub Codespaces at scale.
 
 ### Why?
-In 2019 the VS Code team started to refactor its architecture to support a browser-based working mode. As we know many of our existing users are familiar with VSCode it was decided that providing a lab (and demo) enviornment based upon Open VSCode Server would provide the most familar experience (to the large portion of our audience)
+In 2019 the VS Code team started to refactor its architecture to support a browser-based working mode. As we know many of our existing users are familiar with VSCode it was decided that providing a lab (and demo) environment based upon Open VSCode Server would provide the most familar experience (to the large portion of our audience)
 
 <br />
 <br />

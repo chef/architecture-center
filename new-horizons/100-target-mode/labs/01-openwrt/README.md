@@ -21,7 +21,7 @@ _Preperation: Open a Terminal_
 > You need to be in the /home/ec2-user/workshop/new-horizons/100-target-mode/labs/01-openwrt directory
 
 _Preperation: Open OpenWRT UI_      
-> the URL will change depending on the enviornment provisioned for you; however it should look like http://#####.demos.chef.co:80/ where ##### is replaced by your lab's unique DNS name (or number)
+> the URL will change depending on the environment provisioned for you; however it should look like http://#####.demos.chef.co:80/ where ##### is replaced by your lab's unique DNS name (or number)
 
 >    > WARNING: if you see the message ```{"message":"Unauthorized to access this resource"}``` your browser changed the protocol from HTTP to HTTPS. 
 

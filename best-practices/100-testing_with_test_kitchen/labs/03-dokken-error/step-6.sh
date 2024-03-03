@@ -1,8 +1,9 @@
 #!/bin/bash
+
 echo ""
 echo ""
-echo "Running Kitchen converge"
+echo "Running Kitchen verify"
 echo "----------------------------------------"
 echo ""
 echo ""
-sudo time kitchen converge
+sudo time kitchen verify

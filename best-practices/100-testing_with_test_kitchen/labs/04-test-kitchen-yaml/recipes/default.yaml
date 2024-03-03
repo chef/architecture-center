@@ -2,6 +2,12 @@ resources:
   - type: package 
     name: 'httpd'
 
+  - type: service 
+    name: httpd
+    actions: 
+      - enable
+      - start
+
   - type: template 
     name: '/var/www/html/index.html' 
     source: 'index.html.erb'
