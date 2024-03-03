@@ -10,11 +10,22 @@ This lab will provide the most basic introduction to test kitchen (w/ dokken). F
 - List the existing Test Kitchen instances
 - 
 
-1. Open a Terminal
-1. docker ps -a
-1. docker images
-1. kitchen create:
-```./create.sh```
+
+Preperation: Open a Terminal      
+note: you need to be in the /home/ec2-user/workshop/best-practices/100-testing_with_test_kitchen/labs/01-test-kitchen-introduction directory
+
+Step 1: Review current running containers and loaded images.      
+EXECUTE ```./step-1.sh```
+> This script runs ```docker ps -a``` and ```docker images``` to list the current running state. If you have not run any other labs with test kitchen this should result in no images and no containers.
+
+
+Step 2: Prepare the Test Kitchen enviornments      
+EXECUTE: ```./step-2.sh```      
+> This will prepare Test Kitchen by downloading the required containers.
+
+Step 1: Review current running containers and loaded images.      
+EXECUTE: ```./step-3.sh```      
+
 1. docker ps -a
 1. docker images
 1. 
