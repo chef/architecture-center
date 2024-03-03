@@ -11,10 +11,17 @@ action :create do
     action :install
   end
 
-  # disabling for demo w/ nested virtualization enabled
-  #service 'httpd' do
-  #  action [:enable, :start]
-  #end
+  service 'httpd' do
+    action [:enable, :start]
+  end
+
+  user 'www-data' do
+  end
+
+  group 'www-data' do
+      append true
+      members ['www-data']
+  end
 
   # Create the document root directory if it doesn't exist
   directory new_resource.document_root do
