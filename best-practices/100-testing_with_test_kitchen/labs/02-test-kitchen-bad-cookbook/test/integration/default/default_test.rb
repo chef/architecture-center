@@ -1,5 +1,6 @@
-describe package('/var/www/html') do
+describe directory('/var/www/html') do
   it { should exist }
   its('owner') { should eq 'www-data' }
-  its('group')  { should cmp '0755' }
+  its('group') { should eq 'www-data' }
+  its('mode')  { should cmp '0755' }
 end

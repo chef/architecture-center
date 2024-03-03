@@ -20,7 +20,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[01-test-kitchen-introduction::default]
+      - recipe[02-test-kitchen-bad-cookbook::default]
     verifier:
       inspec_tests:
         - test/integration/default      

@@ -1,10 +1,9 @@
-# Create the document root directory if it doesn't exist
-user 'www-data' do
-end
+#user 'www-data' do
+#end
 
-group 'www-data' do
-    members ['www-data']
-end
+#group 'www-data' do
+#    members ['www-data']
+#end
 
 directory "/var/www/html" do
   owner 'www-data'
