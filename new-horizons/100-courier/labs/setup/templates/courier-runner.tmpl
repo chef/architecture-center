@@ -8,7 +8,7 @@ output = "{{.settings.output}}"
 node_id = "{{.agent.nodeId}}"
 
 [queue]
-address = "amqp://{{.settings.api_key}}:{{.settings.api_secret}}@{{.settings.server}}:{{.settings.port}}//"
+address = "amqp://{{.settings.api_key}}:{{.settings.api_secret}}@{{.settings.queue}}:{{.settings.port}}//"
 channel = "{{.agent.nodeId}}"
 provider = {{.settings.provider}}
 
@@ -16,7 +16,7 @@ provider = {{.settings.provider}}
 name = "server"
 authenticationType = "Basic"
 dir =  "{{.settings.reporter_dir}}"
-hostUrl = "https://{{.settings.server}}:{{.settings.port}}/"
+hostUrl = "https://{{.settings.server}}/"
 
 [db]
 db = "{{.settings.db}}"
