@@ -16,9 +16,14 @@ platforms:
 - name: centos-7
   driver:
     image: dokken/centos-7
+#    privileged: true
+#    pid_one_command: /usr/lib/systemd/systemd
 
 suites:
   - name: default
     run_list:
       - recipe[02-dokken-error::default]
+    verifier:
+      inspec_tests:
+        - test/smoke/default           
     attributes:
