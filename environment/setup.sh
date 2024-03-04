@@ -19,3 +19,11 @@ echo ""
 echo "setting up 100-target-mode"
 chmod +x ~/workshop/new-horizons/100-target-mode/labs/setup/configure.sh
 ~/workshop/new-horizons/100-target-mode/labs/setup/configure.sh
+
+cd ~/workshop/new-horizons/100-courier/labs/setup
+./setup.sh
+
+/opt/openvscode-server/bin/openvscode-server --install-extension marp-team.marp-vscode
+/opt/openvscode-server/bin/openvscode-server --install-extension rebornix.ruby
+/opt/openvscode-server/bin/openvscode-server --install-extension redhat.vscode-yaml
+/opt/openvscode-server/bin/openvscode-server --install-extension wingrunr21.vscode-ruby

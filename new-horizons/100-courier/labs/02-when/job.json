@@ -33,7 +33,7 @@
                 {
                     "stepNumber": 1,
                     "interpreter": {
-                        "name": "chef/courier-interpreter/os/shell"
+                        "name": "chef-platform/shell-interpreter"
                     },
                     "command": [ "date" ],
                     "inputs": {},

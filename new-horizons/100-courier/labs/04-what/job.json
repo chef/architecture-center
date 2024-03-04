@@ -26,9 +26,7 @@
     "steps": [
       {
           "interpreter": {
-              "name": "chef/courier-interpreter/os/shell",
-              "min_version": "1.0.0",
-              "max_version": "0.0.1"
+              "name": "chef-platform/shell-interpreter"
           },
           "command": [
               "which nginx >/dev/null && echo true || echo false"

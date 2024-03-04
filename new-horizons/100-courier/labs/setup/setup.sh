@@ -12,4 +12,7 @@ chmod +x /home/ec2-user/nodes/node-3.ssh
 
 cd templates
 ./setup-runner.sh
+cd ..
+
 sudo ./configure.sh
+./enroll.sh
