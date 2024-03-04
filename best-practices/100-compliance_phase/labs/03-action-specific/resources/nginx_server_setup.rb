@@ -1,5 +1,5 @@
-resource_name :web_server_setup
-provides :web_server_setup
+resource_name :nginx_server_setup
+provides :nginx_server_setup
 
 property :server_name, String, name_property: true
 
