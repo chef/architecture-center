@@ -115,5 +115,5 @@ if [ "$SETTING_GROUP" == "3" ]; then
 fi
 
 addSkill "chef-platform" $1 "courier-runner" $PLATFORM
-addSkill "chef-platform" $1 "chef-gohai" $PLATFORM
+#addSkill "chef-platform" $1 "chef-gohai" $PLATFORM
 addSkill "chef-platform" $1 "shell-interpreter" $PLATFORM

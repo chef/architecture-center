@@ -16,11 +16,11 @@ provider = {{.settings.provider}}
 name = "server"
 authenticationType = "Basic"
 dir =  "{{.settings.reporter_dir}}"
-hostUrl = "https://{{.settings.server}}:8084/"
+hostUrl = "https://{{.settings.server}}/"
 
 [db]
 db = "{{.settings.db}}"
 
 [credentials]
 api_key = "{{.settings.api_key}}"
-api_secret = "{{.settings.api_key}}"
+api_secret = "{{.settings.api_secret}}"
