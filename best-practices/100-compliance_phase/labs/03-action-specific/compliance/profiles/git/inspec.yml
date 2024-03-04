@@ -1,0 +1,4 @@
+name: git
+title: git
+summary: An InSpec Compliance Profile
+version: 0.1.1
