@@ -9,12 +9,7 @@ This lab will provide the step by step instructions to prepare your VSCode works
 - Have Node Management install Courier Runner & the OS interpreter 
 - Layout the VSCode UI 
 
-#### Step 1: Enroll to Node Management
-
-
-#### Step 2: Register To Node Management
-
-#### Step 3: Configure VSCode
+#### Step 1: Configure VSCode
 
 You will need to make your VSCode screen look like the following    
 ![screen layout](./images/02-01-layout.png)
@@ -26,3 +21,16 @@ _after the layout has been configured_
 - Rename the bottom three panels to (node-1, node-2, node-3)
 
 watch courier state list-job-instances
+
+
+#### Step 2: Connect each node
+1. In the lower left execute ```~\workshop\new-horizons\100-courier\labs\00-configuration\node-1.sh```
+1. In the lower center execute ```~\workshop\new-horizons\100-courier\labs\00-configuration\node-2.sh```
+1. In the lower right execute ```~\workshop\new-horizons\100-courier\labs\00-configuration\node-3.sh```
+
+1. In the uppoer right execute ```watch node node list-nodes```
+
+#### Step 2: Register To Node Management
+
+
+nitin
