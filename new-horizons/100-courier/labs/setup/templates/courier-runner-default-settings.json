@@ -6,7 +6,7 @@
       },
       {
           "name": "level",
-          "value": "error"
+          "value": "debug"
       },
       {
           "name": "output",

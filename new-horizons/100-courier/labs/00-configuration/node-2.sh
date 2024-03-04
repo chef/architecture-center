@@ -1,1 +1,1 @@
-ssh -i ~/.keys/key-pair.pem ec2-user@192.168.10.20 'journalctl -f | grep hab'
+ssh -i ~/.keys/key-pair.pem ec2-user@192.168.10.20 'sudo tail -f /hab/svc/courier-runner/log/errorcourier-log'
