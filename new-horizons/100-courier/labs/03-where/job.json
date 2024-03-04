@@ -14,12 +14,16 @@
                     },
                     "distributionMethod":"rolling",
                     "successCriteria": [{ "numRuns": { "type": "percent", "value": 100 }, "status": "success" }],
-                    "nodeListType":"nodes",
-                    "nodeIdentifiers":[
-                        "--NODE1--",
-                        "--NODE2--",
-                        "--NODE3--"
-                    ] 
+                    "nodeListType":"query",
+                    "query":{ 
+                        "name":"filter1", 
+                        "constraints": { 
+                            "attributes": 
+                            [ 
+                                { "name" : "primary_ip", "operator" : "MATCHES", "value" : ["192.168.10.10","192.168.10.20","192.168.10.30"] }  
+                            ]  
+                        }  
+                    }
                 }
             ]
         },

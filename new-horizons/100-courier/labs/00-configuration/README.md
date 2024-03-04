@@ -24,13 +24,44 @@ watch courier state list-job-instances
 
 
 #### Step 2: Connect each node
-1. In the lower left execute ```~\workshop\new-horizons\100-courier\labs\00-configuration\node-1.sh```
-1. In the lower center execute ```~\workshop\new-horizons\100-courier\labs\00-configuration\node-2.sh```
-1. In the lower right execute ```~\workshop\new-horizons\100-courier\labs\00-configuration\node-3.sh```
+1. In the lower left execute ```~/workshop/new-horizons/100-courier/labs/00-configuration/node-1.sh```
+1. In the lower center execute ```~/workshop/new-horizons/100-courier/labs/00-configuration/node-2.sh```
+1. In the lower right execute ```~/workshop/new-horizons/100-courier/labs/00-configuration/node-3.sh```    
+> These commands will follow the journal for any errors while running the jobs
 
 1. In the uppoer right execute ```watch node node list-nodes```
+> This command will poll every 2 seconds to wait for node management to have the new nodes enrolled   
+> WARNING: these results are not in order and may change every few seconds
 
-#### Step 2: Register To Node Management
+#### Step 3: Register To Node Management
+In the upper left execute
+1. ~/nodes/enroll.sh 
+2. wait for the upper right screen to show three unique Node ID's (UUIDs)
+
+With each UUID (from the uppor right) run the following command (in the upper left)
+- ```node register <UUID>```
+
+In the upper right hand corner press ```Control c``` to cancel the watch
 
 
-nitin
+to ensure all nodes are registerd with skills in the upper left type
+```node node list-nodes --json```
+
+#### Step 4: Finalization
+in the upper right type
+```watch --interval 1 courier state list-job-instances```
+
+----------------------------
+
+#### Job 1:
+in the upper left type
+```courier scheduler create-job ~/workshop/new-horizons/100-courier/labs/02-when/job.json```
+> It will take 2 - 3 mins for the first execution of the job to occcur
+
+#### Job 2:
+in the upper left type
+```courier scheduler create-job ~/workshop/new-horizons/100-courier/labs/03-where/job.json```
+
+#### Job 3:
+in the upper left type
+```courier scheduler create-job ~/workshop/new-horizons/100-courier/labs/04-what/job.json```
