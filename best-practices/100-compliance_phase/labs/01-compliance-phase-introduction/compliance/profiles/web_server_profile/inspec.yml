@@ -1,0 +1,7 @@
+name: web_server_profile
+title: web_server_profile
+license: MIT
+summary: An InSpec Compliance Profile
+version: 1.0.0
+supports:
+  platform: os
