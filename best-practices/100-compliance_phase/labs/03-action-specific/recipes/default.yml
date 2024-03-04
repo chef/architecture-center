@@ -1,0 +1,10 @@
+
+resources:
+  - type: web_server_setup 
+    name: my-httpd
+    index_content: "<h1>Welcome to example.com!</h1>"
+    action: create
+
+  - type: nginx_server_setup
+    name: my-nginx
+    action: create

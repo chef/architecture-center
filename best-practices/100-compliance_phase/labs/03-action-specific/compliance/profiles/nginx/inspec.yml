@@ -1,0 +1,6 @@
+name: httpd
+title: httpd
+summary: An InSpec Compliance Profile
+version: 0.1.1
+supports:
+- platform-family: redhat

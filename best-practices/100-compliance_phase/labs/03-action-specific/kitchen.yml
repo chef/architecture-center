@@ -1,0 +1,29 @@
+---
+driver:
+  name: dokken
+  chef_version: latest # or 16 or 16.0 or 16.0.300 or current
+
+transport:
+  name: dokken
+
+provisioner:
+  name: dokken
+
+verifier:
+  name: inspec
+
+platforms:
+- name: ubuntu-20.04
+  driver:
+    image: dokken/ubuntu-20.04
+    privileged: true
+    pid_one_command: /usr/lib/systemd/systemd
+
+
+suites:
+  - name: default
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:
+
