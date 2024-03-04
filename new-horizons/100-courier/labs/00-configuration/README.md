@@ -24,10 +24,10 @@ watch courier state list-job-instances
 
 
 #### Step 2: Connect each node
-1. In the lower left execute ```~/workshop/new-horizons/100-courier/labs/00-configuration/node-1.sh```
-1. In the lower center execute ```~/workshop/new-horizons/100-courier/labs/00-configuration/node-2.sh```
-1. In the lower right execute ```~/workshop/new-horizons/100-courier/labs/00-configuration/node-3.sh```    
-> These commands will follow the journal for any errors while running the jobs
+1. In the lower left execute ```~/workshop/new-horizons/100-courier/labs/00-configuration/enroll-1.sh```
+1. In the lower center execute ```~/workshop/new-horizons/100-courier/labs/00-configuration/enroll-2.sh```
+1. In the lower right execute ```~/workshop/new-horizons/100-courier/labs/00-configuration/enroll-3.sh```    
+> These commands will follow the journal during enrollment
 
 1. In the uppoer right execute ```watch node node list-nodes```
 > This command will poll every 2 seconds to wait for node management to have the new nodes enrolled   
@@ -41,14 +41,19 @@ In the upper left execute
 With each UUID (from the uppor right) run the following command (in the upper left)
 - ```node register <UUID>```
 
-In the upper right hand corner press ```Control c``` to cancel the watch
-
 
 to ensure all nodes are registerd with skills in the upper left type
 ```node node list-nodes --json```
 
 #### Step 4: Finalization
-in the upper right type
+1. In the lower left press ```Control c``` to cancel the watch
+1. In the lower left execute ```~/workshop/new-horizons/100-courier/labs/00-configuration/courier-1.sh```
+1. In the lower center press ```Control c``` to cancel the watch
+1. In the lower center execute ```~/workshop/new-horizons/100-courier/labs/00-configuration/courier-2.sh```
+1. In the lower right press ```Control c``` to cancel the watch
+1. In the lower right execute ```~/workshop/new-horizons/100-courier/labs/00-configuration/courier-3.sh```    
+1. In the upper right hand corner press ```Control c``` to cancel the watch.
+1. in the upper right type
 ```watch --interval 1 courier state list-job-instances```
 
 ----------------------------
