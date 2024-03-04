@@ -4,13 +4,13 @@
 # https://docs.chef.io/policyfile/
 
 # A name that describes what the system you're building with Chef does.
-name 'compliance-phase-introduction'
+name 'platform-specific'
 
 # Where to find external cookbooks:
 default_source :supermarket
 
 # run_list: chef-client will run these recipes in the order specified.
-run_list 'compliance-phase-introduction::default'
+run_list 'platform-specific::default'
 
 # Specify a custom source for a single cookbook:
-cookbook 'compliance-phase-introduction', path: '.'
+cookbook 'platform-specific', path: '.'

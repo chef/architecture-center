@@ -1,0 +1,6 @@
+name: linux_el
+title: linux_el
+summary: An InSpec Compliance Profile
+version: 0.1.1
+supports:
+- platform-family: redhat

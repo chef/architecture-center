@@ -22,4 +22,4 @@ service 'nginx' do
   action [ :enable, :start ]
 end
 
-include_profile 'web_server::web_server_profile'
+include_profile 'compliance-phase-introduction::web_server_profile'
