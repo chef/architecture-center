@@ -47,9 +47,9 @@ if [ -z "$CMD" ]; then
   echo "Valid options:"
   echo "list-nodes"
   echo "get-node"
-  echo "list-skills"
-  echo "assign-skill"
-  echo "remove-skill"
+  #echo "list-skills"
+  #echo "assign-skill"
+  #echo "remove-skill"
   exit 1
 fi
 
