@@ -111,14 +111,14 @@ curl -s -X PATCH -H "api-key: $API_KEY" -H "api-secret: $API_SECRET" -H 'Content
 if [ "$SETTING_GROUP" == "2" ]; then
   PLATFORM="x86_64-linux"
 
-  addSkill "chef-platform" $1 "courier-runner" $PLATFORM "1.0.55" "20240118095322"     #chef-platform/courier-runner/1.0.55/20240118095322
+  addSkill "chef-platform" $1 "courier-runner" $PLATFORM "1.0.59" "20240125134232"     #chef-platform/courier-runner/1.0.59/20240125134232
   addSkill "chef-platform" $1 "shell-interpreter" $PLATFORM "0.1.1" "20240102201822"  #chef-platform/shell-interpreter/0.1.1/20240102201822
 fi
 
 if [ "$SETTING_GROUP" == "3" ]; then
   PLATFORM="x86_64-windows"
 
-  addSkill "chef-platform" $1 "courier-runner" $PLATFORM "1.0.55" "20240118095847"        #chef-platform/courier-runner/1.0.55/20240118095847
+  addSkill "chef-platform" $1 "courier-runner" $PLATFORM "1.0.59" "20240125134249"        #chef-platform/courier-runner/1.0.59/20240125134249
   addSkill "chef-platform" $1 "shell-interpreter" $PLATFORM "v0.1.1" "20231222121103"    #chef-platform/shell-interpreter/v0.1.1/20231222121103
 
 fi
