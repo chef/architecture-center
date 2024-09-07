@@ -4,6 +4,7 @@ Content Type:
 -	Reference Architecture
 -	Patterns
 -	Best Practices
+-   Workshops
 -	Solutions
 -	Guidance
 -   New Horizons
