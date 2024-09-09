@@ -15,6 +15,7 @@ curl -sk http://workshop.chef360.io/platform/bundledtools/v1/static/install.sh |
 curl -sk http://workshop.chef360.io/platform/bundledtools/v1/static/install.sh | TOOL="chef-courier-cli" SERVER="http://workshop.chef360.io" VERSION="latest" bash -
 
 curl http://workshop.chef360.io:8080/credentials > .chef-platform/credentials
+curl http://workshop.chef360.io:8080/credentials > .chef-platform/credentials
 
 #cd templates
 #./setup-runner.sh
