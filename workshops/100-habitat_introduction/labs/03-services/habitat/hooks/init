@@ -1,0 +1,12 @@
+#!/bin/bash
+
+addgroup {{cfg.group}}
+adduser --disabled-password --ingroup {{cfg.user}} {{cfg.group}}
+
+chmod 755 {{pkg.svc_data_path}}
+
+mkdir -p {{pkg.svc_data_path}}/htdocs
+chmod 755 {{pkg.svc_data_path}}/htdocs
+
+mkdir -p {{pkg.svc_data_path}}/cgi-bin
+cp {{pkg.path}}/index.html  {{pkg.svc_data_path}}/htdocs/
