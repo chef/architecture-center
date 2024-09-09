@@ -1,0 +1,25 @@
+---
+constraints:
+  attributes:
+  - name: kernel_name
+    namespace: "agent"
+    operator: "="
+    value:
+    - Linux
+  - name: instance-type
+    namespace: aws
+    operator: "="
+    value:
+    - t3.micro
+    - t3.small
+  - name: instance-type
+    namespace: aws
+    operator: "="
+    value:
+    - t3.micro
+    - t3.small
+  - name: ipaddress
+    namespace: gohai
+    operator: "MATCHES"
+    value:
+    - "^192\\.168\\.10\\.(20|30)"

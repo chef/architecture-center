@@ -1,0 +1,8 @@
+---
+constraints:
+  attributes:
+  - name: kernel_name
+    namespace: agent
+    operator: "="
+    value:
+    - Linux

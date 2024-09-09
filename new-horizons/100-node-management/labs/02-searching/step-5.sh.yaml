@@ -1,0 +1,12 @@
+---
+constraints:
+  attributes:
+  - name: kernel_name
+    namespace: "agent"
+    operator: "="
+    value:
+    - Linux
+  skills:
+  - name: courier-runner
+    version:
+    - "= 1.4.2"

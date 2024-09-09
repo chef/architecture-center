@@ -1,0 +1,8 @@
+---
+skills:
+- action: add
+  skill:
+    channel: stable
+    name: ansible
+    value:
+    - 2.12.1

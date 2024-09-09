@@ -1,0 +1,6 @@
+{
+    "name": "aws-cli",
+    "native": {
+        "versionCommand": "aws --version"
+    }
+}

@@ -1,0 +1,9 @@
+---
+skills:
+- action: add
+  skill:
+    channel: stable
+    name: chef-infra-client
+    value:
+    - 18.5.0
+    - 17.10.163

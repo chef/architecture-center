@@ -1,0 +1,14 @@
+{
+  "name": "worker-nodes",
+  "constraints": {
+    "attributes": [
+      {
+        "name": "ipaddress",
+        "operator": "MATCHES",
+        "value": [ 
+          "^192\\.168\\.10\\.(10|20|30)"
+        ]  
+      }
+    ]
+  }
+}

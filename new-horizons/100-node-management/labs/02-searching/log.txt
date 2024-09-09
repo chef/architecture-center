@@ -1,0 +1,1170 @@
+2024-09-08T17:14:47Z | debug | node-management/client.codegen.go:303 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management.getLogger | Found logger in injector | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:47Z", "endTimeNano": "2024-09-08T17:14:47.988186857Z", "timeSpent": "1.88µs", "timeSpentMilliseconds": 0}
+2024-09-08T17:14:47Z | info | node-management/client.codegen.go:100 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management.NewChefNodeManagementApiClient | Entered client | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:47Z", "endTimeNano": "2024-09-08T17:14:47.988280172Z", "timeSpent": "95.195µs", "timeSpentMilliseconds": 0}
+2024-09-08T17:14:47Z | debug | node-management/client.codegen.go:101 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management.NewChefNodeManagementApiClient | Entered client | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:47Z", "endTimeNano": "2024-09-08T17:14:47.988298302Z", "timeSpent": "113.325µs", "timeSpentMilliseconds": 0, "config": {"access_key":"IW9EKSY75Q5P2OZPH7BZ","injector":{},"insecure":false,"max_retries":0,"platform_auth_type":"access_secret","refresh_threshold":300000000000,"retry_wait_max":60000000000,"retry_wait_min":5000000000,"root_ca":null,"secret_key":"k7sTwAbhkdNZLrzcHlUYQOCamTc4s1dT9wivEfVG","server":"http://workshop.chef360.io","timeout":60000000000}, "clientType": 0, "serviceIdentity": null}
+2024-09-08T17:14:47Z | info | node-management/client.codegen.go:176 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management.getAgentWithVerifyResp | Entered getAgentWithVerifyResp | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:47Z", "endTimeNano": "2024-09-08T17:14:47.98837975Z", "timeSpent": "194.773µs", "timeSpentMilliseconds": 0}
+2024-09-08T17:14:47Z | debug | node-management/client.codegen.go:177 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management.getAgentWithVerifyResp | Entered getAgentWithVerifyResp | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:47Z", "endTimeNano": "2024-09-08T17:14:47.988392643Z", "timeSpent": "207.666µs", "timeSpentMilliseconds": 0, "config": {"access_key":"IW9EKSY75Q5P2OZPH7BZ","injector":{},"insecure":false,"max_retries":0,"platform_auth_type":"access_secret","refresh_threshold":300000000000,"retry_wait_max":60000000000,"retry_wait_min":5000000000,"root_ca":null,"secret_key":"k7sTwAbhkdNZLrzcHlUYQOCamTc4s1dT9wivEfVG","server":"http://workshop.chef360.io","timeout":60000000000}, "clientType": 0}
+2024-09-08T17:14:47Z | debug | node-management/client.codegen.go:202 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management.getAgentWithVerifyResp | Using Access/Secret Key based auth | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:47Z", "endTimeNano": "2024-09-08T17:14:47.988424376Z", "timeSpent": "239.399µs", "timeSpentMilliseconds": 0, "AccessKey": "IW9EKSY75Q5P2OZPH7BZ", "SecretKey": "k7sTwAbhkdNZLrzcHlUYQOCamTc4s1dT9wivEfVG", "RefreshBeforeExpiryDuration": 300, "clientType": 0}
+2024-09-08T17:14:47Z | debug | pagent/agent.go:112 | github.com/progress-platform-services/platform-common/pweb/pagent.NewAgent[...] | Inside NewAgent | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:47Z", "endTimeNano": "2024-09-08T17:14:47.988456481Z", "timeSpent": "271.504µs", "timeSpentMilliseconds": 0}
+2024-09-08T17:14:47Z | debug | pagent/agent.go:141 | github.com/progress-platform-services/platform-common/pweb/pagent.(*Agent[...]).Init | Inside Init function of agent | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:47Z", "endTimeNano": "2024-09-08T17:14:47.988474443Z", "timeSpent": "289.466µs", "timeSpentMilliseconds": 0, "ct": 0}
+2024-09-08T17:14:48Z | debug | pauthtype/keyauth.go:26 | github.com/progress-platform-services/platform-common/pweb/pagent/pauthtype.AccessKeySecretAuth.CreatePlugin | Inside AccessKeySecretAuth CreatePlugin | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.049048673Z", "timeSpent": "60.863696ms", "timeSpentMilliseconds": 60}
+2024-09-08T17:14:48Z | debug | pauthtype/keyauth.go:39 | github.com/progress-platform-services/platform-common/pweb/pagent/pauthtype.AccessKeySecretAuth.CreatePlugin | Exiting AccessKeySecretAuth CreatePlugin | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.049234378Z", "timeSpent": "61.049401ms", "timeSpentMilliseconds": 61}
+2024-09-08T17:14:48Z | debug | pagent/agent.go:169 | github.com/progress-platform-services/platform-common/pweb/pagent.(*Agent[...]).Init | Exiting Init function of agent | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.049257329Z", "timeSpent": "61.072352ms", "timeSpentMilliseconds": 61, "ct": 0}
+2024-09-08T17:14:48Z | debug | pagent/agent.go:120 | github.com/progress-platform-services/platform-common/pweb/pagent.NewAgent[...] | Exiting NewAgent | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.049319617Z", "timeSpent": "61.13464ms", "timeSpentMilliseconds": 61}
+2024-09-08T17:14:48Z | info | node-management/client.codegen.go:250 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management.getAgentWithVerifyResp | Exiting getAgentWithVerifyResp | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.04933574Z", "timeSpent": "61.150763ms", "timeSpentMilliseconds": 61}
+2024-09-08T17:14:48Z | debug | node-management/client.codegen.go:251 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management.getAgentWithVerifyResp | Exiting getAgentWithVerifyResp | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.049388808Z", "timeSpent": "61.203831ms", "timeSpentMilliseconds": 61, "verifyResp": true}
+2024-09-08T17:14:48Z | debug | node-management/client.codegen.go:117 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management.NewChefNodeManagementApiClient | Response verification set to true | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.049413906Z", "timeSpent": "61.228929ms", "timeSpentMilliseconds": 61}
+2024-09-08T17:14:48Z | info | node-management/client.codegen.go:142 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management.NewChefNodeManagementApiClient | Exiting client | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.049567056Z", "timeSpent": "61.382079ms", "timeSpentMilliseconds": 61}
+2024-09-08T17:14:48Z | info | filter/filter.codegen.go:256 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management/filter.(*FilterClientImpl).FiltersRunAdhocFilter | Entered FiltersRunAdhocFilter method | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.04959834Z", "timeSpent": "61.413363ms", "timeSpentMilliseconds": 61}
+2024-09-08T17:14:48Z | debug | filter/filter.codegen.go:257 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management/filter.(*FilterClientImpl).FiltersRunAdhocFilter | Entered FiltersRunAdhocFilter method | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.049652932Z", "timeSpent": "61.467955ms", "timeSpentMilliseconds": 61, "reqArgs": null}
+2024-09-08T17:14:48Z | debug | pagent/agent.go:129 | github.com/progress-platform-services/platform-common/pweb/pagent.Agent[...].NewRequest | Inside NewRequest function of agent | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.049999137Z", "timeSpent": "61.81416ms", "timeSpentMilliseconds": 61, "path": "/node/management/v1/filters/exec"}
+2024-09-08T17:14:48Z | debug | pagent/agent.go:132 | github.com/progress-platform-services/platform-common/pweb/pagent.Agent[...].NewRequest | Exiting NewRequest function of agent | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.050081962Z", "timeSpent": "61.896985ms", "timeSpentMilliseconds": 61, "path": "/node/management/v1/filters/exec"}
+2024-09-08T17:14:48Z | debug | pagent/agent.go:190 | github.com/progress-platform-services/platform-common/pweb/pagent.(*Agent[...]).doWithRetry | Inside doWithRetry function of agent | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.050296555Z", "timeSpent": "62.111578ms", "timeSpentMilliseconds": 62}
+2024-09-08T17:14:48Z | debug | pagent/agent.go:258 | github.com/progress-platform-services/platform-common/pweb/pagent.(*Agent[...]).do | Inside do function of agent | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.05031508Z", "timeSpent": "62.130103ms", "timeSpentMilliseconds": 62}
+2024-09-08T17:14:48Z | debug | plugins/request_accesskey.go:91 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*Keys).Before | Inside Before function of Request Accesskey plugin | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.05032897Z", "timeSpent": "62.143993ms", "timeSpentMilliseconds": 62}
+2024-09-08T17:14:48Z | debug | plugins/request_accesskey.go:441 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.decodeJwt | Inside decodeJwt function | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.050524852Z", "timeSpent": "62.339875ms", "timeSpentMilliseconds": 62}
+2024-09-08T17:14:48Z | debug | plugins/request_accesskey.go:458 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.profileClaimVerified | Inside profileClaimVerified function | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.050587303Z", "timeSpent": "62.402326ms", "timeSpentMilliseconds": 62}
+2024-09-08T17:14:48Z | debug | plugins/request_accesskey.go:469 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.profileClaimVerified | Profile claims are valid, skipping login | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.050601344Z", "timeSpent": "62.416367ms", "timeSpentMilliseconds": 62}
+2024-09-08T17:14:48Z | debug | plugins/plugin_utils.go:42 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.isTokenExpiring | Inside isTokenExpiring function | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.050624586Z", "timeSpent": "62.439609ms", "timeSpentMilliseconds": 62}
+2024-09-08T17:14:48Z | debug | plugins/plugin_utils.go:45 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.isTokenExpiring | Exiting isTokenExpiring function | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.050638021Z", "timeSpent": "62.453044ms", "timeSpentMilliseconds": 62}
+2024-09-08T17:14:48Z | debug | plugins/request_logger.go:17 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).Before | Inside Before function of RequestLogger | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.050659322Z", "timeSpent": "62.474345ms", "timeSpentMilliseconds": 62}
+2024-09-08T17:14:48Z | debug | plugins/request_accesskey.go:238 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*Keys).After | Inside After function of Request Accesskey plugin | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.316258314Z", "timeSpent": "328.073337ms", "timeSpentMilliseconds": 328, "body": "{\"code\":200,\"items\":[{\"attributes\":[{\"name\":\"architecture\",\"namespace\":\"agent\",\"value\":\"x86_64\"},{\"name\":\"hostname\",\"namespace\":\"agent\",\"value\":\"ip-192-168-10-10.ec2.internal\"},{\"name\":\"kernel_name\",\"namespace\":\"agent\",\"value\":\"Linux\"},{\"name\":\"kernel_version\",\"namespace\":\"agent\",\"value\":\"6.1.106-116.188.amzn2023.x86_64\"},{\"name\":\"netmask\",\"namespace\":\"agent\",\"value\":\"255.255.255.0\"},{\"name\":\"os_name\",\"namespace\":\"agent\",\"value\":\"Amazon Linux\"},{\"name\":\"os_version\",\"namespace\":\"agent\",\"value\":\"2023\"},{\"name\":\"primary_ip\",\"namespace\":\"agent\",\"value\":\"192.168.10.10\"},{\"name\":\"time_zone\",\"namespace\":\"agent\",\"value\":\"UTC+0000\"},{\"name\":\"fqdn\",\"namespace\":\"enroll\",\"value\":\"192.168.10.10\"},{\"name\":\"cpu_logical_processors\",\"namespace\":\"gohai\",\"value\":\"2\"},{\"name\":\"vendor_id\",\"namespace\":\"gohai\",\"value\":\"GenuineIntel\"},{\"name\":\"cpu_family\",\"namespace\":\"gohai\",\"value\":\"6\"},{\"name\":\"cpu_modelname\",\"namespace\":\"gohai\",\"value\":\"Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz\"},{\"name\":\"processor_type\",\"namespace\":\"gohai\",\"value\":\"x86_64\"},{\"name\":\"kernel_release_date\",\"namespace\":\"gohai\",\"value\":\"#1 SMP PREEMPT_DYNAMIC Tue Aug 27 07:00:36 UTC 2024\"},{\"name\":\"machine_architecture\",\"namespace\":\"gohai\",\"value\":\"x86_64\"},{\"name\":\"cpu_cores\",\"namespace\":\"gohai\",\"value\":\"1\"},{\"name\":\"cpu_model\",\"namespace\":\"gohai\",\"value\":\"85\"},{\"name\":\"cpu_stepping\",\"namespace\":\"gohai\",\"value\":\"7\"},{\"name\":\"total_swapmemory\",\"namespace\":\"gohai\",\"value\":\"0kB\"},{\"name\":\"macaddress\",\"namespace\":\"gohai\",\"value\":\"02:c8:31:61:7b:bb\"},{\"name\":\"hostname\",\"namespace\":\"gohai\",\"value\":\"ip-192-168-10-10.ec2.internal\"},{\"name\":\"os\",\"namespace\":\"gohai\",\"value\":\"GNU/Linux\"},{\"name\":\"instance_type\",\"namespace\":\"gohai\",\"value\":\"aws\"},{\"name\":\"cpu_mhz\",\"namespace\":\"gohai\",\"value\":\"2499.996\"},{\"name\":\"total_memory_inbytes\",\"namespace\":\"gohai\",\"value\":\"948940800\"},{\"name\":\"ipaddress\",\"namespace\":\"gohai\",\"value\":\"192.168.10.10\"},{\"name\":\"ipaddress_v6\",\"namespace\":\"gohai\",\"value\":\"fe80::c8:31ff:fe61:7bbb\"},{\"name\":\"kernel_name\",\"namespace\":\"gohai\",\"value\":\"Linux\"},{\"name\":\"kernel_version\",\"namespace\":\"gohai\",\"value\":\"6.1.106-116.188.amzn2023.x86_64\"},{\"name\":\"local-hostname\",\"namespace\":\"aws\",\"value\":\"ip-192-168-10-10.ec2.internal\"},{\"name\":\"availability-zone\",\"namespace\":\"aws\",\"value\":\"us-east-1a\"},{\"name\":\"private-ip\",\"namespace\":\"aws\",\"value\":\"192.168.10.10\"},{\"name\":\"instance-id\",\"namespace\":\"aws\",\"value\":\"i-0b0288a7986eed976\"},{\"name\":\"ami-id\",\"namespace\":\"aws\",\"value\":\"ami-0182f373e66f89c85\"},{\"name\":\"hostname\",\"namespace\":\"aws\",\"value\":\"ip-192-168-10-10.ec2.internal\"},{\"name\":\"local-ipv4\",\"namespace\":\"aws\",\"value\":\"192.168.10.10\"},{\"name\":\"mac\",\"namespace\":\"aws\",\"value\":\"02:c8:31:61:7b:bb\"},{\"name\":\"region\",\"namespace\":\"aws\",\"value\":\"us-east-1\"},{\"name\":\"instance-type\",\"namespace\":\"aws\",\"value\":\"t3.micro\"},{\"name\":\"account-id\",\"namespace\":\"aws\",\"value\":\"834902008322\"},{\"name\":\"architecture\",\"namespace\":\"aws\",\"value\":\"x86_64\"}],\"checkedinAt\":\"2024-09-08T17:14:13.165035Z\",\"cohortId\":\"436761a5-4bb9-4816-9841-5ff0d474aa17\",\"enrollmentLevel\":\"enrolled\",\"healthStatus\":\"online\",\"id\":\"09f552af-9dc3-4c3e-97da-580a3530782d\",\"installedSkills\":[{\"canister\":{\"channel\":\"\",\"release\":\"20240719065026\",\"version\":\"1.0.3\"},\"name\":\"chef-client-interpreter\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240712151631\",\"version\":\"1.0.1\"},\"name\":\"chef-gohai\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240719065234\",\"version\":\"1.4.2\"},\"name\":\"courier-runner\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240712145454\",\"version\":\"1.0.1\"},\"name\":\"node-management-agent\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240712144109\",\"version\":\"1.0.1\"},\"name\":\"restart-interpreter\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240719065152\",\"version\":\"1.0.2\"},\"name\":\"shell-interpreter\",\"native\":null}],\"requiredSkills\":[{\"canister\":{\"channel\":\"\",\"release\":\"20240712145454\",\"version\":\"1.0.1\"},\"name\":\"node-management-agent\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240719065234\",\"version\":\"1.4.2\"},\"name\":\"courier-runner\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240712151631\",\"version\":\"1.0.1\"},\"name\":\"chef-gohai\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240712144109\",\"version\":\"1.0.1\"},\"name\":\"restart-interpreter\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240719065152\",\"version\":\"1.0.2\"},\"name\":\"shell-interpreter\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240719065026\",\"version\":\"1.0.3\"},\"name\":\"chef-client-interpreter\",\"native\":null}]},{\"attributes\":[{\"name\":\"architecture\",\"namespace\":\"agent\",\"value\":\"x86_64\"},{\"name\":\"hostname\",\"namespace\":\"agent\",\"value\":\"ip-192-168-0-11.ec2.internal\"},{\"name\":\"kernel_name\",\"namespace\":\"agent\",\"value\":\"Linux\"},{\"name\":\"kernel_version\",\"namespace\":\"agent\",\"value\":\"6.1.106-116.188.amzn2023.x86_64\"},{\"name\":\"netmask\",\"namespace\":\"agent\",\"value\":\"255.255.255.0\"},{\"name\":\"os_name\",\"namespace\":\"agent\",\"value\":\"Amazon Linux\"},{\"name\":\"os_version\",\"namespace\":\"agent\",\"value\":\"2023\"},{\"name\":\"primary_ip\",\"namespace\":\"agent\",\"value\":\"192.168.0.11\"},{\"name\":\"time_zone\",\"namespace\":\"agent\",\"value\":\"UTC+0000\"},{\"name\":\"fqdn\",\"namespace\":\"enroll\",\"value\":\"192.168.0.11\"}],\"checkedinAt\":\"2024-09-08T17:14:32.016451Z\",\"cohortId\":\"2af4f9b5-254d-4f55-a8f1-c82ed0cdb5db\",\"enrollmentLevel\":\"enrolled\",\"healthStatus\":\"online\",\"id\":\"cd5f25f4-dd01-47a6-b82d-30cd3f014a0d\",\"installedSkills\":[{\"canister\":{\"channel\":\"\",\"release\":\"20240712145454\",\"version\":\"1.0.1\"},\"name\":\"node-management-agent\",\"native\":null}],\"requiredSkills\":[{\"canister\":{\"channel\":\"\",\"release\":\"20240712145454\",\"version\":\"1.0.1\"},\"name\":\"node-management-agent\",\"native\":null}]},{\"attributes\":[{\"name\":\"fqdn\",\"namespace\":\"enroll\",\"value\":\"192.168.10.30\"},{\"name\":\"ipaddress\",\"namespace\":\"gohai\",\"value\":\"192.168.10.30\"},{\"name\":\"kernel_release_date\",\"namespace\":\"gohai\",\"value\":\"#1 SMP PREEMPT_DYNAMIC Tue Aug 27 07:00:36 UTC 2024\"},{\"name\":\"machine_architecture\",\"namespace\":\"gohai\",\"value\":\"x86_64\"},{\"name\":\"cpu_modelname\",\"namespace\":\"gohai\",\"value\":\"Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz\"},{\"name\":\"cpu_stepping\",\"namespace\":\"gohai\",\"value\":\"7\"},{\"name\":\"cpu_mhz\",\"namespace\":\"gohai\",\"value\":\"2500.004\"},{\"name\":\"cpu_model\",\"namespace\":\"gohai\",\"value\":\"85\"},{\"name\":\"vendor_id\",\"namespace\":\"gohai\",\"value\":\"GenuineIntel\"},{\"name\":\"total_swapmemory\",\"namespace\":\"gohai\",\"value\":\"0kB\"},{\"name\":\"total_memory_inbytes\",\"namespace\":\"gohai\",\"value\":\"948940800\"},{\"name\":\"kernel_name\",\"namespace\":\"gohai\",\"value\":\"Linux\"},{\"name\":\"cpu_cores\",\"namespace\":\"gohai\",\"value\":\"1\"},{\"name\":\"cpu_logical_processors\",\"namespace\":\"gohai\",\"value\":\"2\"},{\"name\":\"kernel_version\",\"namespace\":\"gohai\",\"value\":\"6.1.106-116.188.amzn2023.x86_64\"},{\"name\":\"instance_type\",\"namespace\":\"gohai\",\"value\":\"aws\"},{\"name\":\"ipaddress_v6\",\"namespace\":\"gohai\",\"value\":\"fe80::34:f0ff:feba:70f9\"},{\"name\":\"os\",\"namespace\":\"gohai\",\"value\":\"GNU/Linux\"},{\"name\":\"hostname\",\"namespace\":\"gohai\",\"value\":\"ip-192-168-10-30.ec2.internal\"},{\"name\":\"processor_type\",\"namespace\":\"gohai\",\"value\":\"x86_64\"},{\"name\":\"cpu_family\",\"namespace\":\"gohai\",\"value\":\"6\"},{\"name\":\"macaddress\",\"namespace\":\"gohai\",\"value\":\"02:34:f0:ba:70:f9\"},{\"name\":\"availability-zone\",\"namespace\":\"aws\",\"value\":\"us-east-1a\"},{\"name\":\"ami-id\",\"namespace\":\"aws\",\"value\":\"ami-0182f373e66f89c85\"},{\"name\":\"region\",\"namespace\":\"aws\",\"value\":\"us-east-1\"},{\"name\":\"architecture\",\"namespace\":\"aws\",\"value\":\"x86_64\"},{\"name\":\"hostname\",\"namespace\":\"aws\",\"value\":\"ip-192-168-10-30.ec2.internal\"},{\"name\":\"local-hostname\",\"namespace\":\"aws\",\"value\":\"ip-192-168-10-30.ec2.internal\"},{\"name\":\"instance-type\",\"namespace\":\"aws\",\"value\":\"t3.micro\"},{\"name\":\"account-id\",\"namespace\":\"aws\",\"value\":\"834902008322\"},{\"name\":\"private-ip\",\"namespace\":\"aws\",\"value\":\"192.168.10.30\"},{\"name\":\"local-ipv4\",\"namespace\":\"aws\",\"value\":\"192.168.10.30\"},{\"name\":\"mac\",\"namespace\":\"aws\",\"value\":\"02:34:f0:ba:70:f9\"},{\"name\":\"instance-id\",\"namespace\":\"aws\",\"value\":\"i-098984c0a30cdf883\"},{\"name\":\"architecture\",\"namespace\":\"agent\",\"value\":\"x86_64\"},{\"name\":\"hostname\",\"namespace\":\"agent\",\"value\":\"ip-192-168-10-30.ec2.internal\"},{\"name\":\"kernel_name\",\"namespace\":\"agent\",\"value\":\"Linux\"},{\"name\":\"kernel_version\",\"namespace\":\"agent\",\"value\":\"6.1.106-116.188.amzn2023.x86_64\"},{\"name\":\"netmask\",\"namespace\":\"agent\",\"value\":\"255.255.255.0\"},{\"name\":\"os_name\",\"namespace\":\"agent\",\"value\":\"Amazon Linux\"},{\"name\":\"os_version\",\"namespace\":\"agent\",\"value\":\"2023\"},{\"name\":\"primary_ip\",\"namespace\":\"agent\",\"value\":\"192.168.10.30\"},{\"name\":\"time_zone\",\"namespace\":\"agent\",\"value\":\"UTC+0000\"}],\"checkedinAt\":\"2024-09-08T17:14:22.750929Z\",\"cohortId\":\"436761a5-4bb9-4816-9841-5ff0d474aa17\",\"enrollmentLevel\":\"enrolled\",\"healthStatus\":\"online\",\"id\":\"0566f638-3136-4798-be54-e7d063a0e3a6\",\"installedSkills\":[{\"canister\":{\"channel\":\"\",\"release\":\"20240719065026\",\"version\":\"1.0.3\"},\"name\":\"chef-client-interpreter\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240712151631\",\"version\":\"1.0.1\"},\"name\":\"chef-gohai\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240719065234\",\"version\":\"1.4.2\"},\"name\":\"courier-runner\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240712145454\",\"version\":\"1.0.1\"},\"name\":\"node-management-agent\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240712144109\",\"version\":\"1.0.1\"},\"name\":\"restart-interpreter\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240719065152\",\"version\":\"1.0.2\"},\"name\":\"shell-interpreter\",\"native\":null}],\"requiredSkills\":[{\"canister\":{\"channel\":\"\",\"release\":\"20240712145454\",\"version\":\"1.0.1\"},\"name\":\"node-management-agent\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240712144109\",\"version\":\"1.0.1\"},\"name\":\"restart-interpreter\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240712151631\",\"version\":\"1.0.1\"},\"name\":\"chef-gohai\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240719065234\",\"version\":\"1.4.2\"},\"name\":\"courier-runner\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240719065152\",\"version\":\"1.0.2\"},\"name\":\"shell-interpreter\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240719065026\",\"version\":\"1.0.3\"},\"name\":\"chef-client-interpreter\",\"native\":null}]},{\"attributes\":[{\"name\":\"architecture\",\"namespace\":\"agent\",\"value\":\"x86_64\"},{\"name\":\"hostname\",\"namespace\":\"agent\",\"value\":\"ip-192-168-10-20.ec2.internal\"},{\"name\":\"kernel_name\",\"namespace\":\"agent\",\"value\":\"Linux\"},{\"name\":\"kernel_version\",\"namespace\":\"agent\",\"value\":\"6.1.106-116.188.amzn2023.x86_64\"},{\"name\":\"netmask\",\"namespace\":\"agent\",\"value\":\"255.255.255.0\"},{\"name\":\"os_name\",\"namespace\":\"agent\",\"value\":\"Amazon Linux\"},{\"name\":\"os_version\",\"namespace\":\"agent\",\"value\":\"2023\"},{\"name\":\"primary_ip\",\"namespace\":\"agent\",\"value\":\"192.168.10.20\"},{\"name\":\"time_zone\",\"namespace\":\"agent\",\"value\":\"UTC+0000\"},{\"name\":\"fqdn\",\"namespace\":\"enroll\",\"value\":\"192.168.10.20\"},{\"name\":\"cpu_logical_processors\",\"namespace\":\"gohai\",\"value\":\"2\"},{\"name\":\"cpu_stepping\",\"namespace\":\"gohai\",\"value\":\"7\"},{\"name\":\"processor_type\",\"namespace\":\"gohai\",\"value\":\"x86_64\"},{\"name\":\"cpu_cores\",\"namespace\":\"gohai\",\"value\":\"1\"},{\"name\":\"cpu_mhz\",\"namespace\":\"gohai\",\"value\":\"2499.998\"},{\"name\":\"ipaddress\",\"namespace\":\"gohai\",\"value\":\"192.168.10.20\"},{\"name\":\"hostname\",\"namespace\":\"gohai\",\"value\":\"ip-192-168-10-20.ec2.internal\"},{\"name\":\"cpu_family\",\"namespace\":\"gohai\",\"value\":\"6\"},{\"name\":\"cpu_modelname\",\"namespace\":\"gohai\",\"value\":\"Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz\"},{\"name\":\"vendor_id\",\"namespace\":\"gohai\",\"value\":\"GenuineIntel\"},{\"name\":\"total_memory_inbytes\",\"namespace\":\"gohai\",\"value\":\"948944896\"},{\"name\":\"ipaddress_v6\",\"namespace\":\"gohai\",\"value\":\"fe80::d6:5bff:fef1:6745\"},{\"name\":\"kernel_release_date\",\"namespace\":\"gohai\",\"value\":\"#1 SMP PREEMPT_DYNAMIC Tue Aug 27 07:00:36 UTC 2024\"},{\"name\":\"kernel_version\",\"namespace\":\"gohai\",\"value\":\"6.1.106-116.188.amzn2023.x86_64\"},{\"name\":\"machine_architecture\",\"namespace\":\"gohai\",\"value\":\"x86_64\"},{\"name\":\"cpu_model\",\"namespace\":\"gohai\",\"value\":\"85\"},{\"name\":\"total_swapmemory\",\"namespace\":\"gohai\",\"value\":\"0kB\"},{\"name\":\"macaddress\",\"namespace\":\"gohai\",\"value\":\"02:d6:5b:f1:67:45\"},{\"name\":\"kernel_name\",\"namespace\":\"gohai\",\"value\":\"Linux\"},{\"name\":\"os\",\"namespace\":\"gohai\",\"value\":\"GNU/Linux\"},{\"name\":\"instance_type\",\"namespace\":\"gohai\",\"value\":\"aws\"},{\"name\":\"local-ipv4\",\"namespace\":\"aws\",\"value\":\"192.168.10.20\"},{\"name\":\"instance-type\",\"namespace\":\"aws\",\"value\":\"t3.micro\"},{\"name\":\"architecture\",\"namespace\":\"aws\",\"value\":\"x86_64\"},{\"name\":\"availability-zone\",\"namespace\":\"aws\",\"value\":\"us-east-1a\"},{\"name\":\"region\",\"namespace\":\"aws\",\"value\":\"us-east-1\"},{\"name\":\"ami-id\",\"namespace\":\"aws\",\"value\":\"ami-0182f373e66f89c85\"},{\"name\":\"private-ip\",\"namespace\":\"aws\",\"value\":\"192.168.10.20\"},{\"name\":\"hostname\",\"namespace\":\"aws\",\"value\":\"ip-192-168-10-20.ec2.internal\"},{\"name\":\"local-hostname\",\"namespace\":\"aws\",\"value\":\"ip-192-168-10-20.ec2.internal\"},{\"name\":\"mac\",\"namespace\":\"aws\",\"value\":\"02:d6:5b:f1:67:45\"},{\"name\":\"instance-id\",\"namespace\":\"aws\",\"value\":\"i-0e284de289b4bcb39\"},{\"name\":\"account-id\",\"namespace\":\"aws\",\"value\":\"834902008322\"}],\"checkedinAt\":\"2024-09-08T17:14:46.703893Z\",\"cohortId\":\"436761a5-4bb9-4816-9841-5ff0d474aa17\",\"enrollmentLevel\":\"enrolled\",\"healthStatus\":\"online\",\"id\":\"0a379eb0-3faa-4da0-86b0-91823b420ed6\",\"installedSkills\":[{\"canister\":{\"channel\":\"\",\"release\":\"20240719065026\",\"version\":\"1.0.3\"},\"name\":\"chef-client-interpreter\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240712151631\",\"version\":\"1.0.1\"},\"name\":\"chef-gohai\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240719065234\",\"version\":\"1.4.2\"},\"name\":\"courier-runner\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240712145454\",\"version\":\"1.0.1\"},\"name\":\"node-management-agent\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240712144109\",\"version\":\"1.0.1\"},\"name\":\"restart-interpreter\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240719065152\",\"version\":\"1.0.2\"},\"name\":\"shell-interpreter\",\"native\":null}],\"requiredSkills\":[{\"canister\":{\"channel\":\"\",\"release\":\"20240712145454\",\"version\":\"1.0.1\"},\"name\":\"node-management-agent\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240712144109\",\"version\":\"1.0.1\"},\"name\":\"restart-interpreter\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240719065152\",\"version\":\"1.0.2\"},\"name\":\"shell-interpreter\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240719065234\",\"version\":\"1.4.2\"},\"name\":\"courier-runner\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240719065026\",\"version\":\"1.0.3\"},\"name\":\"chef-client-interpreter\",\"native\":null},{\"canister\":{\"channel\":\"\",\"release\":\"20240712151631\",\"version\":\"1.0.1\"},\"name\":\"chef-gohai\",\"native\":null}]}],\"kind\":\"paginated\",\"pagination\":{\"itemsPerPage\":10,\"nextLink\":\"\",\"page\":1,\"pageItemCount\":4,\"previousLink\":\"\",\"startIndex\":1,\"totalItems\":7,\"totalPages\":1},\"params\":{\"header\":{\"Accept-Encoding\":[\"gzip\"],\"Connection\":[\"close\"],\"Content-Digest\":[\"sha-512=:SCmwdwlae4ziyimvpCUWyK9QYQwyvFHk4e7ARfoVOl4sw8vTkWvWHHNSQ1fNUsc5oWcWena7KB9ERVTMqxgZSg==:\"],\"Content-Length\":[\"182\"],\"Content-Type\":[\"application/json\"],\"Host\":[\"workshop.chef360.io\"],\"Org-Id\":[\"8b0e5dba-cbae-40c8-a523-5962a0091f3a\"],\"Session-Id\":[\"304e2e35-168f-4b2d-88c4-a1928584d31d\"],\"Signature\":[\"sig1=:/DP+a67t9HIE+71VSPzOxT0wNGtnZ9E4Y8OAjMFYJVAB57dMsLGS1fO5crqeResy78M7xrEzpT+3gj4n7mIDCg==:\"],\"Signature-Input\":[\"sig1=(\\\"@method\\\" \\\"@path\\\" \\\"@query\\\" \\\"x-date\\\" \\\"content-digest\\\" \\\"host\\\" \\\"x-forwarded-for\\\" \\\"tenant-id\\\" \\\"org-id\\\" \\\"session-id\\\" \\\"user-role-name\\\" \\\"user-email\\\" \\\"user-type\\\" \\\"user-role-level\\\" \\\"x-gateway-host\\\" \\\"accept-encoding\\\" \\\"user-id\\\" \\\"user-role-id\\\" \\\"content-length\\\" \\\"content-type\\\" \\\"user-agent\\\" \\\"x-request-id\\\" \\\"connection\\\");created=1725815688;keyid=\\\"test-key-id-public\\\"\"],\"Tenant-Id\":[\"f5b83baf-0db1-4423-9a27-fcb63c4842e6\"],\"User-Agent\":[\"Go-http-client/1.1\"],\"User-Email\":[\"workshop@chef360.io\"],\"User-Id\":[\"47560019-b152-40a1-a977-4229fa2add91\"],\"User-Role-Id\":[\"5fcb0235-1e56-4ece-8857-404a5d39a290\"],\"User-Role-Level\":[\"tenant\"],\"User-Role-Name\":[\"tenant-admin\"],\"User-Type\":[\"local\"],\"X-Date\":[\"Sun, 08 Sep 2024 17:14:48 UTC\"],\"X-Forwarded-For\":[\"192.168.0.11\"],\"X-Gateway-Host\":[\"public-api-gateway:8000\"],\"X-Hostname\":[\"workshop.chef360.io\"],\"X-Protocol\":[\"http\"],\"X-Real-Ip\":[\"10.244.181.2\"],\"X-Request-Id\":[\"48d944c5-197a-43cd-a671-6f5acafd1895\"]},\"path\":null,\"query\":{\"expand\":\"true\",\"pagination.page\":\"\",\"pagination.size\":\"\"}}}\n"}
+2024-09-08T17:14:48Z | debug | plugins/request_accesskey.go:266 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*Keys).After | Exiting After function of Request Accesskey plugin | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.316893062Z", "timeSpent": "328.708085ms", "timeSpentMilliseconds": 328}
+2024-09-08T17:14:48Z | debug | plugins/request_logger.go:24 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | Inside After function of RequestLogger | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317147725Z", "timeSpent": "328.962748ms", "timeSpentMilliseconds": 328}
+2024-09-08T17:14:48Z | info | plugins/request_logger.go:27 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | Request: POST http://workshop.chef360.io/node/management/v1/filters/exec?expand=true - 266.521368ms
+ | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317209052Z", "timeSpent": "329.024075ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | info | plugins/request_logger.go:29 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | Request Headers:  | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317233682Z", "timeSpent": "329.048705ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | info | plugins/request_logger.go:32 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | 	Content-Type: [application/json] | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317267343Z", "timeSpent": "329.082366ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | info | plugins/request_logger.go:32 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | 	X-Date: [Sun, 08 Sep 2024 17:14:48 UTC] | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317281085Z", "timeSpent": "329.096108ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | info | plugins/request_logger.go:32 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | 	Authorization: [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJPcmdJZCI6IjhiMGU1ZGJhLWNiYWUtNDBjOC1hNTIzLTU5NjJhMDA5MWYzYSIsIlNlc3Npb25JZCI6IjMwNGUyZTM1LTE2OGYtNGIyZC04OGM0LWExOTI4NTg0ZDMxZCIsIlRlbmFudElkIjoiZjViODNiYWYtMGRiMS00NDIzLTlhMjctZmNiNjNjNDg0MmU2IiwiVXNlckVtYWlsIjoid29ya3Nob3BAY2hlZjM2MC5pbyIsIlVzZXJJZCI6IjQ3NTYwMDE5LWIxNTItNDBhMS1hOTc3LTQyMjlmYTJhZGQ5MSIsIlVzZXJSb2xlSWQiOiI1ZmNiMDIzNS0xZTU2LTRlY2UtODg1Ny00MDRhNWQzOWEyOTAiLCJVc2VyUm9sZUxldmVsIjoidGVuYW50IiwiVXNlclJvbGVOYW1lIjoidGVuYW50LWFkbWluIiwiVXNlclR5cGUiOiJsb2NhbCIsImV4cCI6MTcyNTgxNjI2MX0.dlBmuB3Vj4m3wBxNThz2PKf2FYK6cENjFNjjeiPwkPY] | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317293343Z", "timeSpent": "329.108366ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | debug | plugins/request_logger.go:36 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | Response: {"code":200,"items":[{"attributes":[{"name":"architecture","namespace":"agent","value":"x86_64"},{"name":"hostname","namespace":"agent","value":"ip-192-168-10-10.ec2.internal"},{"name":"kernel_name","namespace":"agent","value":"Linux"},{"name":"kernel_version","namespace":"agent","value":"6.1.106-116.188.amzn2023.x86_64"},{"name":"netmask","namespace":"agent","value":"255.255.255.0"},{"name":"os_name","namespace":"agent","value":"Amazon Linux"},{"name":"os_version","namespace":"agent","value":"2023"},{"name":"primary_ip","namespace":"agent","value":"192.168.10.10"},{"name":"time_zone","namespace":"agent","value":"UTC+0000"},{"name":"fqdn","namespace":"enroll","value":"192.168.10.10"},{"name":"cpu_logical_processors","namespace":"gohai","value":"2"},{"name":"vendor_id","namespace":"gohai","value":"GenuineIntel"},{"name":"cpu_family","namespace":"gohai","value":"6"},{"name":"cpu_modelname","namespace":"gohai","value":"Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz"},{"name":"processor_type","namespace":"gohai","value":"x86_64"},{"name":"kernel_release_date","namespace":"gohai","value":"#1 SMP PREEMPT_DYNAMIC Tue Aug 27 07:00:36 UTC 2024"},{"name":"machine_architecture","namespace":"gohai","value":"x86_64"},{"name":"cpu_cores","namespace":"gohai","value":"1"},{"name":"cpu_model","namespace":"gohai","value":"85"},{"name":"cpu_stepping","namespace":"gohai","value":"7"},{"name":"total_swapmemory","namespace":"gohai","value":"0kB"},{"name":"macaddress","namespace":"gohai","value":"02:c8:31:61:7b:bb"},{"name":"hostname","namespace":"gohai","value":"ip-192-168-10-10.ec2.internal"},{"name":"os","namespace":"gohai","value":"GNU/Linux"},{"name":"instance_type","namespace":"gohai","value":"aws"},{"name":"cpu_mhz","namespace":"gohai","value":"2499.996"},{"name":"total_memory_inbytes","namespace":"gohai","value":"948940800"},{"name":"ipaddress","namespace":"gohai","value":"192.168.10.10"},{"name":"ipaddress_v6","namespace":"gohai","value":"fe80::c8:31ff:fe61:7bbb"},{"name":"kernel_name","namespace":"gohai","value":"Linux"},{"name":"kernel_version","namespace":"gohai","value":"6.1.106-116.188.amzn2023.x86_64"},{"name":"local-hostname","namespace":"aws","value":"ip-192-168-10-10.ec2.internal"},{"name":"availability-zone","namespace":"aws","value":"us-east-1a"},{"name":"private-ip","namespace":"aws","value":"192.168.10.10"},{"name":"instance-id","namespace":"aws","value":"i-0b0288a7986eed976"},{"name":"ami-id","namespace":"aws","value":"ami-0182f373e66f89c85"},{"name":"hostname","namespace":"aws","value":"ip-192-168-10-10.ec2.internal"},{"name":"local-ipv4","namespace":"aws","value":"192.168.10.10"},{"name":"mac","namespace":"aws","value":"02:c8:31:61:7b:bb"},{"name":"region","namespace":"aws","value":"us-east-1"},{"name":"instance-type","namespace":"aws","value":"t3.micro"},{"name":"account-id","namespace":"aws","value":"834902008322"},{"name":"architecture","namespace":"aws","value":"x86_64"}],"checkedinAt":"2024-09-08T17:14:13.165035Z","cohortId":"436761a5-4bb9-4816-9841-5ff0d474aa17","enrollmentLevel":"enrolled","healthStatus":"online","id":"09f552af-9dc3-4c3e-97da-580a3530782d","installedSkills":[{"canister":{"channel":"","release":"20240719065026","version":"1.0.3"},"name":"chef-client-interpreter","native":null},{"canister":{"channel":"","release":"20240712151631","version":"1.0.1"},"name":"chef-gohai","native":null},{"canister":{"channel":"","release":"20240719065234","version":"1.4.2"},"name":"courier-runner","native":null},{"canister":{"channel":"","release":"20240712145454","version":"1.0.1"},"name":"node-management-agent","native":null},{"canister":{"channel":"","release":"20240712144109","version":"1.0.1"},"name":"restart-interpreter","native":null},{"canister":{"channel":"","release":"20240719065152","version":"1.0.2"},"name":"shell-interpreter","native":null}],"requiredSkills":[{"canister":{"channel":"","release":"20240712145454","version":"1.0.1"},"name":"node-management-agent","native":null},{"canister":{"channel":"","release":"20240719065234","version":"1.4.2"},"name":"courier-runner","native":null},{"canister":{"channel":"","release":"20240712151631","version":"1.0.1"},"name":"chef-gohai","native":null},{"canister":{"channel":"","release":"20240712144109","version":"1.0.1"},"name":"restart-interpreter","native":null},{"canister":{"channel":"","release":"20240719065152","version":"1.0.2"},"name":"shell-interpreter","native":null},{"canister":{"channel":"","release":"20240719065026","version":"1.0.3"},"name":"chef-client-interpreter","native":null}]},{"attributes":[{"name":"architecture","namespace":"agent","value":"x86_64"},{"name":"hostname","namespace":"agent","value":"ip-192-168-0-11.ec2.internal"},{"name":"kernel_name","namespace":"agent","value":"Linux"},{"name":"kernel_version","namespace":"agent","value":"6.1.106-116.188.amzn2023.x86_64"},{"name":"netmask","namespace":"agent","value":"255.255.255.0"},{"name":"os_name","namespace":"agent","value":"Amazon Linux"},{"name":"os_version","namespace":"agent","value":"2023"},{"name":"primary_ip","namespace":"agent","value":"192.168.0.11"},{"name":"time_zone","namespace":"agent","value":"UTC+0000"},{"name":"fqdn","namespace":"enroll","value":"192.168.0.11"}],"checkedinAt":"2024-09-08T17:14:32.016451Z","cohortId":"2af4f9b5-254d-4f55-a8f1-c82ed0cdb5db","enrollmentLevel":"enrolled","healthStatus":"online","id":"cd5f25f4-dd01-47a6-b82d-30cd3f014a0d","installedSkills":[{"canister":{"channel":"","release":"20240712145454","version":"1.0.1"},"name":"node-management-agent","native":null}],"requiredSkills":[{"canister":{"channel":"","release":"20240712145454","version":"1.0.1"},"name":"node-management-agent","native":null}]},{"attributes":[{"name":"fqdn","namespace":"enroll","value":"192.168.10.30"},{"name":"ipaddress","namespace":"gohai","value":"192.168.10.30"},{"name":"kernel_release_date","namespace":"gohai","value":"#1 SMP PREEMPT_DYNAMIC Tue Aug 27 07:00:36 UTC 2024"},{"name":"machine_architecture","namespace":"gohai","value":"x86_64"},{"name":"cpu_modelname","namespace":"gohai","value":"Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz"},{"name":"cpu_stepping","namespace":"gohai","value":"7"},{"name":"cpu_mhz","namespace":"gohai","value":"2500.004"},{"name":"cpu_model","namespace":"gohai","value":"85"},{"name":"vendor_id","namespace":"gohai","value":"GenuineIntel"},{"name":"total_swapmemory","namespace":"gohai","value":"0kB"},{"name":"total_memory_inbytes","namespace":"gohai","value":"948940800"},{"name":"kernel_name","namespace":"gohai","value":"Linux"},{"name":"cpu_cores","namespace":"gohai","value":"1"},{"name":"cpu_logical_processors","namespace":"gohai","value":"2"},{"name":"kernel_version","namespace":"gohai","value":"6.1.106-116.188.amzn2023.x86_64"},{"name":"instance_type","namespace":"gohai","value":"aws"},{"name":"ipaddress_v6","namespace":"gohai","value":"fe80::34:f0ff:feba:70f9"},{"name":"os","namespace":"gohai","value":"GNU/Linux"},{"name":"hostname","namespace":"gohai","value":"ip-192-168-10-30.ec2.internal"},{"name":"processor_type","namespace":"gohai","value":"x86_64"},{"name":"cpu_family","namespace":"gohai","value":"6"},{"name":"macaddress","namespace":"gohai","value":"02:34:f0:ba:70:f9"},{"name":"availability-zone","namespace":"aws","value":"us-east-1a"},{"name":"ami-id","namespace":"aws","value":"ami-0182f373e66f89c85"},{"name":"region","namespace":"aws","value":"us-east-1"},{"name":"architecture","namespace":"aws","value":"x86_64"},{"name":"hostname","namespace":"aws","value":"ip-192-168-10-30.ec2.internal"},{"name":"local-hostname","namespace":"aws","value":"ip-192-168-10-30.ec2.internal"},{"name":"instance-type","namespace":"aws","value":"t3.micro"},{"name":"account-id","namespace":"aws","value":"834902008322"},{"name":"private-ip","namespace":"aws","value":"192.168.10.30"},{"name":"local-ipv4","namespace":"aws","value":"192.168.10.30"},{"name":"mac","namespace":"aws","value":"02:34:f0:ba:70:f9"},{"name":"instance-id","namespace":"aws","value":"i-098984c0a30cdf883"},{"name":"architecture","namespace":"agent","value":"x86_64"},{"name":"hostname","namespace":"agent","value":"ip-192-168-10-30.ec2.internal"},{"name":"kernel_name","namespace":"agent","value":"Linux"},{"name":"kernel_version","namespace":"agent","value":"6.1.106-116.188.amzn2023.x86_64"},{"name":"netmask","namespace":"agent","value":"255.255.255.0"},{"name":"os_name","namespace":"agent","value":"Amazon Linux"},{"name":"os_version","namespace":"agent","value":"2023"},{"name":"primary_ip","namespace":"agent","value":"192.168.10.30"},{"name":"time_zone","namespace":"agent","value":"UTC+0000"}],"checkedinAt":"2024-09-08T17:14:22.750929Z","cohortId":"436761a5-4bb9-4816-9841-5ff0d474aa17","enrollmentLevel":"enrolled","healthStatus":"online","id":"0566f638-3136-4798-be54-e7d063a0e3a6","installedSkills":[{"canister":{"channel":"","release":"20240719065026","version":"1.0.3"},"name":"chef-client-interpreter","native":null},{"canister":{"channel":"","release":"20240712151631","version":"1.0.1"},"name":"chef-gohai","native":null},{"canister":{"channel":"","release":"20240719065234","version":"1.4.2"},"name":"courier-runner","native":null},{"canister":{"channel":"","release":"20240712145454","version":"1.0.1"},"name":"node-management-agent","native":null},{"canister":{"channel":"","release":"20240712144109","version":"1.0.1"},"name":"restart-interpreter","native":null},{"canister":{"channel":"","release":"20240719065152","version":"1.0.2"},"name":"shell-interpreter","native":null}],"requiredSkills":[{"canister":{"channel":"","release":"20240712145454","version":"1.0.1"},"name":"node-management-agent","native":null},{"canister":{"channel":"","release":"20240712144109","version":"1.0.1"},"name":"restart-interpreter","native":null},{"canister":{"channel":"","release":"20240712151631","version":"1.0.1"},"name":"chef-gohai","native":null},{"canister":{"channel":"","release":"20240719065234","version":"1.4.2"},"name":"courier-runner","native":null},{"canister":{"channel":"","release":"20240719065152","version":"1.0.2"},"name":"shell-interpreter","native":null},{"canister":{"channel":"","release":"20240719065026","version":"1.0.3"},"name":"chef-client-interpreter","native":null}]},{"attributes":[{"name":"architecture","namespace":"agent","value":"x86_64"},{"name":"hostname","namespace":"agent","value":"ip-192-168-10-20.ec2.internal"},{"name":"kernel_name","namespace":"agent","value":"Linux"},{"name":"kernel_version","namespace":"agent","value":"6.1.106-116.188.amzn2023.x86_64"},{"name":"netmask","namespace":"agent","value":"255.255.255.0"},{"name":"os_name","namespace":"agent","value":"Amazon Linux"},{"name":"os_version","namespace":"agent","value":"2023"},{"name":"primary_ip","namespace":"agent","value":"192.168.10.20"},{"name":"time_zone","namespace":"agent","value":"UTC+0000"},{"name":"fqdn","namespace":"enroll","value":"192.168.10.20"},{"name":"cpu_logical_processors","namespace":"gohai","value":"2"},{"name":"cpu_stepping","namespace":"gohai","value":"7"},{"name":"processor_type","namespace":"gohai","value":"x86_64"},{"name":"cpu_cores","namespace":"gohai","value":"1"},{"name":"cpu_mhz","namespace":"gohai","value":"2499.998"},{"name":"ipaddress","namespace":"gohai","value":"192.168.10.20"},{"name":"hostname","namespace":"gohai","value":"ip-192-168-10-20.ec2.internal"},{"name":"cpu_family","namespace":"gohai","value":"6"},{"name":"cpu_modelname","namespace":"gohai","value":"Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz"},{"name":"vendor_id","namespace":"gohai","value":"GenuineIntel"},{"name":"total_memory_inbytes","namespace":"gohai","value":"948944896"},{"name":"ipaddress_v6","namespace":"gohai","value":"fe80::d6:5bff:fef1:6745"},{"name":"kernel_release_date","namespace":"gohai","value":"#1 SMP PREEMPT_DYNAMIC Tue Aug 27 07:00:36 UTC 2024"},{"name":"kernel_version","namespace":"gohai","value":"6.1.106-116.188.amzn2023.x86_64"},{"name":"machine_architecture","namespace":"gohai","value":"x86_64"},{"name":"cpu_model","namespace":"gohai","value":"85"},{"name":"total_swapmemory","namespace":"gohai","value":"0kB"},{"name":"macaddress","namespace":"gohai","value":"02:d6:5b:f1:67:45"},{"name":"kernel_name","namespace":"gohai","value":"Linux"},{"name":"os","namespace":"gohai","value":"GNU/Linux"},{"name":"instance_type","namespace":"gohai","value":"aws"},{"name":"local-ipv4","namespace":"aws","value":"192.168.10.20"},{"name":"instance-type","namespace":"aws","value":"t3.micro"},{"name":"architecture","namespace":"aws","value":"x86_64"},{"name":"availability-zone","namespace":"aws","value":"us-east-1a"},{"name":"region","namespace":"aws","value":"us-east-1"},{"name":"ami-id","namespace":"aws","value":"ami-0182f373e66f89c85"},{"name":"private-ip","namespace":"aws","value":"192.168.10.20"},{"name":"hostname","namespace":"aws","value":"ip-192-168-10-20.ec2.internal"},{"name":"local-hostname","namespace":"aws","value":"ip-192-168-10-20.ec2.internal"},{"name":"mac","namespace":"aws","value":"02:d6:5b:f1:67:45"},{"name":"instance-id","namespace":"aws","value":"i-0e284de289b4bcb39"},{"name":"account-id","namespace":"aws","value":"834902008322"}],"checkedinAt":"2024-09-08T17:14:46.703893Z","cohortId":"436761a5-4bb9-4816-9841-5ff0d474aa17","enrollmentLevel":"enrolled","healthStatus":"online","id":"0a379eb0-3faa-4da0-86b0-91823b420ed6","installedSkills":[{"canister":{"channel":"","release":"20240719065026","version":"1.0.3"},"name":"chef-client-interpreter","native":null},{"canister":{"channel":"","release":"20240712151631","version":"1.0.1"},"name":"chef-gohai","native":null},{"canister":{"channel":"","release":"20240719065234","version":"1.4.2"},"name":"courier-runner","native":null},{"canister":{"channel":"","release":"20240712145454","version":"1.0.1"},"name":"node-management-agent","native":null},{"canister":{"channel":"","release":"20240712144109","version":"1.0.1"},"name":"restart-interpreter","native":null},{"canister":{"channel":"","release":"20240719065152","version":"1.0.2"},"name":"shell-interpreter","native":null}],"requiredSkills":[{"canister":{"channel":"","release":"20240712145454","version":"1.0.1"},"name":"node-management-agent","native":null},{"canister":{"channel":"","release":"20240712144109","version":"1.0.1"},"name":"restart-interpreter","native":null},{"canister":{"channel":"","release":"20240719065152","version":"1.0.2"},"name":"shell-interpreter","native":null},{"canister":{"channel":"","release":"20240719065234","version":"1.4.2"},"name":"courier-runner","native":null},{"canister":{"channel":"","release":"20240719065026","version":"1.0.3"},"name":"chef-client-interpreter","native":null},{"canister":{"channel":"","release":"20240712151631","version":"1.0.1"},"name":"chef-gohai","native":null}]}],"kind":"paginated","pagination":{"itemsPerPage":10,"nextLink":"","page":1,"pageItemCount":4,"previousLink":"","startIndex":1,"totalItems":7,"totalPages":1},"params":{"header":{"Accept-Encoding":["gzip"],"Connection":["close"],"Content-Digest":["sha-512=:SCmwdwlae4ziyimvpCUWyK9QYQwyvFHk4e7ARfoVOl4sw8vTkWvWHHNSQ1fNUsc5oWcWena7KB9ERVTMqxgZSg==:"],"Content-Length":["182"],"Content-Type":["application/json"],"Host":["workshop.chef360.io"],"Org-Id":["8b0e5dba-cbae-40c8-a523-5962a0091f3a"],"Session-Id":["304e2e35-168f-4b2d-88c4-a1928584d31d"],"Signature":["sig1=:/DP+a67t9HIE+71VSPzOxT0wNGtnZ9E4Y8OAjMFYJVAB57dMsLGS1fO5crqeResy78M7xrEzpT+3gj4n7mIDCg==:"],"Signature-Input":["sig1=(\"@method\" \"@path\" \"@query\" \"x-date\" \"content-digest\" \"host\" \"x-forwarded-for\" \"tenant-id\" \"org-id\" \"session-id\" \"user-role-name\" \"user-email\" \"user-type\" \"user-role-level\" \"x-gateway-host\" \"accept-encoding\" \"user-id\" \"user-role-id\" \"content-length\" \"content-type\" \"user-agent\" \"x-request-id\" \"connection\");created=1725815688;keyid=\"test-key-id-public\""],"Tenant-Id":["f5b83baf-0db1-4423-9a27-fcb63c4842e6"],"User-Agent":["Go-http-client/1.1"],"User-Email":["workshop@chef360.io"],"User-Id":["47560019-b152-40a1-a977-4229fa2add91"],"User-Role-Id":["5fcb0235-1e56-4ece-8857-404a5d39a290"],"User-Role-Level":["tenant"],"User-Role-Name":["tenant-admin"],"User-Type":["local"],"X-Date":["Sun, 08 Sep 2024 17:14:48 UTC"],"X-Forwarded-For":["192.168.0.11"],"X-Gateway-Host":["public-api-gateway:8000"],"X-Hostname":["workshop.chef360.io"],"X-Protocol":["http"],"X-Real-Ip":["10.244.181.2"],"X-Request-Id":["48d944c5-197a-43cd-a671-6f5acafd1895"]},"path":null,"query":{"expand":"true","pagination.page":"","pagination.size":""}}}
+
+ | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317351703Z", "timeSpent": "329.166726ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | info | plugins/request_logger.go:38 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | Response Headers:  | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317376528Z", "timeSpent": "329.191551ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | info | plugins/request_logger.go:41 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | 	Content-Digest: [sha-512=:Imws0KoaA4oMroYkUEwJWu2hMG9mNbnT4WuwnuqMHSjwnEPPVCaby7lEhfVRJ3kL0I2gtUlXlBxYk7djx16Mrg==:] | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317388807Z", "timeSpent": "329.20383ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | info | plugins/request_logger.go:41 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | 	Date: [Sun, 08 Sep 2024 17:14:48 GMT] | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317416687Z", "timeSpent": "329.23171ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | info | plugins/request_logger.go:41 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | 	Content-Type: [application/json] | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317430884Z", "timeSpent": "329.245907ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | info | plugins/request_logger.go:41 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | 	Server: [nginx/1.24.0] | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.31744426Z", "timeSpent": "329.259283ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | info | plugins/request_logger.go:41 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | 	Content-Length: [16448] | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317455584Z", "timeSpent": "329.270607ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | info | plugins/request_logger.go:41 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | 	Connection: [keep-alive] | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317466868Z", "timeSpent": "329.281891ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | info | plugins/request_logger.go:41 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | 	Signature: [sig1=:BWlKB1Rg60vsuEM3y+QiLupwHBBP0aVdvCv7VAcQIQei4kpEbcktzk2kDJ8IGUa8mvntKVt8D3Hd2YfgXJoHDQ==:] | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.31749392Z", "timeSpent": "329.308943ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | info | plugins/request_logger.go:41 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | 	X-Request-Id: [48d944c5-197a-43cd-a671-6f5acafd1895] | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317505332Z", "timeSpent": "329.320355ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | info | plugins/request_logger.go:41 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | 	X-Real-Ip: [10.244.181.2] | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.31752019Z", "timeSpent": "329.335213ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | info | plugins/request_logger.go:41 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | 	X-Date: [Sun, 08 Sep 2024 17:14:48 UTC] | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317531758Z", "timeSpent": "329.346781ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | info | plugins/request_logger.go:41 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | 	Signature-Input: [sig1=("@method" "@path" "@query" "x-date" "content-digest" "content-length" "content-type" "x-request-id" "x-real-ip");created=1725815688;keyid="test-key-id-public"] | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317544704Z", "timeSpent": "329.359727ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | debug | plugins/request_logger.go:44 | github.com/progress-platform-services/platform-common/pweb/pagent/plugins.(*RequestLogger).After | Exiting After function of RequestLogger | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317569986Z", "timeSpent": "329.385009ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | debug | pagent/agent.go:296 | github.com/progress-platform-services/platform-common/pweb/pagent.(*Agent[...]).do | Exiting do function of agent | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.31758434Z", "timeSpent": "329.399363ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | info | utils/util.codegen.go:28 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management/utils.VerifyResponse | Entered VerifyResponse | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317599863Z", "timeSpent": "329.414886ms", "timeSpentMilliseconds": 329}
+2024-09-08T17:14:48Z | debug | utils/util.codegen.go:30 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management/utils.VerifyResponse | Found content digest header | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317615653Z", "timeSpent": "329.430676ms", "timeSpentMilliseconds": 329, "Content-Digest": ["sha-512=:Imws0KoaA4oMroYkUEwJWu2hMG9mNbnT4WuwnuqMHSjwnEPPVCaby7lEhfVRJ3kL0I2gtUlXlBxYk7djx16Mrg==:"]}
+2024-09-08T17:14:48Z | debug | utils/util.codegen.go:42 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management/utils.VerifyResponse | Response digest verified successfully | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.31773854Z", "timeSpent": "329.553563ms", "timeSpentMilliseconds": 329, "Content-Digest": ["sha-512=:Imws0KoaA4oMroYkUEwJWu2hMG9mNbnT4WuwnuqMHSjwnEPPVCaby7lEhfVRJ3kL0I2gtUlXlBxYk7djx16Mrg==:"]}
+2024-09-08T17:14:48Z | debug | utils/util.codegen.go:49 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management/utils.VerifyResponse | Response signature could not be verified, will try to fetch public key from gateway | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.317797584Z", "timeSpent": "329.612607ms", "timeSpentMilliseconds": 329, "ok": false, "err": "could not find the specified public key: test-key-id-public, failed to get public key test-key-id-public data in cache"}
+2024-09-08T17:14:48Z | debug | utils/util.codegen.go:60 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management/utils.VerifyResponse | Successfully fetched public key from gateway | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.337269288Z", "timeSpent": "349.084311ms", "timeSpentMilliseconds": 349, "gatewayPub": {"Name":"test-key-id-public","Pem":"-----BEGIN PUBLIC KEY-----\nnJSuNSPsEHDpDTT7Fi19zcBRHdctSPl2P/VRZ1gl88w=\n-----END PUBLIC KEY-----\n","Algorithm":"ed25519","ExpireAt":"2024-12-20T12:29:46Z"}}
+2024-09-08T17:14:48Z | info | utils/util.codegen.go:76 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management/utils.VerifyResponse | Response signature verified successfully | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.337978012Z", "timeSpent": "349.793035ms", "timeSpentMilliseconds": 349}
+2024-09-08T17:14:48Z | info | utils/util.codegen.go:81 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management/utils.CheckForKeyRotation | Entered CheckForKeyRotation | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.338012388Z", "timeSpent": "349.827411ms", "timeSpentMilliseconds": 349}
+2024-09-08T17:14:48Z | debug | utils/util.codegen.go:82 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management/utils.CheckForKeyRotation | Entered CheckForKeyRotation | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.338074084Z", "timeSpent": "349.889107ms", "timeSpentMilliseconds": 349, "headers": {"Connection":["keep-alive"],"Content-Digest":["sha-512=:Imws0KoaA4oMroYkUEwJWu2hMG9mNbnT4WuwnuqMHSjwnEPPVCaby7lEhfVRJ3kL0I2gtUlXlBxYk7djx16Mrg==:"],"Content-Length":["16448"],"Content-Type":["application/json"],"Date":["Sun, 08 Sep 2024 17:14:48 GMT"],"Server":["nginx/1.24.0"],"Signature":["sig1=:BWlKB1Rg60vsuEM3y+QiLupwHBBP0aVdvCv7VAcQIQei4kpEbcktzk2kDJ8IGUa8mvntKVt8D3Hd2YfgXJoHDQ==:"],"Signature-Input":["sig1=(\"@method\" \"@path\" \"@query\" \"x-date\" \"content-digest\" \"content-length\" \"content-type\" \"x-request-id\" \"x-real-ip\");created=1725815688;keyid=\"test-key-id-public\""],"X-Date":["Sun, 08 Sep 2024 17:14:48 UTC"],"X-Real-Ip":["10.244.181.2"],"X-Request-Id":["48d944c5-197a-43cd-a671-6f5acafd1895"]}}
+2024-09-08T17:14:48Z | debug | utils/util.codegen.go:88 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management/utils.CheckForKeyRotation | Did not find rotate-key header | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.338126111Z", "timeSpent": "349.941134ms", "timeSpentMilliseconds": 349}
+2024-09-08T17:14:48Z | debug | filter/filter.codegen.go:361 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management/filter.(*FilterClientImpl).FiltersRunAdhocFilter | Exiting FiltersRunAdhocFilter method | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.33930724Z", "timeSpent": "351.122263ms", "timeSpentMilliseconds": 351, "responseModel": {"StatusCode":200,"Response200":{"code":200,"items":[{"attributes":[{"name":"architecture","namespace":"agent","value":"x86_64"},{"name":"hostname","namespace":"agent","value":"ip-192-168-10-10.ec2.internal"},{"name":"kernel_name","namespace":"agent","value":"Linux"},{"name":"kernel_version","namespace":"agent","value":"6.1.106-116.188.amzn2023.x86_64"},{"name":"netmask","namespace":"agent","value":"255.255.255.0"},{"name":"os_name","namespace":"agent","value":"Amazon Linux"},{"name":"os_version","namespace":"agent","value":"2023"},{"name":"primary_ip","namespace":"agent","value":"192.168.10.10"},{"name":"time_zone","namespace":"agent","value":"UTC+0000"},{"name":"fqdn","namespace":"enroll","value":"192.168.10.10"},{"name":"cpu_logical_processors","namespace":"gohai","value":"2"},{"name":"vendor_id","namespace":"gohai","value":"GenuineIntel"},{"name":"cpu_family","namespace":"gohai","value":"6"},{"name":"cpu_modelname","namespace":"gohai","value":"Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz"},{"name":"processor_type","namespace":"gohai","value":"x86_64"},{"name":"kernel_release_date","namespace":"gohai","value":"#1 SMP PREEMPT_DYNAMIC Tue Aug 27 07:00:36 UTC 2024"},{"name":"machine_architecture","namespace":"gohai","value":"x86_64"},{"name":"cpu_cores","namespace":"gohai","value":"1"},{"name":"cpu_model","namespace":"gohai","value":"85"},{"name":"cpu_stepping","namespace":"gohai","value":"7"},{"name":"total_swapmemory","namespace":"gohai","value":"0kB"},{"name":"macaddress","namespace":"gohai","value":"02:c8:31:61:7b:bb"},{"name":"hostname","namespace":"gohai","value":"ip-192-168-10-10.ec2.internal"},{"name":"os","namespace":"gohai","value":"GNU/Linux"},{"name":"instance_type","namespace":"gohai","value":"aws"},{"name":"cpu_mhz","namespace":"gohai","value":"2499.996"},{"name":"total_memory_inbytes","namespace":"gohai","value":"948940800"},{"name":"ipaddress","namespace":"gohai","value":"192.168.10.10"},{"name":"ipaddress_v6","namespace":"gohai","value":"fe80::c8:31ff:fe61:7bbb"},{"name":"kernel_name","namespace":"gohai","value":"Linux"},{"name":"kernel_version","namespace":"gohai","value":"6.1.106-116.188.amzn2023.x86_64"},{"name":"local-hostname","namespace":"aws","value":"ip-192-168-10-10.ec2.internal"},{"name":"availability-zone","namespace":"aws","value":"us-east-1a"},{"name":"private-ip","namespace":"aws","value":"192.168.10.10"},{"name":"instance-id","namespace":"aws","value":"i-0b0288a7986eed976"},{"name":"ami-id","namespace":"aws","value":"ami-0182f373e66f89c85"},{"name":"hostname","namespace":"aws","value":"ip-192-168-10-10.ec2.internal"},{"name":"local-ipv4","namespace":"aws","value":"192.168.10.10"},{"name":"mac","namespace":"aws","value":"02:c8:31:61:7b:bb"},{"name":"region","namespace":"aws","value":"us-east-1"},{"name":"instance-type","namespace":"aws","value":"t3.micro"},{"name":"account-id","namespace":"aws","value":"834902008322"},{"name":"architecture","namespace":"aws","value":"x86_64"}],"checkedinAt":"2024-09-08T17:14:13.165035Z","cohortId":"436761a5-4bb9-4816-9841-5ff0d474aa17","enrollmentLevel":"enrolled","healthStatus":"online","id":"09f552af-9dc3-4c3e-97da-580a3530782d","installedSkills":[{"canister":{"channel":"","release":"20240719065026","version":"1.0.3"},"name":"chef-client-interpreter","native":null},{"canister":{"channel":"","release":"20240712151631","version":"1.0.1"},"name":"chef-gohai","native":null},{"canister":{"channel":"","release":"20240719065234","version":"1.4.2"},"name":"courier-runner","native":null},{"canister":{"channel":"","release":"20240712145454","version":"1.0.1"},"name":"node-management-agent","native":null},{"canister":{"channel":"","release":"20240712144109","version":"1.0.1"},"name":"restart-interpreter","native":null},{"canister":{"channel":"","release":"20240719065152","version":"1.0.2"},"name":"shell-interpreter","native":null}],"requiredSkills":[{"canister":{"channel":"","release":"20240712145454","version":"1.0.1"},"name":"node-management-agent","native":null},{"canister":{"channel":"","release":"20240719065234","version":"1.4.2"},"name":"courier-runner","native":null},{"canister":{"channel":"","release":"20240712151631","version":"1.0.1"},"name":"chef-gohai","native":null},{"canister":{"channel":"","release":"20240712144109","version":"1.0.1"},"name":"restart-interpreter","native":null},{"canister":{"channel":"","release":"20240719065152","version":"1.0.2"},"name":"shell-interpreter","native":null},{"canister":{"channel":"","release":"20240719065026","version":"1.0.3"},"name":"chef-client-interpreter","native":null}]},{"attributes":[{"name":"architecture","namespace":"agent","value":"x86_64"},{"name":"hostname","namespace":"agent","value":"ip-192-168-0-11.ec2.internal"},{"name":"kernel_name","namespace":"agent","value":"Linux"},{"name":"kernel_version","namespace":"agent","value":"6.1.106-116.188.amzn2023.x86_64"},{"name":"netmask","namespace":"agent","value":"255.255.255.0"},{"name":"os_name","namespace":"agent","value":"Amazon Linux"},{"name":"os_version","namespace":"agent","value":"2023"},{"name":"primary_ip","namespace":"agent","value":"192.168.0.11"},{"name":"time_zone","namespace":"agent","value":"UTC+0000"},{"name":"fqdn","namespace":"enroll","value":"192.168.0.11"}],"checkedinAt":"2024-09-08T17:14:32.016451Z","cohortId":"2af4f9b5-254d-4f55-a8f1-c82ed0cdb5db","enrollmentLevel":"enrolled","healthStatus":"online","id":"cd5f25f4-dd01-47a6-b82d-30cd3f014a0d","installedSkills":[{"canister":{"channel":"","release":"20240712145454","version":"1.0.1"},"name":"node-management-agent","native":null}],"requiredSkills":[{"canister":{"channel":"","release":"20240712145454","version":"1.0.1"},"name":"node-management-agent","native":null}]},{"attributes":[{"name":"fqdn","namespace":"enroll","value":"192.168.10.30"},{"name":"ipaddress","namespace":"gohai","value":"192.168.10.30"},{"name":"kernel_release_date","namespace":"gohai","value":"#1 SMP PREEMPT_DYNAMIC Tue Aug 27 07:00:36 UTC 2024"},{"name":"machine_architecture","namespace":"gohai","value":"x86_64"},{"name":"cpu_modelname","namespace":"gohai","value":"Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz"},{"name":"cpu_stepping","namespace":"gohai","value":"7"},{"name":"cpu_mhz","namespace":"gohai","value":"2500.004"},{"name":"cpu_model","namespace":"gohai","value":"85"},{"name":"vendor_id","namespace":"gohai","value":"GenuineIntel"},{"name":"total_swapmemory","namespace":"gohai","value":"0kB"},{"name":"total_memory_inbytes","namespace":"gohai","value":"948940800"},{"name":"kernel_name","namespace":"gohai","value":"Linux"},{"name":"cpu_cores","namespace":"gohai","value":"1"},{"name":"cpu_logical_processors","namespace":"gohai","value":"2"},{"name":"kernel_version","namespace":"gohai","value":"6.1.106-116.188.amzn2023.x86_64"},{"name":"instance_type","namespace":"gohai","value":"aws"},{"name":"ipaddress_v6","namespace":"gohai","value":"fe80::34:f0ff:feba:70f9"},{"name":"os","namespace":"gohai","value":"GNU/Linux"},{"name":"hostname","namespace":"gohai","value":"ip-192-168-10-30.ec2.internal"},{"name":"processor_type","namespace":"gohai","value":"x86_64"},{"name":"cpu_family","namespace":"gohai","value":"6"},{"name":"macaddress","namespace":"gohai","value":"02:34:f0:ba:70:f9"},{"name":"availability-zone","namespace":"aws","value":"us-east-1a"},{"name":"ami-id","namespace":"aws","value":"ami-0182f373e66f89c85"},{"name":"region","namespace":"aws","value":"us-east-1"},{"name":"architecture","namespace":"aws","value":"x86_64"},{"name":"hostname","namespace":"aws","value":"ip-192-168-10-30.ec2.internal"},{"name":"local-hostname","namespace":"aws","value":"ip-192-168-10-30.ec2.internal"},{"name":"instance-type","namespace":"aws","value":"t3.micro"},{"name":"account-id","namespace":"aws","value":"834902008322"},{"name":"private-ip","namespace":"aws","value":"192.168.10.30"},{"name":"local-ipv4","namespace":"aws","value":"192.168.10.30"},{"name":"mac","namespace":"aws","value":"02:34:f0:ba:70:f9"},{"name":"instance-id","namespace":"aws","value":"i-098984c0a30cdf883"},{"name":"architecture","namespace":"agent","value":"x86_64"},{"name":"hostname","namespace":"agent","value":"ip-192-168-10-30.ec2.internal"},{"name":"kernel_name","namespace":"agent","value":"Linux"},{"name":"kernel_version","namespace":"agent","value":"6.1.106-116.188.amzn2023.x86_64"},{"name":"netmask","namespace":"agent","value":"255.255.255.0"},{"name":"os_name","namespace":"agent","value":"Amazon Linux"},{"name":"os_version","namespace":"agent","value":"2023"},{"name":"primary_ip","namespace":"agent","value":"192.168.10.30"},{"name":"time_zone","namespace":"agent","value":"UTC+0000"}],"checkedinAt":"2024-09-08T17:14:22.750929Z","cohortId":"436761a5-4bb9-4816-9841-5ff0d474aa17","enrollmentLevel":"enrolled","healthStatus":"online","id":"0566f638-3136-4798-be54-e7d063a0e3a6","installedSkills":[{"canister":{"channel":"","release":"20240719065026","version":"1.0.3"},"name":"chef-client-interpreter","native":null},{"canister":{"channel":"","release":"20240712151631","version":"1.0.1"},"name":"chef-gohai","native":null},{"canister":{"channel":"","release":"20240719065234","version":"1.4.2"},"name":"courier-runner","native":null},{"canister":{"channel":"","release":"20240712145454","version":"1.0.1"},"name":"node-management-agent","native":null},{"canister":{"channel":"","release":"20240712144109","version":"1.0.1"},"name":"restart-interpreter","native":null},{"canister":{"channel":"","release":"20240719065152","version":"1.0.2"},"name":"shell-interpreter","native":null}],"requiredSkills":[{"canister":{"channel":"","release":"20240712145454","version":"1.0.1"},"name":"node-management-agent","native":null},{"canister":{"channel":"","release":"20240712144109","version":"1.0.1"},"name":"restart-interpreter","native":null},{"canister":{"channel":"","release":"20240712151631","version":"1.0.1"},"name":"chef-gohai","native":null},{"canister":{"channel":"","release":"20240719065234","version":"1.4.2"},"name":"courier-runner","native":null},{"canister":{"channel":"","release":"20240719065152","version":"1.0.2"},"name":"shell-interpreter","native":null},{"canister":{"channel":"","release":"20240719065026","version":"1.0.3"},"name":"chef-client-interpreter","native":null}]},{"attributes":[{"name":"architecture","namespace":"agent","value":"x86_64"},{"name":"hostname","namespace":"agent","value":"ip-192-168-10-20.ec2.internal"},{"name":"kernel_name","namespace":"agent","value":"Linux"},{"name":"kernel_version","namespace":"agent","value":"6.1.106-116.188.amzn2023.x86_64"},{"name":"netmask","namespace":"agent","value":"255.255.255.0"},{"name":"os_name","namespace":"agent","value":"Amazon Linux"},{"name":"os_version","namespace":"agent","value":"2023"},{"name":"primary_ip","namespace":"agent","value":"192.168.10.20"},{"name":"time_zone","namespace":"agent","value":"UTC+0000"},{"name":"fqdn","namespace":"enroll","value":"192.168.10.20"},{"name":"cpu_logical_processors","namespace":"gohai","value":"2"},{"name":"cpu_stepping","namespace":"gohai","value":"7"},{"name":"processor_type","namespace":"gohai","value":"x86_64"},{"name":"cpu_cores","namespace":"gohai","value":"1"},{"name":"cpu_mhz","namespace":"gohai","value":"2499.998"},{"name":"ipaddress","namespace":"gohai","value":"192.168.10.20"},{"name":"hostname","namespace":"gohai","value":"ip-192-168-10-20.ec2.internal"},{"name":"cpu_family","namespace":"gohai","value":"6"},{"name":"cpu_modelname","namespace":"gohai","value":"Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz"},{"name":"vendor_id","namespace":"gohai","value":"GenuineIntel"},{"name":"total_memory_inbytes","namespace":"gohai","value":"948944896"},{"name":"ipaddress_v6","namespace":"gohai","value":"fe80::d6:5bff:fef1:6745"},{"name":"kernel_release_date","namespace":"gohai","value":"#1 SMP PREEMPT_DYNAMIC Tue Aug 27 07:00:36 UTC 2024"},{"name":"kernel_version","namespace":"gohai","value":"6.1.106-116.188.amzn2023.x86_64"},{"name":"machine_architecture","namespace":"gohai","value":"x86_64"},{"name":"cpu_model","namespace":"gohai","value":"85"},{"name":"total_swapmemory","namespace":"gohai","value":"0kB"},{"name":"macaddress","namespace":"gohai","value":"02:d6:5b:f1:67:45"},{"name":"kernel_name","namespace":"gohai","value":"Linux"},{"name":"os","namespace":"gohai","value":"GNU/Linux"},{"name":"instance_type","namespace":"gohai","value":"aws"},{"name":"local-ipv4","namespace":"aws","value":"192.168.10.20"},{"name":"instance-type","namespace":"aws","value":"t3.micro"},{"name":"architecture","namespace":"aws","value":"x86_64"},{"name":"availability-zone","namespace":"aws","value":"us-east-1a"},{"name":"region","namespace":"aws","value":"us-east-1"},{"name":"ami-id","namespace":"aws","value":"ami-0182f373e66f89c85"},{"name":"private-ip","namespace":"aws","value":"192.168.10.20"},{"name":"hostname","namespace":"aws","value":"ip-192-168-10-20.ec2.internal"},{"name":"local-hostname","namespace":"aws","value":"ip-192-168-10-20.ec2.internal"},{"name":"mac","namespace":"aws","value":"02:d6:5b:f1:67:45"},{"name":"instance-id","namespace":"aws","value":"i-0e284de289b4bcb39"},{"name":"account-id","namespace":"aws","value":"834902008322"}],"checkedinAt":"2024-09-08T17:14:46.703893Z","cohortId":"436761a5-4bb9-4816-9841-5ff0d474aa17","enrollmentLevel":"enrolled","healthStatus":"online","id":"0a379eb0-3faa-4da0-86b0-91823b420ed6","installedSkills":[{"canister":{"channel":"","release":"20240719065026","version":"1.0.3"},"name":"chef-client-interpreter","native":null},{"canister":{"channel":"","release":"20240712151631","version":"1.0.1"},"name":"chef-gohai","native":null},{"canister":{"channel":"","release":"20240719065234","version":"1.4.2"},"name":"courier-runner","native":null},{"canister":{"channel":"","release":"20240712145454","version":"1.0.1"},"name":"node-management-agent","native":null},{"canister":{"channel":"","release":"20240712144109","version":"1.0.1"},"name":"restart-interpreter","native":null},{"canister":{"channel":"","release":"20240719065152","version":"1.0.2"},"name":"shell-interpreter","native":null}],"requiredSkills":[{"canister":{"channel":"","release":"20240712145454","version":"1.0.1"},"name":"node-management-agent","native":null},{"canister":{"channel":"","release":"20240712144109","version":"1.0.1"},"name":"restart-interpreter","native":null},{"canister":{"channel":"","release":"20240719065152","version":"1.0.2"},"name":"shell-interpreter","native":null},{"canister":{"channel":"","release":"20240719065234","version":"1.4.2"},"name":"courier-runner","native":null},{"canister":{"channel":"","release":"20240719065026","version":"1.0.3"},"name":"chef-client-interpreter","native":null},{"canister":{"channel":"","release":"20240712151631","version":"1.0.1"},"name":"chef-gohai","native":null}]}],"kind":"paginated","pagination":{"itemsPerPage":10,"nextLink":"","page":1,"pageItemCount":4,"previousLink":"","startIndex":1,"totalItems":7,"totalPages":1},"params":{"header":{"Accept-Encoding":["gzip"],"Connection":["close"],"Content-Digest":["sha-512=:SCmwdwlae4ziyimvpCUWyK9QYQwyvFHk4e7ARfoVOl4sw8vTkWvWHHNSQ1fNUsc5oWcWena7KB9ERVTMqxgZSg==:"],"Content-Length":["182"],"Content-Type":["application/json"],"Host":["workshop.chef360.io"],"Org-Id":["8b0e5dba-cbae-40c8-a523-5962a0091f3a"],"Session-Id":["304e2e35-168f-4b2d-88c4-a1928584d31d"],"Signature":["sig1=:/DP+a67t9HIE+71VSPzOxT0wNGtnZ9E4Y8OAjMFYJVAB57dMsLGS1fO5crqeResy78M7xrEzpT+3gj4n7mIDCg==:"],"Signature-Input":["sig1=(\"@method\" \"@path\" \"@query\" \"x-date\" \"content-digest\" \"host\" \"x-forwarded-for\" \"tenant-id\" \"org-id\" \"session-id\" \"user-role-name\" \"user-email\" \"user-type\" \"user-role-level\" \"x-gateway-host\" \"accept-encoding\" \"user-id\" \"user-role-id\" \"content-length\" \"content-type\" \"user-agent\" \"x-request-id\" \"connection\");created=1725815688;keyid=\"test-key-id-public\""],"Tenant-Id":["f5b83baf-0db1-4423-9a27-fcb63c4842e6"],"User-Agent":["Go-http-client/1.1"],"User-Email":["workshop@chef360.io"],"User-Id":["47560019-b152-40a1-a977-4229fa2add91"],"User-Role-Id":["5fcb0235-1e56-4ece-8857-404a5d39a290"],"User-Role-Level":["tenant"],"User-Role-Name":["tenant-admin"],"User-Type":["local"],"X-Date":["Sun, 08 Sep 2024 17:14:48 UTC"],"X-Forwarded-For":["192.168.0.11"],"X-Gateway-Host":["public-api-gateway:8000"],"X-Hostname":["workshop.chef360.io"],"X-Protocol":["http"],"X-Real-Ip":["10.244.181.2"],"X-Request-Id":["48d944c5-197a-43cd-a671-6f5acafd1895"]},"path":null,"query":{"expand":"true","pagination.page":"","pagination.size":""}}},"ResponseWrapperError":null,"ResponseUnknown":null}}
+2024-09-08T17:14:48Z | info | filter/filter.codegen.go:364 | github.com/progress-platform-services/chef-node-management-server/public/client/node-management/filter.(*FilterClientImpl).FiltersRunAdhocFilter | Exiting  FiltersRunAdhocFilter method | {"beginTime": "2024-09-08T17:14:47Z", "beginTimeNano": "2024-09-08T17:14:47.988184977Z", "endTime": "2024-09-08T17:14:48Z", "endTimeNano": "2024-09-08T17:14:48.339550925Z", "timeSpent": "351.365948ms", "timeSpentMilliseconds": 351}
+{
+  "items": [
+    {
+      "attributes": [
+        {
+          "name": "architecture",
+          "namespace": "agent",
+          "value": "x86_64"
+        },
+        {
+          "name": "hostname",
+          "namespace": "agent",
+          "value": "ip-192-168-10-10.ec2.internal"
+        },
+        {
+          "name": "kernel_name",
+          "namespace": "agent",
+          "value": "Linux"
+        },
+        {
+          "name": "kernel_version",
+          "namespace": "agent",
+          "value": "6.1.106-116.188.amzn2023.x86_64"
+        },
+        {
+          "name": "netmask",
+          "namespace": "agent",
+          "value": "255.255.255.0"
+        },
+        {
+          "name": "os_name",
+          "namespace": "agent",
+          "value": "Amazon Linux"
+        },
+        {
+          "name": "os_version",
+          "namespace": "agent",
+          "value": "2023"
+        },
+        {
+          "name": "primary_ip",
+          "namespace": "agent",
+          "value": "192.168.10.10"
+        },
+        {
+          "name": "time_zone",
+          "namespace": "agent",
+          "value": "UTC+0000"
+        },
+        {
+          "name": "fqdn",
+          "namespace": "enroll",
+          "value": "192.168.10.10"
+        },
+        {
+          "name": "cpu_logical_processors",
+          "namespace": "gohai",
+          "value": "2"
+        },
+        {
+          "name": "vendor_id",
+          "namespace": "gohai",
+          "value": "GenuineIntel"
+        },
+        {
+          "name": "cpu_family",
+          "namespace": "gohai",
+          "value": "6"
+        },
+        {
+          "name": "cpu_modelname",
+          "namespace": "gohai",
+          "value": "Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz"
+        },
+        {
+          "name": "processor_type",
+          "namespace": "gohai",
+          "value": "x86_64"
+        },
+        {
+          "name": "kernel_release_date",
+          "namespace": "gohai",
+          "value": "#1 SMP PREEMPT_DYNAMIC Tue Aug 27 07:00:36 UTC 2024"
+        },
+        {
+          "name": "machine_architecture",
+          "namespace": "gohai",
+          "value": "x86_64"
+        },
+        {
+          "name": "cpu_cores",
+          "namespace": "gohai",
+          "value": "1"
+        },
+        {
+          "name": "cpu_model",
+          "namespace": "gohai",
+          "value": "85"
+        },
+        {
+          "name": "cpu_stepping",
+          "namespace": "gohai",
+          "value": "7"
+        },
+        {
+          "name": "total_swapmemory",
+          "namespace": "gohai",
+          "value": "0kB"
+        },
+        {
+          "name": "macaddress",
+          "namespace": "gohai",
+          "value": "02:c8:31:61:7b:bb"
+        },
+        {
+          "name": "hostname",
+          "namespace": "gohai",
+          "value": "ip-192-168-10-10.ec2.internal"
+        },
+        {
+          "name": "os",
+          "namespace": "gohai",
+          "value": "GNU/Linux"
+        },
+        {
+          "name": "instance_type",
+          "namespace": "gohai",
+          "value": "aws"
+        },
+        {
+          "name": "cpu_mhz",
+          "namespace": "gohai",
+          "value": "2499.996"
+        },
+        {
+          "name": "total_memory_inbytes",
+          "namespace": "gohai",
+          "value": "948940800"
+        },
+        {
+          "name": "ipaddress",
+          "namespace": "gohai",
+          "value": "192.168.10.10"
+        },
+        {
+          "name": "ipaddress_v6",
+          "namespace": "gohai",
+          "value": "fe80::c8:31ff:fe61:7bbb"
+        },
+        {
+          "name": "kernel_name",
+          "namespace": "gohai",
+          "value": "Linux"
+        },
+        {
+          "name": "kernel_version",
+          "namespace": "gohai",
+          "value": "6.1.106-116.188.amzn2023.x86_64"
+        },
+        {
+          "name": "local-hostname",
+          "namespace": "aws",
+          "value": "ip-192-168-10-10.ec2.internal"
+        },
+        {
+          "name": "availability-zone",
+          "namespace": "aws",
+          "value": "us-east-1a"
+        },
+        {
+          "name": "private-ip",
+          "namespace": "aws",
+          "value": "192.168.10.10"
+        },
+        {
+          "name": "instance-id",
+          "namespace": "aws",
+          "value": "i-0b0288a7986eed976"
+        },
+        {
+          "name": "ami-id",
+          "namespace": "aws",
+          "value": "ami-0182f373e66f89c85"
+        },
+        {
+          "name": "hostname",
+          "namespace": "aws",
+          "value": "ip-192-168-10-10.ec2.internal"
+        },
+        {
+          "name": "local-ipv4",
+          "namespace": "aws",
+          "value": "192.168.10.10"
+        },
+        {
+          "name": "mac",
+          "namespace": "aws",
+          "value": "02:c8:31:61:7b:bb"
+        },
+        {
+          "name": "region",
+          "namespace": "aws",
+          "value": "us-east-1"
+        },
+        {
+          "name": "instance-type",
+          "namespace": "aws",
+          "value": "t3.micro"
+        },
+        {
+          "name": "account-id",
+          "namespace": "aws",
+          "value": "834902008322"
+        },
+        {
+          "name": "architecture",
+          "namespace": "aws",
+          "value": "x86_64"
+        }
+      ],
+      "checkedinAt": "2024-09-08T17:14:13.165035Z",
+      "cohortId": "436761a5-4bb9-4816-9841-5ff0d474aa17",
+      "enrollmentLevel": "enrolled",
+      "healthStatus": "online",
+      "id": "09f552af-9dc3-4c3e-97da-580a3530782d",
+      "installedSkills": [
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240719065026",
+            "version": "1.0.3"
+          },
+          "name": "chef-client-interpreter",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712151631",
+            "version": "1.0.1"
+          },
+          "name": "chef-gohai",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240719065234",
+            "version": "1.4.2"
+          },
+          "name": "courier-runner",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712145454",
+            "version": "1.0.1"
+          },
+          "name": "node-management-agent",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712144109",
+            "version": "1.0.1"
+          },
+          "name": "restart-interpreter",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240719065152",
+            "version": "1.0.2"
+          },
+          "name": "shell-interpreter",
+          "native": null
+        }
+      ],
+      "requiredSkills": [
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712145454",
+            "version": "1.0.1"
+          },
+          "name": "node-management-agent",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240719065234",
+            "version": "1.4.2"
+          },
+          "name": "courier-runner",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712151631",
+            "version": "1.0.1"
+          },
+          "name": "chef-gohai",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712144109",
+            "version": "1.0.1"
+          },
+          "name": "restart-interpreter",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240719065152",
+            "version": "1.0.2"
+          },
+          "name": "shell-interpreter",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240719065026",
+            "version": "1.0.3"
+          },
+          "name": "chef-client-interpreter",
+          "native": null
+        }
+      ]
+    },
+    {
+      "attributes": [
+        {
+          "name": "architecture",
+          "namespace": "agent",
+          "value": "x86_64"
+        },
+        {
+          "name": "hostname",
+          "namespace": "agent",
+          "value": "ip-192-168-0-11.ec2.internal"
+        },
+        {
+          "name": "kernel_name",
+          "namespace": "agent",
+          "value": "Linux"
+        },
+        {
+          "name": "kernel_version",
+          "namespace": "agent",
+          "value": "6.1.106-116.188.amzn2023.x86_64"
+        },
+        {
+          "name": "netmask",
+          "namespace": "agent",
+          "value": "255.255.255.0"
+        },
+        {
+          "name": "os_name",
+          "namespace": "agent",
+          "value": "Amazon Linux"
+        },
+        {
+          "name": "os_version",
+          "namespace": "agent",
+          "value": "2023"
+        },
+        {
+          "name": "primary_ip",
+          "namespace": "agent",
+          "value": "192.168.0.11"
+        },
+        {
+          "name": "time_zone",
+          "namespace": "agent",
+          "value": "UTC+0000"
+        },
+        {
+          "name": "fqdn",
+          "namespace": "enroll",
+          "value": "192.168.0.11"
+        }
+      ],
+      "checkedinAt": "2024-09-08T17:14:32.016451Z",
+      "cohortId": "2af4f9b5-254d-4f55-a8f1-c82ed0cdb5db",
+      "enrollmentLevel": "enrolled",
+      "healthStatus": "online",
+      "id": "cd5f25f4-dd01-47a6-b82d-30cd3f014a0d",
+      "installedSkills": [
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712145454",
+            "version": "1.0.1"
+          },
+          "name": "node-management-agent",
+          "native": null
+        }
+      ],
+      "requiredSkills": [
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712145454",
+            "version": "1.0.1"
+          },
+          "name": "node-management-agent",
+          "native": null
+        }
+      ]
+    },
+    {
+      "attributes": [
+        {
+          "name": "fqdn",
+          "namespace": "enroll",
+          "value": "192.168.10.30"
+        },
+        {
+          "name": "ipaddress",
+          "namespace": "gohai",
+          "value": "192.168.10.30"
+        },
+        {
+          "name": "kernel_release_date",
+          "namespace": "gohai",
+          "value": "#1 SMP PREEMPT_DYNAMIC Tue Aug 27 07:00:36 UTC 2024"
+        },
+        {
+          "name": "machine_architecture",
+          "namespace": "gohai",
+          "value": "x86_64"
+        },
+        {
+          "name": "cpu_modelname",
+          "namespace": "gohai",
+          "value": "Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz"
+        },
+        {
+          "name": "cpu_stepping",
+          "namespace": "gohai",
+          "value": "7"
+        },
+        {
+          "name": "cpu_mhz",
+          "namespace": "gohai",
+          "value": "2500.004"
+        },
+        {
+          "name": "cpu_model",
+          "namespace": "gohai",
+          "value": "85"
+        },
+        {
+          "name": "vendor_id",
+          "namespace": "gohai",
+          "value": "GenuineIntel"
+        },
+        {
+          "name": "total_swapmemory",
+          "namespace": "gohai",
+          "value": "0kB"
+        },
+        {
+          "name": "total_memory_inbytes",
+          "namespace": "gohai",
+          "value": "948940800"
+        },
+        {
+          "name": "kernel_name",
+          "namespace": "gohai",
+          "value": "Linux"
+        },
+        {
+          "name": "cpu_cores",
+          "namespace": "gohai",
+          "value": "1"
+        },
+        {
+          "name": "cpu_logical_processors",
+          "namespace": "gohai",
+          "value": "2"
+        },
+        {
+          "name": "kernel_version",
+          "namespace": "gohai",
+          "value": "6.1.106-116.188.amzn2023.x86_64"
+        },
+        {
+          "name": "instance_type",
+          "namespace": "gohai",
+          "value": "aws"
+        },
+        {
+          "name": "ipaddress_v6",
+          "namespace": "gohai",
+          "value": "fe80::34:f0ff:feba:70f9"
+        },
+        {
+          "name": "os",
+          "namespace": "gohai",
+          "value": "GNU/Linux"
+        },
+        {
+          "name": "hostname",
+          "namespace": "gohai",
+          "value": "ip-192-168-10-30.ec2.internal"
+        },
+        {
+          "name": "processor_type",
+          "namespace": "gohai",
+          "value": "x86_64"
+        },
+        {
+          "name": "cpu_family",
+          "namespace": "gohai",
+          "value": "6"
+        },
+        {
+          "name": "macaddress",
+          "namespace": "gohai",
+          "value": "02:34:f0:ba:70:f9"
+        },
+        {
+          "name": "availability-zone",
+          "namespace": "aws",
+          "value": "us-east-1a"
+        },
+        {
+          "name": "ami-id",
+          "namespace": "aws",
+          "value": "ami-0182f373e66f89c85"
+        },
+        {
+          "name": "region",
+          "namespace": "aws",
+          "value": "us-east-1"
+        },
+        {
+          "name": "architecture",
+          "namespace": "aws",
+          "value": "x86_64"
+        },
+        {
+          "name": "hostname",
+          "namespace": "aws",
+          "value": "ip-192-168-10-30.ec2.internal"
+        },
+        {
+          "name": "local-hostname",
+          "namespace": "aws",
+          "value": "ip-192-168-10-30.ec2.internal"
+        },
+        {
+          "name": "instance-type",
+          "namespace": "aws",
+          "value": "t3.micro"
+        },
+        {
+          "name": "account-id",
+          "namespace": "aws",
+          "value": "834902008322"
+        },
+        {
+          "name": "private-ip",
+          "namespace": "aws",
+          "value": "192.168.10.30"
+        },
+        {
+          "name": "local-ipv4",
+          "namespace": "aws",
+          "value": "192.168.10.30"
+        },
+        {
+          "name": "mac",
+          "namespace": "aws",
+          "value": "02:34:f0:ba:70:f9"
+        },
+        {
+          "name": "instance-id",
+          "namespace": "aws",
+          "value": "i-098984c0a30cdf883"
+        },
+        {
+          "name": "architecture",
+          "namespace": "agent",
+          "value": "x86_64"
+        },
+        {
+          "name": "hostname",
+          "namespace": "agent",
+          "value": "ip-192-168-10-30.ec2.internal"
+        },
+        {
+          "name": "kernel_name",
+          "namespace": "agent",
+          "value": "Linux"
+        },
+        {
+          "name": "kernel_version",
+          "namespace": "agent",
+          "value": "6.1.106-116.188.amzn2023.x86_64"
+        },
+        {
+          "name": "netmask",
+          "namespace": "agent",
+          "value": "255.255.255.0"
+        },
+        {
+          "name": "os_name",
+          "namespace": "agent",
+          "value": "Amazon Linux"
+        },
+        {
+          "name": "os_version",
+          "namespace": "agent",
+          "value": "2023"
+        },
+        {
+          "name": "primary_ip",
+          "namespace": "agent",
+          "value": "192.168.10.30"
+        },
+        {
+          "name": "time_zone",
+          "namespace": "agent",
+          "value": "UTC+0000"
+        }
+      ],
+      "checkedinAt": "2024-09-08T17:14:22.750929Z",
+      "cohortId": "436761a5-4bb9-4816-9841-5ff0d474aa17",
+      "enrollmentLevel": "enrolled",
+      "healthStatus": "online",
+      "id": "0566f638-3136-4798-be54-e7d063a0e3a6",
+      "installedSkills": [
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240719065026",
+            "version": "1.0.3"
+          },
+          "name": "chef-client-interpreter",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712151631",
+            "version": "1.0.1"
+          },
+          "name": "chef-gohai",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240719065234",
+            "version": "1.4.2"
+          },
+          "name": "courier-runner",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712145454",
+            "version": "1.0.1"
+          },
+          "name": "node-management-agent",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712144109",
+            "version": "1.0.1"
+          },
+          "name": "restart-interpreter",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240719065152",
+            "version": "1.0.2"
+          },
+          "name": "shell-interpreter",
+          "native": null
+        }
+      ],
+      "requiredSkills": [
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712145454",
+            "version": "1.0.1"
+          },
+          "name": "node-management-agent",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712144109",
+            "version": "1.0.1"
+          },
+          "name": "restart-interpreter",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712151631",
+            "version": "1.0.1"
+          },
+          "name": "chef-gohai",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240719065234",
+            "version": "1.4.2"
+          },
+          "name": "courier-runner",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240719065152",
+            "version": "1.0.2"
+          },
+          "name": "shell-interpreter",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240719065026",
+            "version": "1.0.3"
+          },
+          "name": "chef-client-interpreter",
+          "native": null
+        }
+      ]
+    },
+    {
+      "attributes": [
+        {
+          "name": "architecture",
+          "namespace": "agent",
+          "value": "x86_64"
+        },
+        {
+          "name": "hostname",
+          "namespace": "agent",
+          "value": "ip-192-168-10-20.ec2.internal"
+        },
+        {
+          "name": "kernel_name",
+          "namespace": "agent",
+          "value": "Linux"
+        },
+        {
+          "name": "kernel_version",
+          "namespace": "agent",
+          "value": "6.1.106-116.188.amzn2023.x86_64"
+        },
+        {
+          "name": "netmask",
+          "namespace": "agent",
+          "value": "255.255.255.0"
+        },
+        {
+          "name": "os_name",
+          "namespace": "agent",
+          "value": "Amazon Linux"
+        },
+        {
+          "name": "os_version",
+          "namespace": "agent",
+          "value": "2023"
+        },
+        {
+          "name": "primary_ip",
+          "namespace": "agent",
+          "value": "192.168.10.20"
+        },
+        {
+          "name": "time_zone",
+          "namespace": "agent",
+          "value": "UTC+0000"
+        },
+        {
+          "name": "fqdn",
+          "namespace": "enroll",
+          "value": "192.168.10.20"
+        },
+        {
+          "name": "cpu_logical_processors",
+          "namespace": "gohai",
+          "value": "2"
+        },
+        {
+          "name": "cpu_stepping",
+          "namespace": "gohai",
+          "value": "7"
+        },
+        {
+          "name": "processor_type",
+          "namespace": "gohai",
+          "value": "x86_64"
+        },
+        {
+          "name": "cpu_cores",
+          "namespace": "gohai",
+          "value": "1"
+        },
+        {
+          "name": "cpu_mhz",
+          "namespace": "gohai",
+          "value": "2499.998"
+        },
+        {
+          "name": "ipaddress",
+          "namespace": "gohai",
+          "value": "192.168.10.20"
+        },
+        {
+          "name": "hostname",
+          "namespace": "gohai",
+          "value": "ip-192-168-10-20.ec2.internal"
+        },
+        {
+          "name": "cpu_family",
+          "namespace": "gohai",
+          "value": "6"
+        },
+        {
+          "name": "cpu_modelname",
+          "namespace": "gohai",
+          "value": "Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz"
+        },
+        {
+          "name": "vendor_id",
+          "namespace": "gohai",
+          "value": "GenuineIntel"
+        },
+        {
+          "name": "total_memory_inbytes",
+          "namespace": "gohai",
+          "value": "948944896"
+        },
+        {
+          "name": "ipaddress_v6",
+          "namespace": "gohai",
+          "value": "fe80::d6:5bff:fef1:6745"
+        },
+        {
+          "name": "kernel_release_date",
+          "namespace": "gohai",
+          "value": "#1 SMP PREEMPT_DYNAMIC Tue Aug 27 07:00:36 UTC 2024"
+        },
+        {
+          "name": "kernel_version",
+          "namespace": "gohai",
+          "value": "6.1.106-116.188.amzn2023.x86_64"
+        },
+        {
+          "name": "machine_architecture",
+          "namespace": "gohai",
+          "value": "x86_64"
+        },
+        {
+          "name": "cpu_model",
+          "namespace": "gohai",
+          "value": "85"
+        },
+        {
+          "name": "total_swapmemory",
+          "namespace": "gohai",
+          "value": "0kB"
+        },
+        {
+          "name": "macaddress",
+          "namespace": "gohai",
+          "value": "02:d6:5b:f1:67:45"
+        },
+        {
+          "name": "kernel_name",
+          "namespace": "gohai",
+          "value": "Linux"
+        },
+        {
+          "name": "os",
+          "namespace": "gohai",
+          "value": "GNU/Linux"
+        },
+        {
+          "name": "instance_type",
+          "namespace": "gohai",
+          "value": "aws"
+        },
+        {
+          "name": "local-ipv4",
+          "namespace": "aws",
+          "value": "192.168.10.20"
+        },
+        {
+          "name": "instance-type",
+          "namespace": "aws",
+          "value": "t3.micro"
+        },
+        {
+          "name": "architecture",
+          "namespace": "aws",
+          "value": "x86_64"
+        },
+        {
+          "name": "availability-zone",
+          "namespace": "aws",
+          "value": "us-east-1a"
+        },
+        {
+          "name": "region",
+          "namespace": "aws",
+          "value": "us-east-1"
+        },
+        {
+          "name": "ami-id",
+          "namespace": "aws",
+          "value": "ami-0182f373e66f89c85"
+        },
+        {
+          "name": "private-ip",
+          "namespace": "aws",
+          "value": "192.168.10.20"
+        },
+        {
+          "name": "hostname",
+          "namespace": "aws",
+          "value": "ip-192-168-10-20.ec2.internal"
+        },
+        {
+          "name": "local-hostname",
+          "namespace": "aws",
+          "value": "ip-192-168-10-20.ec2.internal"
+        },
+        {
+          "name": "mac",
+          "namespace": "aws",
+          "value": "02:d6:5b:f1:67:45"
+        },
+        {
+          "name": "instance-id",
+          "namespace": "aws",
+          "value": "i-0e284de289b4bcb39"
+        },
+        {
+          "name": "account-id",
+          "namespace": "aws",
+          "value": "834902008322"
+        }
+      ],
+      "checkedinAt": "2024-09-08T17:14:46.703893Z",
+      "cohortId": "436761a5-4bb9-4816-9841-5ff0d474aa17",
+      "enrollmentLevel": "enrolled",
+      "healthStatus": "online",
+      "id": "0a379eb0-3faa-4da0-86b0-91823b420ed6",
+      "installedSkills": [
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240719065026",
+            "version": "1.0.3"
+          },
+          "name": "chef-client-interpreter",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712151631",
+            "version": "1.0.1"
+          },
+          "name": "chef-gohai",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240719065234",
+            "version": "1.4.2"
+          },
+          "name": "courier-runner",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712145454",
+            "version": "1.0.1"
+          },
+          "name": "node-management-agent",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712144109",
+            "version": "1.0.1"
+          },
+          "name": "restart-interpreter",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240719065152",
+            "version": "1.0.2"
+          },
+          "name": "shell-interpreter",
+          "native": null
+        }
+      ],
+      "requiredSkills": [
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712145454",
+            "version": "1.0.1"
+          },
+          "name": "node-management-agent",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712144109",
+            "version": "1.0.1"
+          },
+          "name": "restart-interpreter",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240719065152",
+            "version": "1.0.2"
+          },
+          "name": "shell-interpreter",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240719065234",
+            "version": "1.4.2"
+          },
+          "name": "courier-runner",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240719065026",
+            "version": "1.0.3"
+          },
+          "name": "chef-client-interpreter",
+          "native": null
+        },
+        {
+          "canister": {
+            "channel": "",
+            "release": "20240712151631",
+            "version": "1.0.1"
+          },
+          "name": "chef-gohai",
+          "native": null
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "itemsPerPage": 10,
+    "nextLink": "",
+    "page": 1,
+    "pageItemCount": 4,
+    "previousLink": "",
+    "startIndex": 1,
+    "totalItems": 7,
+    "totalPages": 1
+  }
+}
+

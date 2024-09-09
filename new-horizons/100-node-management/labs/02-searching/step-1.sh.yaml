@@ -1,0 +1,7 @@
+---
+constraints:
+  attributes:
+  - name: kernel_name
+    operator: "="
+    value:
+    - Linux

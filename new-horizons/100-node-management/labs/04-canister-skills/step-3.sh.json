@@ -1,0 +1,9 @@
+{
+    "name": "ansible",
+    "canister": {
+        "origin": "core",
+        "name": "ansible",
+        "service": false
+    },
+    "configurationTemplates": []
+}

@@ -1,0 +1,14 @@
+---
+skills:
+- action: add
+  skill:
+    channel: stable
+    name: chef-infra-client
+    value:
+    - 18.5.0
+- action: remove
+  skill:
+    channel: stable
+    name: chef-infra-client
+    value:
+    - < 18

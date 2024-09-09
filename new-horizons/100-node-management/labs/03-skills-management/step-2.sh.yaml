@@ -1,0 +1,44 @@
+---
+skills:
+- action: add
+  skill:
+    channel: stable
+    name: chef-infra-client
+    value:
+    - 18.5.0
+- action: add
+  skill:
+    channel: stable
+    name: inspec
+    value:
+    - 5.22.58
+- action: add
+  skill:
+    channel: stable
+    name: chef-client-interpreter
+    value:
+    - 1.0.3
+- action: add
+  skill:
+    channel: stable
+    name: chef-gohai
+    value:
+    - 1.0.1
+- action: add
+  skill:
+    channel: stable
+    name: courier-runner
+    value:
+    - 1.4.2
+- action: add
+  skill:
+    channel: stable
+    name: restart-interpreter
+    value:
+    - 1.0.1
+- action: add
+  skill:
+    channel: stable
+    name: shell-interpreter
+    value:
+    - 1.0.2
