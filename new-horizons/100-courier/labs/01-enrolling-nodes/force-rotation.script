@@ -1,0 +1,11 @@
+curl -sk http://workshop.chef360.io/platform/bundledtools/v1/static/install.sh | TOOL="chef-platform-auth-cli" SERVER="http://workshop.chef360.io" VERSION="latest" bash -
+curl -s http://workshop.chef360.io:8080/credentials > .chef-platform/credentials
+NODE=$(cat /hab/svc/node-management-agent/data/node_guid)
+sudo hab svc stop chef-platform/courier-runner
+SYS_ID=$(chef-platform-auth-cli node-account node get-nodeByRef --refId $NODE --profile admin --format json | jq -br '.item.id')
+ROLE_ID=$(chef-platform-auth-cli node-account node get-nodeByRef --refId $NODE --profile admin --format json | jq -br '.item.roles[] | select(.name == "courier-runner") | .id')
+CREDS=$(chef-platform-auth-cli node-account node update-credentials --nodeId $SYS_ID --roleId $ROLE_ID --profile admin --format json)
+CERT=$(echo $CREDS | jq -br '.item.privateCert')
+sudo cp /hab/svc/node-management-agent/data/courier-runner-key.pem /hab/svc/node-management-agent/data/courier-runner-key.pem.bak
+printf "%s" "$CERT" | sudo tee /hab/svc/node-management-agent/data/courier-runner-key.pem
+sudo hab svc start chef-platform/courier-runner

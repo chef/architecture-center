@@ -1,7 +1,0 @@
-{
-    "name": "shell-interpreter",
-    "canister": {
-      "origin": "chef-platform",
-      "name": "shell-interpreter"
-    }
-  }

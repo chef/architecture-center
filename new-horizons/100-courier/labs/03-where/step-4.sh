@@ -1,5 +1,5 @@
 #!/bin/bash
-NAME="100-courier-lab-02-where-rolling"
+NAME="100-courier-lab-02-where-all1"
 EXPECT=3
 FORMAT="%1s | %5s | %10s | %36s | %36s | %30s \n"
 
@@ -31,6 +31,9 @@ function wait() {
         receivedTime=$(echo $ITEM | jq -br '.receivedTime' )
         printf "$FORMAT" $i $groupNumber $status $nodeId $runId $receivedTime
 
+        if [ "$status" == "failure" ]; then
+            COMPLETE="$((COMPLETE+1))"
+        fi
         if [ "$status" == "failed" ]; then
             COMPLETE="$((COMPLETE+1))"
         fi

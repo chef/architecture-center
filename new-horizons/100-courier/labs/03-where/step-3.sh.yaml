@@ -1,5 +1,5 @@
 ---
-name: 100-courier-lab-02-where-rolling
+name: 100-courier-lab-02-where-all
 description: Rolling Jobs
 exceptionRules: []
 scheduleRule: immediate
@@ -9,9 +9,9 @@ target:
   groups:
   - timeoutSeconds: 120
     batchSize:
-      type: number
-      value: 1
-    distributionMethod: rolling
+      type: percent
+      value: 100
+    distributionMethod: batching
     successCriteria:
     - status: success
       numRuns:
@@ -39,9 +39,9 @@ actions:
         minVersion: 1.0.0
     command: 
       linux: 
-        - sleep 10
+        - sleep 30
       windows: 
-        - timeout 10
+        - timeout 30
 
     inputs: {}
     expectedInputs: {}
