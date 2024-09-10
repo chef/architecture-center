@@ -1,0 +1,57 @@
+---
+name: 100-courier-lab-02-where
+description: Rolling Jobs
+exceptionRules: []
+scheduleRule: immediate
+
+target:
+  executionType: sequential
+  groups:
+  - timeoutSeconds: 120
+    batchSize:
+      type: percent
+      value: 100
+    distributionMethod: rolling
+    successCriteria:
+    - status: success
+      numRuns:
+        type: number
+        value: 1
+    nodeListType: filter
+    filter: 
+        constraints:
+            attributes:
+            - name: primary_ip
+              operator: "MATCHES"
+              value :
+              - "192.168.10.10"
+              - "192.168.10.20"
+              - "192.168.10.30"
+
+actions:
+  accessMode: agent
+  steps:
+
+  - name: Do nothing
+    interpreter:
+      name: chef-platform/shell-interpreter
+      skill:
+        minVersion: 1.0.0
+    command: 
+      linux: 
+        - sleep 10
+      windows: 
+        - timeout 10
+
+    inputs: {}
+    expectedInputs: {}
+    outputFieldRules: {}
+    retryCount: 0
+    limits: {}
+    conditions: []
+    failureBehavior:
+      action: retryThenFail
+      retryBackoffStrategy:
+        type: none
+        delaySeconds: 0
+        arguments: []
