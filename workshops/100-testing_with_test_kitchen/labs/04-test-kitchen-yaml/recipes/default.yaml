@@ -4,7 +4,7 @@ resources:
 
   - type: service 
     name: httpd
-    actions: 
+    action: 
       - enable
       - start
 

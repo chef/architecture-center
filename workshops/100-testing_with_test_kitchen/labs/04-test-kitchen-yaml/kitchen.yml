@@ -13,9 +13,9 @@ verifier:
   name: inspec
 
 platforms:
-- name: centos-7
+- name: almalinux-8
   driver:
-    image: dokken/centos-7
+    image: dokken/almalinux-8
     privileged: true
     pid_one_command: /usr/lib/systemd/systemd
 
