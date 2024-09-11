@@ -1,5 +1,5 @@
 #!/bin/bash
-NAME="100-courier-lab-02-where-all1"
+NAME="100-courier-lab-02-where-all"
 EXPECT=3
 FORMAT="%1s | %5s | %10s | %36s | %36s | %30s \n"
 

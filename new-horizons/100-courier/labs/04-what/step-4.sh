@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NAME="100-courier-lab-04-what-1"
+NAME="100-courier-lab-04-what-2"
 EXPECT=1
 
 

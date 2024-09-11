@@ -1,4 +1,4 @@
-mkdir /home/ec2-user/nodes
+mkdir -p /home/ec2-user/nodes
 echo "ssh -i ~/.keys/key-pair.pem ec2-user@192.168.10.10" > /home/ec2-user/nodes/node-1.ssh
 echo "ssh -i ~/.keys/key-pair.pem ec2-user@192.168.10.20" > /home/ec2-user/nodes/node-2.ssh
 echo "ssh -i ~/.keys/key-pair.pem ec2-user@192.168.10.30" > /home/ec2-user/nodes/node-3.ssh
@@ -9,7 +9,7 @@ chmod +x /home/ec2-user/nodes/node-2.ssh
 chmod +x /home/ec2-user/nodes/node-3.ssh
 chmod +x /home/ec2-user/nodes/wrt.ssh
 
-mkdir /home/ec2-user/.chef
+mkdir -p /home/ec2-user/.chef
 touch /home/ec2-user/.chef/credentials
 echo "['node-1']" >> /home/ec2-user/.chef/credentials
 echo "host='192.168.10.10'" >> /home/ec2-user/.chef/credentials
