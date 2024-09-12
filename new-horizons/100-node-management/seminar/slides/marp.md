@@ -44,19 +44,55 @@ url: https://github.com/chef/architecture-center/blob/main/new-horizons/100-cour
 ---
 ![bg right](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/right-blue-1.png)
 <!-- _paginate: "false" -->
-# What is Courier?
+# What is Node Management?
 
-<!--
-Courier is a powerful Job Orchistration component of Chef Platform. 
-
-Job orchestration is about creating and managing workflows that automate a sequence of tasks across multiple systems. This process is crucial for managing complex IT environments, where it's necessary to synchronize and streamline operations across different platforms and tools​​.
-
-Job orchestration streamlines and optimizes frequently occurring workflows, or enables infrequent worklows to be exeuted on-demand. It plays a crucial role in improving the efficiency of IT processes such as server provisioning, incident management, and incident response.
-
-Courier provides the ability to rapidly integrate new tools and technologies, develop and iterate end-to-end processes, and standardize and maintain permissions, auditing, and business rules across various environments. Courier also offers a unified view for monitoring processes, infrastructure, and systems from a single location​​.
--->
 
 ---
-# Part 2: 
-#### Hands-On-Labs 
+![bg](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/bg-gray.png)
+<!-- _paginate: "false" -->
+<!-- header: "" -->
+# Why?
+
+
+---
+![bg left](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/left-blue-1.png)
+<!-- _paginate: "false" -->
+# Node Management Responsibilities?
+- Inventory
+- Enrollment
+- Health / Status
+- Organize
+- Discover
+
+
+---
+![bg right](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/right-green-1.png)
+<!-- _paginate: "false" -->
+# Anatomy
+- Skill Assembly
+- Cohort
+- Node
+- Attributes
+- Discover Engine
+- Discover Instance
+
+
+---
+![bg right](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/right-blue-1.png)
+<!-- _paginate: "false" -->
+# What is inventory?
+
+
+
+---
+![bg left](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/left-green-1.png)
+<!-- _paginate: "false" -->
+# What is enrollment?
+
+
+
+---
+![bg left](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/left-blue-1.png)
+<!-- _paginate: "false" -->
+# How does this fit in?
 
