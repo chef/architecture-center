@@ -33,6 +33,7 @@ actions:
       name: chef-platform/shell-interpreter
       skill:
         minVersion: 1.0.0
+        maxVersion: 9.0.0
     command: 
       linux: 
         - sleep 10

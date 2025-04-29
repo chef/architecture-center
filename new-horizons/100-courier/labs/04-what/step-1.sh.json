@@ -45,7 +45,7 @@
             {
                 "interpreter": {
                   "skill": {
-                    "minVersion": "1.0.0"
+                    "minVersion": "1.0.0","maxVersion": "9.0.0"
                   },
                   "name": "chef-platform/shell-interpreter"
                 },
@@ -80,7 +80,7 @@
             {
                 "interpreter": {
                   "skill": {
-                    "minVersion": "1.0.0"
+                    "minVersion": "1.0.0","maxVersion": "9.0.0"
                   },
                   "name": "chef-platform/shell-interpreter"
                 },
@@ -121,7 +121,7 @@
             {
                 "interpreter": {
                   "skill": {
-                    "minVersion": "1.0.0"
+                    "minVersion": "1.0.0","maxVersion": "9.0.0"
                   },
                   "name": "chef-platform/shell-interpreter"
                 },
@@ -156,7 +156,7 @@
             {
                 "interpreter": {
                   "skill": {
-                    "minVersion": "1.0.0"
+                    "minVersion": "1.0.0","maxVersion": "9.0.0"
                   },
                   "name": "chef-platform/shell-interpreter"
                 },
@@ -195,7 +195,7 @@
             {
                 "interpreter": {
                   "skill": {
-                    "minVersion": "1.0.0"
+                    "minVersion": "1.0.0","maxVersion": "9.0.0"
                   },
                   "name": "chef-platform/shell-interpreter"
                 },
