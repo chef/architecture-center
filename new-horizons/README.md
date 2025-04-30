@@ -1,5 +1,6 @@
-# New Horizons 
-**Mastering the Future with Progress Chef Tools**:    
+# New Horizons
+
+**Mastering the Future with Progress Chef Tools**:
 This is a specialized series of educational content aimed at delving into the expiremental, new or advanced capabilities (and future potential) of Progress Chef's tools. This initiative moves beyond traditional training, best practices and patterns to spotlight emerging features and applications of Chef technologies.
 
 ## Target Audience
