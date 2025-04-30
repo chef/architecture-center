@@ -8,7 +8,7 @@ marp: true
 
 paginate: true
 header: '![w:200px](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/header-logo.png)'
-footer: '&copy; 2024 Progress Software Corporation and/or its subsidiaries or affiliates. All rights reserved.'
+footer: '&copy; 2025 Progress Software Corporation and/or its subsidiaries or affiliates. All rights reserved.'
 size: 16:9
 style: |
   footer {

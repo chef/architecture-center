@@ -1,14 +1,13 @@
-# Code of Conduct
+# Code of Conduct Document
 
-- [Code of Conduct](#code-of-conduct)
+- [Code of Conduct Document](#code-of-conduct-document)
   - [Summary](#summary)
-  - [Code of Conduct](#code-of-conduct-1)
+  - [Code of Conduct](#code-of-conduct)
   - [Anti-Harassment Policy](#anti-harassment-policy)
   - [Participants Procedure for Incident Handling in Physical Spaces](#participants-procedure-for-incident-handling-in-physical-spaces)
   - [Enforcement](#enforcement)
   - [Consequences of Unacceptable Behavior](#consequences-of-unacceptable-behavior)
   - [Our Responsibilities](#our-responsibilities)
-  - [Contact Information](#contact-information)
   - [Scope](#scope)
   - [Influences](#influences)
   - [Copyright](#copyright)
@@ -120,4 +119,4 @@ This Code of Conduct was originally forked from the example policy from the [Gee
 
 ## Copyright
 
-This Code of Conduct is in the public domain. In jurisdictions that do not allow for this, this work is available under CC0. To the extent possible under law, the person who associated CC0 with this work has waived all copyright and related or neighboring rights to this work
+This Code of Conduct is in the public domain. In jurisdictions that do not allow for this, this work is available under CC0. To the extent possible under law, the person who associated CC0 with this work has waived all copyright and related or neighboring rights to this work.

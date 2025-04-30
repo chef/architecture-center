@@ -2,7 +2,7 @@
 marp: true
 paginate: true
 header: '![w:200px](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/header-logo.png)'
-footer: '&copy; 2024 Progress Software Corporation and/or its subsidiaries or affiliates. All rights reserved.'
+footer: '&copy; 2025 Progress Software Corporation and/or its subsidiaries or affiliates. All rights reserved.'
 size: 16:9
 style: |
   footer {
@@ -32,10 +32,12 @@ url: https://github.com/chef/architecture-center/blob/main/best-practices/100-cu
 #image: https://marp.app/og-image.jpg
 ---
 # Compliance
-## Chef Compliance Phase
-### Best Practices - level 100
-![bg right](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/logo.png)
 
+## Chef Compliance Phase
+
+### Best Practices - level 100
+
+![bg right](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/logo.png)
 
 ---
 ![bg right](https://images.unsplash.com/photo-1583361704493-d4d4d1b1d70a)
@@ -54,6 +56,7 @@ In the context of Chef Compliance Phase and Chef InSpec, "compliance" refers to 
 <!-- _paginate: "false" -->
 
 ## Compliance Phase
+
 ### Stress-free Compliance
 
 <!--
@@ -69,8 +72,10 @@ The Chef Compliance Phase is a feature of the Chef Infra Client that integrates 
 
 <div class="center">
 
-## Audit Cookbook 
-## vs 
+## Audit Cookbook
+
+## vs
+
 ## Compliance Phase
 
 </div>
@@ -95,6 +100,7 @@ As for functionality, the Compliance Phase covers the same core features as the 
 ---
 
 ## Continuous Compliance
+
 ### Benefits
 
 <!--
@@ -137,9 +143,10 @@ As for functionality, the Compliance Phase covers the same core features as the 
 ![bg left](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/left-blue-1.png)
 
 ## Managing Compliance Phase
-- Enabling and Disabling 
+
+- Enabling and Disabling
     (Compliance Phase)
-- Include and Exclude 
+- Include and Exclude
     (Specific Profiles)
 
 <!--
@@ -159,7 +166,8 @@ As for functionality, the Compliance Phase covers the same core features as the 
 - **Speaker Note**: In conclusion, the Compliance Phase is a powerful tool for maintaining compliance and security in your infrastructure. By following best practices and leveraging its flexibility, you can ensure that your infrastructure remains compliant and secure.
 -->
 
---- 
+---
+
 ## Labs and Exercises
 
 <!--

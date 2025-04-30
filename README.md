@@ -1,4 +1,4 @@
-_This is a Work in Progress, documenting approximately how we believe we should be operating._
+> *This is a Work in Progress, documenting approximately how we believe we should be operating.*
 
 # Architecture Center - Draft/Collaborative Content
 
@@ -23,10 +23,11 @@ It is important to know this space is for collaboration but not the final restin
 Any content found on the architecture center will be considered endorsed by Chef.  This means the content needs to either target users or specifically call out the expected users skill/experience level. Regardless of skill level the content should be prescriptive, include both the positives and negatives for implementation/usage and include any alternative (if applicable).
 
 ## Skill Levels
+
 - 1XX – (Entry Level) All users should be able to read and understand the content/pattern.
 - 2XX – (Beginner) Should expand upon items in 1XX content, and begin to introduce more complex topics
 - 3XX – (Intermediate) content, designed to help teams increase automation and scale
-- 4XX – (Advanced) 
+- 4XX – (Advanced)
 - 5XX – (Expert)
 - 6XX – (Professional) Integration / Extension
 
@@ -44,5 +45,3 @@ We encourage all users to become reviewers/contributors to this project.
 ### Code of Conduct
 
 - [Physical and Virtual Spaces Code of Conduct](./CODE_OF_CONDUCT.md)
-
-

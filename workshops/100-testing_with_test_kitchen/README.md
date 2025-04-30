@@ -1,41 +1,44 @@
 # Best Practice Series
-## Testing Cookbooks
 
+## Testing Cookbooks
 
 **Testing Cookbooks with Test Kitchen (Level 101)**
 
 ## Best Practice
+
 While creating or editing cookbooks, testing early and often using is critical to reliable exection. 
 
 ## Summary
+
 Testing your infrastructure as code (IaC) is a foundational best practice for ensuring the reliability, consistency, and security of your infrastructure environments. By applying rigorous testing standards to IaC, similar to those used in application development, organizations can identify errors early, automate deployments, and maintain a clear, version-controlled history of infrastructure changes. Tools like Test Kitchen empower developers and operations teams to validate configurations across various environments, ensuring that infrastructure behaves as expected under different conditions. This approach not only mitigates risks but also streamlines the management and scalability of infrastructure resources.
 
-## Benefits 
+## Benefits
+
 Chef practitioners should consider Test Kitchen during cookbook development for several reasons:
 
 1. **Automated Testing**:
 Test Kitchen automates the process of testing Chef cookbooks, making it easier to identify and fix issues early in the development cycle. This automation helps ensure that cookbooks are reliable and function as intended before they are deployed to production.
 
-2. **Multi-Platform Testing**: 
+2. **Multi-Platform Testing**:
 Test Kitchen allows practitioners to test cookbooks across multiple platforms and environments. This is crucial for ensuring that cookbooks work correctly on all supported operating systems and configurations, which is especially important in diverse infrastructure landscapes.
 
-3. **Integration with Testing Frameworks**: 
+3. **Integration with Testing Frameworks**:
 Test Kitchen integrates seamlessly with testing frameworks like InSpec, Serverspec, and Bats, enabling practitioners to write comprehensive tests that cover various aspects of cookbook functionality, including configuration settings, services, and file contents.
 
-4. **Isolated Environments**: 
+4. **Isolated Environments**:
 By using virtualization or containerization tools Test Kitchen creates isolated environments for each test instance. This isolation ensures that tests do not interfere with each other or with the host system, leading to more accurate and reliable test results.
 
-5. **Debugging and Development Efficiency**: 
+5. **Debugging and Development Efficiency**:
 Test Kitchen provides a convenient environment for debugging cookbooks. Practitioners can quickly spin up an instance, apply the cookbook, and interact with the instance to troubleshoot issues. This streamlined workflow significantly speeds up the development and debugging process.
 
-6. **Continuous Integration (CI) Compatibility**: 
+6. **Continuous Integration (CI) Compatibility**:
 Test Kitchen can be integrated into CI pipelines, allowing for automated testing of cookbooks whenever changes are made. This integration helps maintain the stability and quality of cookbooks over time, as any new changes are automatically tested against predefined criteria.
 
-7. **Community Support and Best Practices**: 
+7. **Community Support and Best Practices**:
 Test Kitchen is widely used in the Chef community and is considered a best practice for cookbook development. Using Test Kitchen aligns with community standards and enables practitioners to leverage a wealth of knowledge and resources available from other Chef users.
 
-
 ## Effective Utilization of Test Kitchen
+
 Using Test Kitchen effectively involves several best practices and steps to ensure a smooth and productive testing experience. Here's how a user should best use Test Kitchen:
 
 1. **Understand the Configuration**:
@@ -77,7 +80,3 @@ By following these guidelines, users can maximize the benefits of Test Kitchen, 
 - InSpec First Cookbook Development (with Test Kitchen) - level 200
 - Integrate with CI/CD Pipelines - level 300
 - Test Kitchen Alternatives - level 400
-
-
-
-

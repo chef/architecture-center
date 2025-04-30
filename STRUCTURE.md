@@ -1,6 +1,6 @@
 # Content Structure & Guidelines
 
-This document serves as a guide for contributors who wish to add new content, ensuring consistency, quality, and accessibility across all materials. Here are the elements required when structuing your submissions for maximum impact and clarity.
+This document serves as a guide for contributors who wish to add new content, ensuring consistency, quality, and accessibility across all materials. Here are the elements required when structuring your submissions for maximum impact and clarity.
 
 ## Content Structure Overview
 
@@ -24,7 +24,8 @@ Every piece of content submitted to this repository should include the following
 Each folder should contain subfolders organized by topic or technology, and further divided by audience skill level when applicable.
 
 ### Example Folder Structure
-```
+
+```test
 /repository-root
     /<content-type>
         /<level>-<title>
@@ -56,5 +57,3 @@ Each folder should contain subfolders organized by topic or technology, and furt
 - Submissions are reviewed on a rolling basis.
 - Feedback or requests for revisions will be provided through the PR comments.
 - Once approved, your contribution will be merged into the repository.
-
-
