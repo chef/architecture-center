@@ -3,7 +3,7 @@ marp: true
 
 paginate: true
 header: '![w:200px](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/header-logo.png)'
-footer: '&copy; 2024 Progress Software Corporation and/or its subsidiaries or affiliates. All rights reserved.'
+footer: '&copy; 2025 Progress Software Corporation and/or its subsidiaries or affiliates. All rights reserved.'
 size: 16:9
 style: |
   footer {
@@ -34,8 +34,11 @@ url: https://github.com/chef/architecture-center/blob/main/best-practices/100-te
 ---
 
 # Testing with Test Kitchen
+
 ## Developing Cookbooks with Test Kitchen
+
 ### Best Practices - level 100
+
 ![bg right](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/logo.png)
 
 
@@ -101,7 +104,9 @@ url: https://github.com/chef/architecture-center/blob/main/best-practices/100-te
 ---
 <!-- _header: "" -->
 ![bg left](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/left-blue-1.png)
-## Recap:
+
+## Recap
+
 - Chef Infra Client
 - Chef InSpec
 - Chef Habitat
@@ -119,7 +124,7 @@ url: https://github.com/chef/architecture-center/blob/main/best-practices/100-te
 
 <div class="center">
 
-# Best Practices 
+# Best Practices
 
 ## Testing with Chef, Test Kitchen, and InSpec
 
@@ -139,7 +144,7 @@ url: https://github.com/chef/architecture-center/blob/main/best-practices/100-te
 ![bg right](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/right-blue-1.png)
 <!-- _paginate: "false" -->
 
-# Testable Cookbooks:
+# Testable Cookbooks
 
 - Small, reusable recipes
 - Version pinning in metadata
@@ -153,6 +158,7 @@ Speaking Notes: Emphasize modular code, using resources effectively, metadata to
 ---
 <!-- _header: "" -->
 ![bg left](https://raw.githubusercontent.com/chef/architecture-center/main/marp/images/left-blue-1.png)
+
 ## Effective Utilization of Test Kitchen
 
 - Understand the Configuration
@@ -169,21 +175,19 @@ Speaking Notes: Emphasize modular code, using resources effectively, metadata to
 <!-- image source: "https://unsplash.com/photos/a-blurry-photo-of-a-light-in-the-dark-ouwdw--XNzo" -->
 
 # Cookbooks are Code
+
 - Use Version Control
 - Multi-platform testing strategy
 - Pipeline Integration
 
 <!-- CI/CD -->
 
-
-
-
 ---
-# Part 2: 
-#### Hands-On-Labs 
+# Part 2
 
+## Hands-On-Labs
 
-
-
-
-
+- Lab 1 - Introduction to Test Kitchen
+- Lab 2 - Cookbook Troubleshooting
+- Lab 3 - Kitchen Configuration Error
+- Lab 4 - Yabba Doo and YAML Too
