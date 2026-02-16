@@ -45,3 +45,6 @@ We encourage all users to become reviewers/contributors to this project.
 ### Code of Conduct
 
 - [Physical and Virtual Spaces Code of Conduct](./CODE_OF_CONDUCT.md)
+
+# Copyright
+See [COPYRIGHT.md](./COPYRIGHT.md).
